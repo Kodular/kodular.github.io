@@ -1,34 +1,67 @@
-/* Author: Conor Shipp
-Copyright 2017 insert_name_here */
-
-body{
-	background-color: #e0e0e0;
-}
-h1{
-	word-wrap: break-word;
-	font-size: 45px;
-}
-h2{
-	font-size: 30px;
-	font-weight: bold;
-}
-h3{
-	font-size: 20px;
-}
-h4{
-	font-size: 15px;
-}
-.centre-arrangement{
-	width: 90%;
-	margin: 0 auto;
-	text-align: center;
-}
-ul#menu li {
-    display:inline;
-}
-.help-icons{
-	cursor: pointer;
-}
-.title{
-	font-family: 'Amaranth', sans-serif;
+/* Author: Conor Shipp
+
+Copyright 2017 Makeroid */
+
+
+
+body{
+
+	background-color: #e0e0e0;
+
+}
+
+h1{
+
+	word-wrap: break-word;
+
+	font-size: 45px;
+
+}
+
+h2{
+
+	font-size: 30px;
+
+	font-weight: bold;
+
+}
+
+h3{
+
+	font-size: 20px;
+
+}
+
+h4{
+
+	font-size: 15px;
+
+}
+
+.centre-arrangement{
+
+	width: 90%;
+
+	margin: 0 auto;
+
+	text-align: center;
+
+}
+
+ul#menu li {
+
+    display:inline;
+
+}
+
+.help-icons{
+
+	cursor: pointer;
+
+}
+
+.title{
+
+	font-family: 'Amaranth', sans-serif;
+
 }
