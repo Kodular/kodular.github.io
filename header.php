@@ -1,5 +1,5 @@
 
-	<meta name="theme-color" content="#2196f3">
+	<meta name="theme-color" content="#673ab7">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="shortcut icon" href="/favicon.ico">
 	
@@ -21,7 +21,7 @@
 	
 	<div class="navbar-fixed">
 	<nav>
-	  <div class="nav-wrapper blue">
+	  <div class="nav-wrapper deep-purple">
 		<a href="/home" class="brand-logo title">&nbsp;&nbsp;Makeroid</a>
 		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul class="right hide-on-med-and-down">
@@ -30,7 +30,7 @@
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/docs") !== false ) { echo " class=\"active\""; }?>><a href="/docs">Docs</a></li>
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
 		  <li><a href="https://community.makeroid.tk/">Community</a></li>
-		  <li><a class="waves-effect waves-dark btn amber" href="#">Login</a></a></li>
+		  <li><a class="waves-effect waves-dark btn  pink accent-2" href="#">Login</a></a></li>
 		</ul>
 	  </div>
 	</nav>
@@ -41,7 +41,7 @@
 	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/docs") !== false ) { echo " class=\"active\""; }?>><a href="/docs">Docs</a></li>
 	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
 	  <li><a href="https://community.makeroid.tk/">Community</a></li>
-	  <li><a class="waves-effect waves-dark btn amber" href="#">Login</a></a></li>
+	  <li><a class="waves-effect waves-dark btn  pink accent-2" href="#">Login</a></a></li>
 	</ul>
 	<br>
 	<br>

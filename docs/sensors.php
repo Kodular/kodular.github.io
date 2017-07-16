@@ -14,17 +14,17 @@
 	<h3>Sensor Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">AccelerometerSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">BarcodeScanner</a>
-	<a class="waves-effect waves-dark btn-large amber">Clock</a>
-	<a class="waves-effect waves-dark btn-large amber">GyroscopeSensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Accelerometer Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Barcode Scanner</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Clock</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Gyroscope Sensor</a>
 	<br>
 	<br>
-	<a class="waves-effect waves-dark btn-large amber">LocationSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">Nearfield</a>
-	<a class="waves-effect waves-dark btn-large amber">OrientationSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">Pedometer</a>
-	<a class="waves-effect waves-dark btn-large amber">ProximitySensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Location Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Nearfield</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Orientation Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Pedometer</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Proximity Sensor</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -32,7 +32,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>

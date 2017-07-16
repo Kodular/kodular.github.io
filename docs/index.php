@@ -16,42 +16,42 @@
 	  <p>There are a few different block types for each component. These are <b>Events</b>, <b>Methods</b> and <b>Properties</b>.</p>
 	  <br>
 	  <h3>Select a component type:</h3>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/user-interface">User Interface</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/layout">Layout</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/media">Media</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/drawing-and-animation">Drawing and Animation</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/sensors">Sensors</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/user-interface">User Interface</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/layout">Layout</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/media">Media</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/drawing-and-animation">Drawing and Animation</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/sensors">Sensors</a>
 	  <br>
 	  <br>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/social">Social</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/storage">Storage</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/connectivity">Connectivity</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/lego-mindstorms">Lego Mindstorms</a>
-	  <a class="waves-effect waves-dark btn-large amber" href="/docs/experimental">Experimental</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/social">Social</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/storage">Storage</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/connectivity">Connectivity</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/lego-mindstorms">Lego Mindstorms</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/experimental">Experimental</a>
 	  <br>
 	  <br>
 	  <br>
 	  <br>
 	  <h3>Other docs:</h3>
-	  <a class="waves-effect waves-dark btn-large amber">Extensions</a>
-	  <a class="waves-effect waves-dark btn-large amber">Release Notes</a>
-	  <a class="waves-effect waves-dark btn-large amber">Live Development</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Extensions</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Release Notes</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Live Development</a>
 	  <br>
 	  <br>
 	  <br>
 	  <br>
 	  <h3>Blocks:</h3>
-	  <a class="waves-effect waves-dark btn-large amber">Control</a>
-	  <a class="waves-effect waves-dark btn-large amber">Logic</a>
-	  <a class="waves-effect waves-dark btn-large amber">Math</a>
-	  <a class="waves-effect waves-dark btn-large amber">Text</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Control</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Logic</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Math</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Text</a>
 	  <br>
 	  <br>
-	  <a class="waves-effect waves-dark btn-large amber">Lists</a>
-	  <a class="waves-effect waves-dark btn-large amber">Colors</a>
-	  <a class="waves-effect waves-dark btn-large amber">Variables</a>
-	  <a class="waves-effect waves-dark btn-large amber">Procedures</a>
-	  <a class="waves-effect waves-dark btn-large amber">Screen</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Lists</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Colors</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Variables</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Procedures</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Screen</a>
 	</div>
 	
 <?php include "../fab.php"; ?>

@@ -14,7 +14,7 @@
 	  <br>
 	  <h4>Hover over the icons to read more about us</h4>
 	  <ul id="menu">
-		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Conor - Website Developer and Designer" src="/images/conor.png" alt="Conor" height="100" width="100"></li>
+		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Conor" src="/images/conor.png" alt="Conor" height="100" width="100"></li>
 		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Diego" src="/images/diego.png" alt="barreeeiroo" height="100" width="100"></li>
 		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Mika" src="/images/mika.png" alt="Mika" height="100" width="100"></li>
 		<br>

@@ -14,7 +14,7 @@
 	<h3>Experimental Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">FirebaseDB</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Firebase DB</a>	<a class="waves-effect waves-dark btn-large pink accent-2">Google Map</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -22,7 +22,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>

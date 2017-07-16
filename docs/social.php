@@ -14,15 +14,15 @@
 	<h3>Social Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">ContactPicker</a>
-	<a class="waves-effect waves-dark btn-large amber">EmailPicker</a>
-	<a class="waves-effect waves-dark btn-large amber">PhoneCall</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Contact Picker</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Email Picker</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Phone Call</a>
 	<br>
 	<br>
-	<a class="waves-effect waves-dark btn-large amber">PhoneNumberPicker</a>
-	<a class="waves-effect waves-dark btn-large amber">Sharing</a>
-	<a class="waves-effect waves-dark btn-large amber">Texting</a>
-	<a class="waves-effect waves-dark btn-large amber">Twitter</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Phone Number Picker</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Sharing</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Texting</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Twitter</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -30,7 +30,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>

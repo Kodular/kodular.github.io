@@ -14,10 +14,10 @@
 	<h3>Storage Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">File</a>
-	<a class="waves-effect waves-dark btn-large amber">FusiontablesControl</a>
-	<a class="waves-effect waves-dark btn-large amber">TinyDB</a>
-	<a class="waves-effect waves-dark btn-large amber">TinyWebDB</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">File</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Fusiontables Control</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Tiny DB</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Tiny Web DB</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -25,7 +25,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>

@@ -14,17 +14,17 @@
 	<h3>Media Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">Camcorder</a>
-	<a class="waves-effect waves-dark btn-large amber">Camera</a>
-	<a class="waves-effect waves-dark btn-large amber">ImagePicker</a>
-	<a class="waves-effect waves-dark btn-large amber">Player</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Camcorder</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Camera</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Image Picker</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Player</a>
 	<br>
 	<br>
-	<a class="waves-effect waves-dark btn-large amber">SoundRecorder</a>
-	<a class="waves-effect waves-dark btn-large amber">SpeechRecogniser</a>
-	<a class="waves-effect waves-dark btn-large amber">TextToSpeech</a>
-	<a class="waves-effect waves-dark btn-large amber">VideoPlayer</a>
-	<a class="waves-effect waves-dark btn-large amber">YandexTranslate</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Sound Recorder</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Speech Recogniser</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Text To Speech</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Video Player</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Yandex Translate</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -32,7 +32,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>

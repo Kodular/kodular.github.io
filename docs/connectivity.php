@@ -14,10 +14,10 @@
 	<h3>Connectivity Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">ActivityStarter</a>
-	<a class="waves-effect waves-dark btn-large amber">BluetoothClient</a>
-	<a class="waves-effect waves-dark btn-large amber">BluetoothServer</a>
-	<a class="waves-effect waves-dark btn-large amber">Web</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Activity Starter</a>		<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Admin</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Client</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Server</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Web</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -25,7 +25,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>

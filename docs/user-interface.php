@@ -14,22 +14,22 @@
 	<h3>User Interface Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">Button</a>
-	<a class="waves-effect waves-dark btn-large amber">CheckBox</a>
-	<a class="waves-effect waves-dark btn-large amber">DatePicker</a>
-	<a class="waves-effect waves-dark btn-large amber">Image</a>
-	<a class="waves-effect waves-dark btn-large amber">Label</a>
-	<a class="waves-effect waves-dark btn-large amber">ListPicker</a>
-	<a class="waves-effect waves-dark btn-large amber">ListView</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Button</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">CheckBox</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Date Picker</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Image</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Label</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">List Picker</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">List View</a>
 	<br>
 	<br>
-	<a class="waves-effect waves-dark btn-large amber">Notifier</a>
-	<a class="waves-effect waves-dark btn-large amber">PasswordTextBox</a>
-	<a class="waves-effect waves-dark btn-large amber">Slider</a>
-	<a class="waves-effect waves-dark btn-large amber">Spinner</a>
-	<a class="waves-effect waves-dark btn-large amber">TextBox</a>
-	<a class="waves-effect waves-dark btn-large amber">TimePicker</a>
-	<a class="waves-effect waves-dark btn-large amber">WebViewer</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Notifier</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Password TextBox</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Slider</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Spinner</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">TextBox</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Time Picker</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Web Viewer</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -37,7 +37,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>

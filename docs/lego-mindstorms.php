@@ -14,29 +14,29 @@
 	<h3>LEGO® MINDSTORMS® Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large amber">NXTDrive</a>
-	<a class="waves-effect waves-dark btn-large amber">NXTColorSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">NXTLightSensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">NXT Drive</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">NXT Color Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">NXT Light Sensor</a>
 	<br>
 	<br>
-	<a class="waves-effect waves-dark btn-large amber">NXTSoundSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">NXTTouchSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">NXTUltrasonicSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">NXTDirectCommands</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">NXT Sound Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">NXT Touch Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">NXT Ultrasonic Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">NXT Direct Commands</a>
 	<br>
 	<br>
 	<br>
 	<br>
-	<a class="waves-effect waves-dark btn-large amber">Ev3Motors</a>
-	<a class="waves-effect waves-dark btn-large amber">Ev3ColorSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">Ev3GyroSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">Ev3TouchSensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Motors</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Color Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Gyro Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Touch Sensor</a>
 	<br>
 	<br>
-	<a class="waves-effect waves-dark btn-large amber">Ev3UltrasonicSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">Ev3SoundSensor</a>
-	<a class="waves-effect waves-dark btn-large amber">Ev3UI</a>
-	<a class="waves-effect waves-dark btn-large amber">Ev3Commands</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Ultrasonic Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Sound Sensor</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 UI</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Commands</a>
 
 	<!--Floating Action Button-->
 	<div class="fixed-action-btn vertical">
@@ -44,7 +44,7 @@
 			<i class="material-icons">help</i>
 		</a>
 	<ul>
-		<li><a href="#" class="tooltipped btn-floating amber" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
+		<li><a href="#" class="tooltipped btn-floating pink accent-2" data-position="left" data-delay="50" data-tooltip="Email us!"><i class="material-icons">email</i></a></li>
 		<li><a href="#" class="tooltipped btn-floating black" data-position="left" data-delay="50" data-tooltip="Live chat!"><i class="material-icons">chat</i></a></li>
 	</ul>
 	</div>
