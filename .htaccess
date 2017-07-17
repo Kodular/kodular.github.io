@@ -1,12 +1,13 @@
-RewriteEngine On
-RewriteBase /
-
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteCond %{HTTPS}s ^on(s)|
-RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-RewriteCond %{REQUEST_FILENAME}\.php -f [NC]
-RewriteRule ^(.+?)/?$ $1.php
-
-Redirect /index.php /home
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !^www.makeroid.tk
+RewriteCond %{HTTP_HOST} !^makeroid.000webhostapp.com
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME}\.php -f [NC]
+RewriteRule ^(.+?)/?$ $1.php
+
+Redirect /index.php /home
 Redirect /index.html /home
