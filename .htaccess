@@ -1,6 +1,7 @@
 RewriteEngine On
 RewriteBase /
 
+RewriteCond %{HTTP_HOST} !^localhost
 RewriteCond %{HTTP_HOST} !^www.makeroid.tk
 RewriteCond %{HTTP_HOST} !^makeroid.000webhostapp.com
 RewriteCond %{HTTPS}s ^on(s)|

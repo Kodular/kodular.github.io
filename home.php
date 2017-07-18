@@ -31,7 +31,7 @@
     </div> -->
 
     <!-- Loader -->
-    <div class="loader" id="CS">
+    <div class="loader" name="CS">
     	<div class="preloader-wrapper big active">
     	    <div class="spinner-layer spinner-blue-only">
     	    	<div class="circle-clipper left">
@@ -47,7 +47,7 @@
     	</div>
     </div>
     <!-- End Loader -->
-    <div class="wrapper" id="CS">
+    <div class="wrapper" name="CS">
     	<div class="main">
     		<div class="tab-content">
     			<div role="tabpanel" class="tab-pane active" id="home">
