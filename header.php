@@ -24,7 +24,7 @@
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/docs") !== false ) { echo " class=\"active\""; }?>><a href="/docs">Docs</a></li>
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
 		  <li><a target="_blank" href="https://community.makeroid.tk/">Community</a></li>
-		  <li><a class="waves-effect waves-dark btn  pink accent-2" href="#">Login</a></a></li>
+		  <li><a class="waves-effect waves-dark btn pink accent-2" href="#">Login</a></a></li>
 		</ul>
 	  </div>
 	</nav>

@@ -11,7 +11,7 @@ if (!isset($_POST["email"])) {
     }
   }
   if ($found==true) {
-    exit(header('Location: /?0'));
+    exit(header('Location: /home/?0'));
   }
   $file = fopen('emails.txt', 'a');
   fwrite($file, $_POST['email'] . "\n");
@@ -38,7 +38,7 @@ if (!isset($_POST["email"])) {
           $result=curl_exec ($ch);
           curl_close ($ch);
           echo $result;
-      exit(header('Location: /?1'));
+      exit(header('Location: /home/?1'));
   }
   catch(Exception $ex){
   	echo $ex->getMessage();
