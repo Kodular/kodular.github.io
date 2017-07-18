@@ -11,8 +11,6 @@
 	<script src="/js/mobile-nav.js" type="text/javascript"></script>
   </head>
 
-	<style type="text/css">body {overflow:hidden;}</style>
-	
 	<body>
 <?php include_once("config/analyticstracking.php") ?>
 	<div class="navbar-fixed">

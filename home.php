@@ -7,6 +7,8 @@
 
     <?php include "header.php"; ?>
 
+    <style type="text/css">body {overflow:hidden;}</style>
+
     <link rel="stylesheet" href="/CS/vendor/bootstrap-3.3.6/css/bootstrap.min.css">
   	<link rel="stylesheet" href="/CS/vendor/owl-carousel/assets/owl.carousel.css">
   	<link rel="stylesheet" href="/CS/vendor/custom-scrollbar/jquery.mCustomScrollbar.min.css">
@@ -81,12 +83,11 @@
     									</div>
     									<!-- End Countdown -->
     									<!-- Subscribe Form -->
-    									<form action="http://legendary-works.com/demo/sirius/?" method="post" class="form form-subscribe">
+    									<form action="/sub.php" method="post" class="form form-subscribe">
     										<div class="row">
     											<div class="col-sm-8 col-sm-offset-2">
     												<div class="input-field">
-    										        	<input id="email" type="email" class="validate">
-
+    										        	<input id="email" type="email" name="email" class="validate" required>
     										        	<label for="email">Email Address</label>
     										        </div>
     											</div>
