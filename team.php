@@ -18,12 +18,12 @@
 		<br>
 		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Pavitra" src="https://en.gravatar.com/userimage/67794664/b3d68ddee06312fa2e4b1435be6d03d4.png?size=100" alt="pavi2410" height="100" width="100"></li>
 		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Sander" src="/images/sander.png" alt="Sander" height="100" width="100"></li>
-		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Ben" src="/images/ben.png" alt="Ben" height="100" width="100"></li>
+		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Vishwas" src="/images/vishwas.png" alt="Vishwas" height="100" width="100"></li>
 		<br>
 		<br>
 		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Domhnall" src="/images/domhnall.png" alt="Domhnall" height="100" width="100"></li>
 		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Sivagiri" src="/images/sivagiri.png" alt="Sivagiri" height="100" width="100"></li>
-		<li><img class="help-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Vishwas" src="/images/vishwas.png" alt="Vishwas" height="100" width="100"></li>
+		
 	  </ul>
 	</div>
 	
