@@ -69,7 +69,7 @@
     							<div class="row">
     								<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
     									<!-- Countdown -->
-    									<div class="card card-countdown" data-launch-date="2017/12/31">
+    									<div class="card card-countdown" data-launch-date="2017/08/01">
     										<div class="countdown-part ds"></div>
     										<div class="countdown-part hs"></div>
     										<div class="countdown-part ms"></div>
