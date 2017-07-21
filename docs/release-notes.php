@@ -7,11 +7,12 @@
 <?php include "../header.php"; ?>
 	<div class="centre-arrangement">
 	  <h1>Release Notes</h1>
-	  <h2>July 2017</h2>	  <p>This is the first release of Makeroid, bugs are to be expected and features may be incomplete.</p>
+	  <h3>July 2017</h3>	  <p>This is the first release of Makeroid, bugs are to be expected and features may be incomplete.</p>
 	  <br>
 	  <p>Please report bugs, suggest features and give us feedback on our <a href="https://community.makeroid.tk/">community.</a></p>
 	  <br>
-	  <h2>Differences between MIT App Inventor and Makeroid</h2>
+	  <h3>Differences between MIT App Inventor and Makeroid</h3>
+	</div>
 	  <ul class="browser-default">
 		<li>Material Design</li>
 		<li>Enhanced User Interface</li>
@@ -44,8 +45,7 @@
 				<li>Bluetooth Admin</li>
 			</ul>
 		<li>Plus, a lot more coming soon!</li>
-	  </ul>
-	</div>
+	  </ul>
 <?php include "../fab.php"; ?>
   </body>
 </html>
