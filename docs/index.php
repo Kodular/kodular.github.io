@@ -34,8 +34,9 @@
 	  <br>
 	  <h3>Other docs:</h3>
 	  <a class="waves-effect waves-dark btn-large pink accent-2">Extensions</a>
-	  <a class="waves-effect waves-dark btn-large pink accent-2">Release Notes</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/release-notes">Release Notes</a>
 	  <a class="waves-effect waves-dark btn-large pink accent-2">Live Development</a>
+	  <a class="waves-effect waves-dark btn-large pink accent-2">Backpack</a>
 	  <br>
 	  <br>
 	  <br>
