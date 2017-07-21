@@ -1,3 +1,24 @@
+<?php
+// Minify
+function sanitize_output($buffer) {
+    $search = array(
+        '/\>[^\S ]+/s',     // strip whitespaces after tags, except space
+        '/[^\S ]+\</s',     // strip whitespaces before tags, except space
+        '/(\s)+/s',         // shorten multiple whitespace sequences
+        '/<!--(.|\s)*?-->/' // Remove HTML comments
+    );
+    $replace = array(
+        '>',
+        '<',
+        '\\1',
+        ''
+    );
+    $buffer = preg_replace($search, $replace, $buffer);
+    return $buffer;
+}
+ob_start("sanitize_output");
+?>
+
 	<meta charset="utf-8" />
 	<meta name="theme-color" content="#673ab7">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,6 +30,25 @@
 	<script src="/js/materialize.min.js" type="text/javascript"></script>
 	<script src="/js/fontawesome.js" type="text/javascript"></script>
 	<script src="/js/mobile-nav.js" type="text/javascript"></script>
+
+	<script type='application/ld+json'>
+	{
+	  "@context": "http://www.schema.org",
+	  "@type": "WebSite",
+	  "name": "Makeroid",
+	  "alternateName": "Makeroid App Builder",
+	  "url": "https://www.makeroid.tk"
+	}
+	</script>
+
+	<meta name="description" content="A new era of app building">
+
+	<meta property="og:title" content="Makeroid App Builder" />
+	<meta property="og:description" content="A new era of app building" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.makeroid.tk" />
+	<meta property="og:image" content="https://www.makeroid.tk/favicon.ico" />
   </head>
 
 	<body>
