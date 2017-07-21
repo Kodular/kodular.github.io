@@ -1,14 +1,27 @@
+# Start the rewrite engine
 RewriteEngine On
 RewriteBase /
 
+# Rewrite to www
 RewriteCond %{HTTP_HOST} !^localhost
 RewriteCond %{HTTP_HOST} !^www.makeroid.tk
 RewriteCond %{HTTP_HOST} !^makeroid.000webhostapp.com
 RewriteCond %{HTTPS}s ^on(s)|
 RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Remove PHP extension
 RewriteCond %{REQUEST_FILENAME}\.php -f [NC]
 RewriteRule ^(.+?)/?$ $1.php
 
+# Redirect root requests
 Redirect /index.php /home
 Redirect /index.html /home
+
+
+# Security for the update page
+<FilesMatch "update.php">
+  AuthName "Input the password to update the website"
+  AuthType Basic
+  AuthUserFile /var/www/html/.htpasswd
+  require valid-user
+</FilesMatch>
