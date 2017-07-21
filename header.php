@@ -48,7 +48,7 @@ ob_start("sanitize_output");
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.makeroid.tk" />
-	<meta property="og:image" content="https://www.makeroid.tk/favicon.ico" />
+	<meta property="og:image" content="https://www.makeroid.tk/logo.png" />
   </head>
 
 	<body>
