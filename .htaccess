@@ -36,3 +36,9 @@ ErrorDocument 503 /error/503.html
   AuthUserFile /var/www/html/.htpasswd
   require valid-user
 </FilesMatch>
+
+# Disable access to emails.txt
+<Files "emails.txt">
+  Order Allow,Deny
+  Deny from all
+</Files>
