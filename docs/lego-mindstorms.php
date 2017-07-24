@@ -7,7 +7,7 @@
 	<!--Site Tite-->
 	<title>LEGO® MINDSTORMS® Components - Makeroid</title>
 	
-<?php include "../header.php"; ?>
+<?php include "../assets/templates/header.php"; ?>
 
 	<div class="centre-arrangement">
 	<h1>Documentation</h1>
@@ -38,6 +38,6 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 UI</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Commands</a>
 
-<?php include "../fab.php"; ?>
+<?php include "../assets/templates/fab.php"; ?>
 </body>
 </html>

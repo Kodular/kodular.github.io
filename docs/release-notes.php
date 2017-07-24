@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>Release Notes - Makeroid</title>
-<?php include "../header.php"; ?>
+<?php include "../assets/templates/header.php"; ?>
 	<div class="centre-arrangement">
 	  <h1>Release Notes</h1>
 	  <h3>July 2017</h3>	  <p>This is the first release of Makeroid, bugs are to be expected and features may be incomplete.</p>
@@ -46,6 +46,6 @@
 			</ul>
 		<li>Plus, a lot more coming soon!</li>
 	  </ul>
-<?php include "../fab.php"; ?>
+<?php include "../assets/templates/fab.php"; ?>
   </body>
 </html>

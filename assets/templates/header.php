@@ -24,9 +24,9 @@ ob_start("sanitize_output");
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	<link href="/css/materialize.min.css" rel="stylesheet" type="text/css">
-	<link href="/css/style.css" rel="stylesheet" type="text/css">
-	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	<link href="/assets/css/materialize.min.css" rel="stylesheet" type="text/css">
+	<link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="/js/materialize.min.js" type="text/javascript"></script>
 	<script src="/js/fontawesome.js" type="text/javascript"></script>
 	<script src="/js/mobile-nav.js" type="text/javascript"></script>
@@ -48,7 +48,7 @@ ob_start("sanitize_output");
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.makeroid.tk" />
-	<meta property="og:image" content="https://www.makeroid.tk/logo.png" />
+	<meta property="og:image" content="https://www.makeroid.tk/assets/logo.png" />
   </head>
 
 	<body>
@@ -64,7 +64,7 @@ ob_start("sanitize_output");
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/docs") !== false ) { echo " class=\"active\""; }?>><a href="/docs">Docs</a></li>
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
 		  <li><a target="_blank" href="https://community.makeroid.tk/">Community</a></li>
-		  <li><a class="waves-effect waves-dark btn pink accent-2" href="#">Login</a></a></li>
+		  <li><a class="waves-effect waves-dark btn pink accent-2" href="https://builder.makeroid.tk">Login</a></a></li>
 		</ul>
 	  </div>
 	</nav>
@@ -75,7 +75,7 @@ ob_start("sanitize_output");
 	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/docs") !== false ) { echo " class=\"active\""; }?>><a href="/docs">Docs</a></li>
 	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
 	  <li><a target="_blank" href="https://community.makeroid.tk/">Community</a></li>
-	  <li><a class="waves-effect waves-dark btn  pink accent-2" href="#">Login</a></a></li>
+	  <li><a class="waves-effect waves-dark btn  pink accent-2" href="https://builder.makeroid.tk">Login</a></a></li>
 	</ul>
 
 <?php include_once("config/ads.php"); ?>

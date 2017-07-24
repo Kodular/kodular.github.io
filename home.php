@@ -5,7 +5,7 @@
   <head>
     <title>Home | Makeroid</title>
 
-    <?php include "header.php"; ?>
+    <?php include "assets/templates/header.php"; ?>
 
     <style type="text/css">body {overflow:hidden;}</style>
 
@@ -254,5 +254,5 @@
     <script src="/CS/vendor/jquery.countdown-2.1.0/jquery.countdown.min.js"></script>
     <script src="/CS/js/functions.js"></script>
 
-    <?php include "fab.php"; ?>  </body>
+    <?php include "assets/templates/footer.php"; ?>  </body>
 </html>
