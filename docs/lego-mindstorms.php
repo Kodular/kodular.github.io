@@ -38,6 +38,6 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 UI</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Ev3 Commands</a>
 
-<?php include "../assets/templates/fab.php"; ?>
+<?php include "../assets/templates/footer.php"; ?>
 </body>
 </html>

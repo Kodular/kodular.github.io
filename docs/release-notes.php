@@ -46,6 +46,6 @@
 			</ul>
 		<li>Plus, a lot more coming soon!</li>
 	  </ul>
-<?php include "../assets/templates/fab.php"; ?>
+<?php include "../assets/templates/footer.php"; ?>
   </body>
 </html>

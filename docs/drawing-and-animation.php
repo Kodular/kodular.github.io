@@ -18,6 +18,6 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Canvas</a>		<a class="waves-effect waves-dark btn-large pink accent-2">Image Editor</a>	
 	<a class="waves-effect waves-dark btn-large pink accent-2">Image Sprite</a>		
 
-<?php include "../assets/templates/fab.php"; ?>
+<?php include "../assets/templates/footer.php"; ?>
 </body>
 </html>

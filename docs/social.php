@@ -24,6 +24,6 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Texting</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Twitter</a>
 
-<?php include "../assets/templates/fab.php"; ?>
+<?php include "../assets/templates/footer.php"; ?>
 </body>
 </html>

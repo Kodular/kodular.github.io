@@ -27,9 +27,9 @@ ob_start("sanitize_output");
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	<link href="/assets/css/materialize.min.css" rel="stylesheet" type="text/css">
 	<link href="/assets/css/style.css" rel="stylesheet" type="text/css">
 	<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
-	<script src="/js/materialize.min.js" type="text/javascript"></script>
-	<script src="/js/fontawesome.js" type="text/javascript"></script>
-	<script src="/js/mobile-nav.js" type="text/javascript"></script>
+	<script src="/assets/js/materialize.min.js" type="text/javascript"></script>
+	<script src="/assets/js/fontawesome.js" type="text/javascript"></script>
+	<script src="/assets/js/mobile-nav.js" type="text/javascript"></script>
 
 	<script type='application/ld+json'>
 	{
@@ -60,9 +60,9 @@ ob_start("sanitize_output");
 		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul class="right hide-on-med-and-down">
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/home") !== false ) { echo " class=\"active\""; }?>><a href="/home">Home</a></li>
-		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/about") !== false ) { echo " class=\"active\""; }?>><a href="/about">About</a></li>
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/docs") !== false ) { echo " class=\"active\""; }?>><a href="/docs">Docs</a></li>
 		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
+		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/about") !== false ) { echo " class=\"active\""; }?>><a href="/about">About</a></li>
 		  <li><a target="_blank" href="https://community.makeroid.tk/">Community</a></li>
 		  <li><a class="waves-effect waves-dark btn pink accent-2" href="https://builder.makeroid.tk">Login</a></a></li>
 		</ul>
@@ -71,9 +71,9 @@ ob_start("sanitize_output");
 	</div>
 	<ul class="side-nav" id="mobile-demo">
 	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/home") !== false ) { echo " class=\"active\""; }?>><a href="/home">Home</a></li>
-	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/about") !== false ) { echo " class=\"active\""; }?>><a href="/about">About</a></li>
 	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/docs") !== false ) { echo " class=\"active\""; }?>><a href="/docs">Docs</a></li>
 	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
+	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/about") !== false ) { echo " class=\"active\""; }?>><a href="/about">About</a></li>
 	  <li><a target="_blank" href="https://community.makeroid.tk/">Community</a></li>
 	  <li><a class="waves-effect waves-dark btn  pink accent-2" href="https://builder.makeroid.tk">Login</a></a></li>
 	</ul>

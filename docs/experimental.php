@@ -16,6 +16,6 @@
 	<h3>Select a component:</h3>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Firebase DB</a>	<a class="waves-effect waves-dark btn-large pink accent-2">Google Map</a>
 
-<?php include "../assets/templates/fab.php"; ?>
+<?php include "../assets/templates/footer.php"; ?>
 </body>
 </html>

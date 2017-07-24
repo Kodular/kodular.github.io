@@ -6,7 +6,7 @@
 <head>
 	<!--Site Tite-->
 	<title>Documentation - Makeroid</title>
-	
+
 <?php include "../assets/templates/header.php"; ?>
 
 	<div class="centre-arrangement">
@@ -54,8 +54,8 @@
 	  <a class="waves-effect waves-dark btn-large pink accent-2">Procedures</a>
 	  <a class="waves-effect waves-dark btn-large pink accent-2">Screen</a>
 	</div>
-	
-<?php include "../assets/templates/fab.php"; ?>
-	
+
+	<?php include "../assets/templates/footer.php"; ?>
+
   </body>
 </html>
