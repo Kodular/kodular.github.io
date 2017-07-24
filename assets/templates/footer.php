@@ -1,4 +1,6 @@
 <?php include "assets/templates/fab.php"; ?>
+<br>
+<br>
 <footer class="page-footer" style="background-color: #ff4081;">
   <div class="container">
     <div class="row">
