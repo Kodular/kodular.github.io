@@ -51,6 +51,18 @@ ob_start("sanitize_output");
 	<meta property="og:image" content="https://www.makeroid.tk/assets/logo.png" />
   </head>
 
+  <style>
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  </style>
+
 	<body>
 <?php include_once("config/analyticstracking.php") ?>
 	<div class="navbar-fixed">
