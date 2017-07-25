@@ -6,7 +6,7 @@
 	<!--Site Tite-->
 	<title>Connectivity Components - Makeroid</title>
 	
-<?php include "../assets/templates/header.php"; ?>
+<?php include "../../assets/templates/header.php"; ?>
 
 	<div class="centre-arrangement">
 	<h1>Documentation</h1>
@@ -18,6 +18,6 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Server</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Web</a>
 
-<?php include "../assets/templates/footer.php"; ?>
+<?php include "../../assets/templates/footer.php"; ?>
 </body>
 </html>
