@@ -14,7 +14,7 @@
 	<h3>User Interface Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large pink accent-2">Button</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2" href="/docs/user-interface/button">Button</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">CheckBox</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Date Picker</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Image</a>
