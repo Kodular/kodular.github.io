@@ -18,6 +18,7 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Fusiontables Control</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Tiny DB</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Tiny Web DB</a>
+	</div>
 
 <?php include "../../assets/templates/footer.php"; ?>
 </body>

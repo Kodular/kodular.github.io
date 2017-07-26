@@ -20,7 +20,7 @@ ob_start("sanitize_output");
 ?>
 
 	<meta charset="utf-8" />
-	<meta name="theme-color" content="#673ab7">
+	<meta name="theme-color" content="#4527a0">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
@@ -67,7 +67,7 @@ ob_start("sanitize_output");
 <?php include_once("config/analyticstracking.php") ?>
 	<div class="navbar-fixed">
 	<nav>
-	  <div class="nav-wrapper deep-purple">
+	  <div class="nav-wrapper deep-purple darken-3">
 		<a href="/home" class="brand-logo title">&nbsp;&nbsp;Makeroid</a>
 		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul class="right hide-on-med-and-down">

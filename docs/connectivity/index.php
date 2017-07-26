@@ -13,10 +13,12 @@
 	<h3>Connectivity Components</h3>
 	<br>
 	<h3>Select a component:</h3>
-	<a class="waves-effect waves-dark btn-large pink accent-2">Activity Starter</a>		<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Admin</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Activity Starter</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Admin</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Client</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Bluetooth Server</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Web</a>
+	</div>
 
 <?php include "../../assets/templates/footer.php"; ?>
 </body>

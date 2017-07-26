@@ -23,6 +23,7 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Sharing</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Texting</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Twitter</a>
+	</div>
 
 <?php include "../../assets/templates/footer.php"; ?>
 </body>

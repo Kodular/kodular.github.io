@@ -25,6 +25,7 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Orientation Sensor</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Pedometer</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Proximity Sensor</a>
+	</div>
 
 <?php include "../../assets/templates/footer.php"; ?>
 </body>

@@ -21,6 +21,7 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">Table Arrangement</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Vertical Arrangement</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Vertical Scroll Arrangement</a>
+	</div>
 
 <?php include "../../assets/templates/footer.php"; ?>
 </body>
