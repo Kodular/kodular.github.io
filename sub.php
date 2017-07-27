@@ -21,7 +21,7 @@ if (!isset($_POST["email"])) {
   try {
        $post = array('from' => 'no-reply@makeroid.tk',
   		'fromName' => 'Makeroid',
-  		'apikey' => 'a892fa0f-ad52-41f1-a317-13a71136d607',
+  		'apikey' => '',
   		'subject' => 'Subscription',
   		'to' => $_POST["email"],
   		'bodyHtml' => '<h2>Thanks supporting us on Makeroid!</h2>You will be notified when Makeroid will be released<br>Also, as you have signed up, you will take part in a contest to choose some testers for our service<br><br>Regards,<br><i>Makeroid Team</i><br><hr /><br>If this is an error, please notify at support@makeroid.tk',
