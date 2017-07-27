@@ -7,7 +7,39 @@
 
     <?php include "assets/templates/header.php"; ?>
 
-    <style type="text/css">body {overflow:hidden;}</style>
+    <style type="text/css">
+    body {
+      overflow:hidden;
+    }
+
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+    }
+
+    .alert.success {background-color: #4CAF50;}
+    .alert.info {background-color: #2196F3;}
+    .alert.warning {background-color: #ff9800;}
+
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: black;
+    }
+    </style>
 
     <link rel="stylesheet" href="/CS/vendor/bootstrap-3.3.6/css/bootstrap.min.css">
   	<link rel="stylesheet" href="/CS/vendor/owl-carousel/assets/owl.carousel.css">
@@ -118,64 +150,27 @@
                         <span class="closebtn">&times;</span>
                         <strong>Ooops!</strong> It seems you are already in the list
                       </div>
-                      <script>
-                      var close = document.getElementsByClassName("closebtn");
-                      var i;
-                      for (i = 0; i < close.length; i++) {
-                          close[i].onclick = function(){
-                              var div = this.parentElement;
-                              div.style.opacity = "0";
-                              setTimeout(function(){ div.style.display = "none"; }, 600);
-                          }
-                      }
-                      </script>
                       <?php
                         } elseif (isset($_GET['1'])) {
                       ?>
-                      <style>
-                      .alert {
-                          padding: 20px;
-                          background-color: #f44336;
-                          color: white;
-                          opacity: 1;
-                          transition: opacity 0.6s;
-                          margin-bottom: 15px;
-                      }
-
-                      .alert.success {background-color: #4CAF50;}
-                      .alert.info {background-color: #2196F3;}
-                      .alert.warning {background-color: #ff9800;}
-
-                      .closebtn {
-                          margin-left: 15px;
-                          color: white;
-                          font-weight: bold;
-                          float: right;
-                          font-size: 22px;
-                          line-height: 20px;
-                          cursor: pointer;
-                          transition: 0.3s;
-                      }
-
-                      .closebtn:hover {
-                          color: black;
-                      }
-                      </style>
                       <div class="alert success">
                         <span class="closebtn">&times;</span>
                         <strong>WoW!</strong> Thanks for supporting us! You will be notified when we release the service
                       </div>
-                      <script>
-                      var close = document.getElementsByClassName("closebtn");
-                      var i;
-                      for (i = 0; i < close.length; i++) {
-                          close[i].onclick = function(){
-                              var div = this.parentElement;
-                              div.style.opacity = "0";
-                              setTimeout(function(){ div.style.display = "none"; }, 600);
-                          }
-                      }
-                      </script>
+                      <?php
+                        } elseif (isset($_GET['2'])) {
+                      ?>
+                      <div class="alert">
+                        <span class="closebtn">&times;</span>
+                        <strong>Oops!</strong> It seems that the reCaptcha you submitted was wrong - Try again
+                      </div>
+                      <?php
+                        } elseif (isset($_GET['3'])) {
+                      ?>
+                      <div class="alert info">
+                        <span class="closebtn">&times;</span>
+                        <strong>Ooops!</strong> You have to check the reCaptcha
+                      </div>
                       <?php
                         }
                       ?>
@@ -189,6 +184,11 @@
     										        </div>
     											</div>
     										</div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="g-recaptcha" data-sitekey=""></div>
+                          </div>
+                        </div>
     										<div class="row">
     											<div class="col-sm-12">
     												<button type="submit" class="waves-effect waves-light btn blue">subscribe</button>
@@ -253,6 +253,18 @@
     <script src="/CS/vendor/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="/CS/vendor/jquery.countdown-2.1.0/jquery.countdown.min.js"></script>
     <script src="/CS/js/functions.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+      for (i = 0; i < close.length; i++) {
+          close[i].onclick = function(){
+              var div = this.parentElement;
+              div.style.opacity = "0";
+              setTimeout(function(){ div.style.display = "none"; }, 600);
+          }
+      }
+    </script>
 
     <?php include "assets/templates/footer.php"; ?>  </body>
 </html>
