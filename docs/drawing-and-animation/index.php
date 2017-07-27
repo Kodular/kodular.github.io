@@ -15,8 +15,10 @@
 	<br>
 	<h3>Select a component:</h3>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Ball</a>
-	<a class="waves-effect waves-dark btn-large pink accent-2">Canvas</a>		<a class="waves-effect waves-dark btn-large pink accent-2">Image Editor</a>	
+	<a class="waves-effect waves-dark btn-large pink accent-2">Canvas</a>
+	<a class="waves-effect waves-dark btn-large pink accent-2">Image Editor</a>	
 	<a class="waves-effect waves-dark btn-large pink accent-2">Image Sprite</a>		
+	</div>
 
 <?php include "../../assets/templates/footer.php"; ?>
 </body>

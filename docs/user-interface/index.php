@@ -30,6 +30,7 @@
 	<a class="waves-effect waves-dark btn-large pink accent-2">TextBox</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Time Picker</a>
 	<a class="waves-effect waves-dark btn-large pink accent-2">Web Viewer</a>
+	</div>
 
 <?php include "../../assets/templates/footer.php"; ?>
 </body>
