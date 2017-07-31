@@ -5,6 +5,7 @@ RewriteBase /
 # Rewrite to www
 RewriteCond %{HTTP_HOST} !^localhost
 RewriteCond %{HTTP_HOST} !^www.makeroid.tk
+RewriteCond %{HTTP_HOST} !^makeroid.000webhostapp.com
 RewriteCond %{HTTPS}s ^on(s)|
 RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -35,3 +36,9 @@ ErrorDocument 503 /error/503.html
   AuthUserFile /var/www/html/.htpasswd
   require valid-user
 </FilesMatch>
+
+# Disable access to emails.txt
+<Files "emails.txt">
+  Order Allow,Deny
+  Deny from all
+</Files>
