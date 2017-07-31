@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.makeroid.tk/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/home</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/about</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/team</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/user-interface</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/layout</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/media</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/drawing-and-animation</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/sensors</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/social</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/storage</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/connectivity</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/lego-mindstorms</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.makeroid.tk/docs/experimental</loc>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>
