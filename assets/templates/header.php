@@ -1,36 +1,12 @@
-<?php
-// Minify
-function sanitize_output($buffer) {
-    $search = array(
-        '/\>[^\S ]+/s',     // strip whitespaces after tags, except space
-        '/[^\S ]+\</s',     // strip whitespaces before tags, except space
-        '/(\s)+/s',         // shorten multiple whitespace sequences
-        '/<!--(.|\s)*?-->/' // Remove HTML comments
-    );
-    $replace = array(
-        '>',
-        '<',
-        '\\1',
-        ''
-    );
-    $buffer = preg_replace($search, $replace, $buffer);
-    return $buffer;
-}
-ob_start("sanitize_output");
-?>
+<?php include_once("config/min.php") ?>
 
 	<meta charset="utf-8" />
 	<meta name="theme-color" content="#4527a0">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	<link href="/assets/css/materialize.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	<link href="/assets/css/pace.css" rel="stylesheet" type="text/css">	<link href="/assets/css/materialize.min.css" rel="stylesheet" type="text/css">
 	<link href="/assets/css/style.css" rel="stylesheet" type="text/css">
-	<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
-	<script src="/assets/js/materialize.min.js" type="text/javascript"></script>
-	<script src="/assets/js/fontawesome.js" type="text/javascript"></script>
-	<script src="/assets/js/mobile-nav.js" type="text/javascript"></script>
-
 	<script type='application/ld+json'>
 	{
 	  "@context": "http://www.schema.org",
@@ -51,43 +27,8 @@ ob_start("sanitize_output");
 	<meta property="og:image" content="https://www.makeroid.tk/assets/logo.png" />
   </head>
 
-  <style>
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-  </style>
-
 	<body>
-<?php include_once("config/analyticstracking.php") ?>
-	<div class="navbar-fixed">
-	<nav>
-	  <div class="nav-wrapper deep-purple darken-3">
-		<a href="/home" class="brand-logo title">&nbsp;&nbsp;Makeroid</a>
-		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		<ul class="right hide-on-med-and-down">
-		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/home") !== false ) { echo " class=\"active\""; }?>><a href="/home">Home</a></li>
-		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
-		  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/about") !== false ) { echo " class=\"active\""; }?>><a href="/about">About</a></li>
-      <li><a target="_blank" href="https://docs.makeroid.tk/">Documentation</a></li>
-		  <li><a target="_blank" href="https://community.makeroid.tk/">Community</a></li>
-		  <li><a class="waves-effect waves-dark btn pink accent-2" target="_blank" href="https://status.makeroid.tk">Status</a></a></li>
-		</ul>
-	  </div>
-	</nav>
-	</div>
-	<ul class="side-nav" id="mobile-demo">
-	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/home") !== false ) { echo " class=\"active\""; }?>><a href="/home">Home</a></li>
-	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/team") !== false ) { echo " class=\"active\""; }?>><a href="/team">Team</a></li>
-	  <li<?php if( strpos($_SERVER["REQUEST_URI"], "/about") !== false ) { echo " class=\"active\""; }?>><a href="/about">About</a></li>
-    <li><a target="_blank" href="https://docs.makeroid.tk/">Documentation</a></li>
-	  <li><a target="_blank" href="https://community.makeroid.tk/">Community</a></li>
-	  <li><a class="waves-effect waves-dark btn pink accent-2" target="_blank" href="https://status.makeroid.tk">Status</a></a></li>
-	</ul>
+    <?php include_once("config/analyticstracking.php") ?>
+	  <?php include_once("navbar.php") ?>
 
-<?php include_once("config/ads.php"); ?>
+    <?php include_once("config/ads.php"); ?>
