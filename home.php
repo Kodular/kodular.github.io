@@ -1,270 +1,136 @@
-<!--Author: Conor Shipp-->
-<!--Copyright 2017 Makeroid-->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Home | Makeroid</title>
+<?php
+  $title = "Home | Makeroid";
+  include "assets/templates/header.php";
+?>
+<section class="header12 cid-qqY0BFdvY6 mbr-parallax-background" id="header12-3" data-rv-view="101">
 
-    <?php include "assets/templates/header.php"; ?>
 
-    <style type="text/css">
-    body {
-      overflow:hidden;
-    }
 
-    .alert {
-        padding: 20px;
-        background-color: #f44336;
-        color: white;
-        opacity: 1;
-        transition: opacity 0.6s;
-        margin-bottom: 15px;
-    }
-
-    .alert.success {background-color: #4CAF50;}
-    .alert.info {background-color: #2196F3;}
-    .alert.warning {background-color: #ff9800;}
-
-    .closebtn {
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        float: right;
-        font-size: 22px;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    .closebtn:hover {
-        color: black;
-    }
-    </style>
-
-    <link rel="stylesheet" href="/CS/vendor/bootstrap-3.3.6/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="/CS/vendor/owl-carousel/assets/owl.carousel.css">
-  	<link rel="stylesheet" href="/CS/vendor/custom-scrollbar/jquery.mCustomScrollbar.min.css">
-  	<link rel="stylesheet" href="/CS/vendor/font-awesome-4.5.0/css/font-awesome.min.css">
-  	<link rel="stylesheet" href="/CS/vendor/linear-icons/fonts.css">
-  	<link rel="stylesheet" href="/CS/vendor/animate.css">
-  	<link rel="stylesheet" href="/CS/css/style.css" />
-
-    <!-- <div class="centre-arrangement">
-      <h1>Welcome to Makeroid!</h1>
-      <p>Makeroid is an online drag-and-drop Android app builder.</p>
-      <br>
-      <h4>Hover over the icons to read more</h4>
-      <ul id="menu">
-      <li><i class="help-icons tooltipped material-icons black-text large" data-position="bottom" data-delay="50" data-tooltip="Cloud based tool - no software to download or install, it runs straight from your broswer!">cloud</i></li>
-      <li><i class="help-icons tooltipped material-icons black-text large" data-position="bottom" data-delay="50" data-tooltip="Need any help creating your apps? We will help you with all questions you have.">help</i></li>
-      <li><i class="help-icons tooltipped material-icons black-text large" data-position="bottom" data-delay="50" data-tooltip="All you need is a Google account!">account_box</i></li>
-      <li><i class="help-icons tooltipped material-icons black-text large" data-position="bottom" data-delay="50" data-tooltip="You can make your apps funtion by using blocks which snap together. You don't need to learn any code!">extension</i></li>
-      </ul>
-    </div> -->
-
-    <!-- Loader -->
-    <div class="loader" name="CS">
-    	<div class="preloader-wrapper big active">
-    	    <div class="spinner-layer spinner-blue-only">
-    	    	<div class="circle-clipper left">
-    	        	<div class="circle"></div>
-    	    	</div>
-    	    	<div class="gap-patch">
-    	        	<div class="circle"></div>
-    	      	</div>
-    	      	<div class="circle-clipper right">
-    	        	<div class="circle"></div>
-    	    	</div>
-    	  	</div>
-    	</div>
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(15, 118, 153);">
     </div>
-    <!-- End Loader -->
-    <div class="wrapper" name="CS">
-    	<div class="main">
-    		<div class="tab-content">
-    			<div role="tabpanel" class="tab-pane active" id="home">
-    				<!-- Section Home -->
-    				<section class="section section-home">
-    					<!-- Section Home Header -->
-    					<header class="section-head">
-    						<div class="container">
-    							<div class="section-head-inner" style="font-size: 20px;">
-    								<h1>Makeroid</h1>
-    								<h4>A new era for app building</h4>
-    							</div>
-    						</div>
-    					</header>
-    					<!-- End Section Home Header -->
-    					<!-- Section Home Body -->
-    					<div class="section-body">
-    						<div class="container">
-    							<div class="row">
-    								<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-    									<!-- Countdown -->
-    									<div class="card card-countdown" data-launch-date="2017/08/01">
-    										<div class="countdown-part ds"></div>
-    										<div class="countdown-part hs"></div>
-    										<div class="countdown-part ms"></div>
-    										<div class="countdown-part ss"></div>
-    										<div class="countdown-labels">
-    											<span>days</span>
-    											<span>hours</span>
-    											<span>minutes</span>
-    											<span>seconds</span>
-    										</div>
-    									</div>
-    									<!-- End Countdown -->
-                      <?php
-                        if (isset($_GET['0'])) {
-                      ?>
-                      <style>
-                      .alert {
-                          padding: 20px;
-                          background-color: #f44336;
-                          color: white;
-                          opacity: 1;
-                          transition: opacity 0.6s;
-                          margin-bottom: 15px;
-                      }
 
-                      .alert.success {background-color: #4CAF50;}
-                      .alert.info {background-color: #2196F3;}
-                      .alert.warning {background-color: #ff9800;}
+    <div class="container  ">
+            <div class="media-container">
+                <div class="col-md-12 align-center">
+                    <h1 class="mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style display-1">
+                        MAKEROID</h1>
+                    <p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5">
+                        A modern app builder without coding<br>
+                    </p>
+                    <div class="mbr-section-btn align-center py-2">
+                        <a class="btn btn-md btn-primary-outline display-4" href="#features8-4"><span class="mbri-arrow-down mbr-iconfont mbr-iconfont-btn"></span>SEE MORE FEATURES</a> <a class="btn btn-md btn-secondary display-4" href="https://community.makeroid.tk/t/server-ready-for-public-usage/99/3?u=barreeeiroo" target="_blank"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>START NOW!</a>
+                    </div>
 
-                      .closebtn {
-                          margin-left: 15px;
-                          color: white;
-                          font-weight: bold;
-                          float: right;
-                          font-size: 22px;
-                          line-height: 20px;
-                          cursor: pointer;
-                          transition: 0.3s;
-                      }
+                    <div class="icons-media-container mbr-white">
+                        <div class="card col-12 col-md-6 col-lg-3">
+                            <div class="icon-block">
 
-                      .closebtn:hover {
-                          color: black;
-                      }
-                      </style>
-                      <div class="alert warning">
-                        <span class="closebtn">&times;</span>
-                        <strong>Ooops!</strong> It seems you are already in the list
-                      </div>
-                      <?php
-                        } elseif (isset($_GET['1'])) {
-                      ?>
-                      <div class="alert success">
-                        <span class="closebtn">&times;</span>
-                        <strong>WoW!</strong> Thanks for supporting us! You will be notified when we release the service
-                      </div>
-                      <?php
-                        } elseif (isset($_GET['2'])) {
-                      ?>
-                      <div class="alert">
-                        <span class="closebtn">&times;</span>
-                        <strong>Oops!</strong> It seems that the reCaptcha you submitted was wrong - Try again
-                      </div>
-                      <?php
-                        } elseif (isset($_GET['3'])) {
-                      ?>
-                      <div class="alert info">
-                        <span class="closebtn">&times;</span>
-                        <strong>Ooops!</strong> You have to check the reCaptcha
-                      </div>
-                      <?php
-                        }
-                      ?>
-    									<!-- Subscribe Form -->
-    									<form action="/sub.php" method="post" class="form form-subscribe">
-    										<div class="row">
-    											<div class="col-sm-8 col-sm-offset-2">
-    												<div class="input-field">
-    										        	<input id="email" type="email" name="email" class="validate" required>
-    										        	<label for="email">Email Address</label>
-    										        </div>
-    											</div>
-    										</div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <div class="g-recaptcha" data-sitekey=""></div>
-                          </div>
+                                <span class="mbr-iconfont mbri-cloud" media-simple="true"></span>
+
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">Cloud-Based Tool<br><em>No software required</em></h5>
                         </div>
-    										<div class="row">
-    											<div class="col-sm-12">
-    												<button type="submit" class="waves-effect waves-light btn blue">subscribe</button>
-    											</div>
-    										</div>
-    									</form>
-    									<!-- End Subscribe Form -->
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    					<!-- End Section Home Body -->
-    					<!-- Section Home Footer -->
-    					<footer class="section-foot">
-    						<div class="container">
-    							<p class="copyright">Copyright &copy; 2017 <span>Makeroid Inc.</span></p>
-    							<ul class="socials">
-    								<li>
-    									<a href="#" class="waves-effect waves-light">
-    										<i class="fa fa-facebook"></i>
-    									</a>
-    								</li>
-    								<li>
-    									<a href="https://twitter.com/MakeroidBuilder" class="waves-effect waves-light">
-    										<i class="fa fa-twitter"></i>
-    									</a>
-    								</li>
-    								<li>
-    									<a href="#" class="waves-effect waves-light">
-    										<i class="fa fa-google"></i>
-    									</a>
-    								</li>
-    								<li>
-    									<a href="#" class="waves-effect waves-light">
-    										<i class="fa fa-youtube-play"></i>
-    									</a>
-    								</li>
-    								<li>
-    									<a href="https://instagra.com/MakeroidBuilder" class="waves-effect waves-light">
-    										<i class="fa fa-instagram"></i>
-    									</a>
-    								</li>
-    								<li>
-    									<a href="#" class="waves-effect waves-light">
-    										<i class="fa fa-pinterest-p"></i>
-    									</a>
-    								</li>
-    							</ul>
-    						</div>
-    					</footer>
-    					<!-- End Section Home Footer -->
-    				</section>
-    				<!-- End Section Home -->
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <!-- Scripts -->
-    <script src="/CS/vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-    <script src="/CS/vendor/jquery-validation-1.14.0/jquery.validate.min.js"></script>
-    <script src="/CS/vendor/owl-carousel/owl.carousel.min.js"></script>
-    <script src="/CS/vendor/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="/CS/vendor/jquery.countdown-2.1.0/jquery.countdown.min.js"></script>
-    <script src="/CS/js/functions.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script>
-      var close = document.getElementsByClassName("closebtn");
-      var i;
-      for (i = 0; i < close.length; i++) {
-          close[i].onclick = function(){
-              var div = this.parentElement;
-              div.style.opacity = "0";
-              setTimeout(function(){ div.style.display = "none"; }, 600);
-          }
-      }
-    </script>
 
-    <?php include "assets/templates/footer.php"; ?>  </body>
-</html>
+                        <div class="card col-12 col-md-6 col-lg-3">
+                            <div class="icon-block">
+
+                                    <span class="mbr-iconfont mbri-user" media-simple="true"></span>
+
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">Google integration<br><em>No signup/login</em></h5>
+                        </div>
+
+                        <div class="card col-12 col-md-6 col-lg-3">
+                            <div class="icon-block">
+
+                                    <span class="mbr-iconfont mbri-website-theme" media-simple="true"></span>
+
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">
+                                Easy to use<br><em>No coding</em></h5>
+                        </div>
+
+                        <div class="card col-12 col-md-6 col-lg-3">
+                            <div class="icon-block">
+
+                                    <span class="mbr-iconfont mbri-responsive" media-simple="true"></span>
+
+                            </div>
+                            <h5 class="mbr-fonts-style display-5">Powerful tool<br><em>No waiting time</em></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+</section>
+
+<section class="features8 cid-qqY2eKt651 mbr-parallax-background" id="features8-4" data-rv-view="104">
+
+
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="media-container-row">
+
+            <div class="card  col-12 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <span class="mbr-iconfont mbri-cart-full" media-simple="true"></span>
+                </div>
+                <div class="card-box align-center">
+                    <h4 class="card-title mbr-fonts-style display-7">
+                        InApp Purchases</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                       Do you need to make an app for your business?<br>Makeroid has a component which allows you to make InApp Purchases in Google Play Store</p>
+
+                </div>
+            </div>
+
+            <div class="card  col-12 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <span class="mbr-iconfont mbri-alert" media-simple="true"></span>
+                </div>
+                <div class="card-box align-center">
+                    <h4 class="card-title mbr-fonts-style display-7">
+                        Push Notifications</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                       Our team is currently working to bring this amazing feature to Makeroid<br>This will allow you to send notifications to your users</p>
+
+                </div>
+            </div>
+
+            <div class="card  col-12 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <span class="mbr-iconfont mbri-change-style" media-simple="true"></span>
+                </div>
+                <div class="card-box align-center">
+                    <h4 class="card-title mbr-fonts-style display-7">
+                        Material Design</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                       We have added Material Design theme to all app builds with us. If you run Android +5.0, you will get an app with latest design templates from Google</p>
+
+                </div>
+            </div>
+
+            <div class="card  col-12 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <span class="mbr-iconfont mbri-plus" media-simple="true"></span>
+                </div>
+                <div class="card-box align-center">
+                    <h4 class="card-title mbr-fonts-style display-7">
+                        Much more</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">We are open to every suggestion you want to add<br>If it's possible, we will do it to improve our builder</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php
+  include "assets/templates/footer.php";
+?>
