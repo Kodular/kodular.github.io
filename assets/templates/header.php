@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include_once("config/min.php"); ?>
 <html>
   <head>
     <meta charset="UTF-8">
