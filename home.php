@@ -18,7 +18,7 @@
                         A modern app builder without coding<br>
                     </p>
                     <div class="mbr-section-btn align-center py-2">
-                        <a class="btn btn-md btn-primary-outline display-4" href="#features8-4"><span class="mbri-arrow-down mbr-iconfont mbr-iconfont-btn"></span>SEE MORE FEATURES</a> <a class="btn btn-md btn-secondary display-4" href="https://builder.makeroid.tk" target="_blank"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>START NOW!</a>
+                        <a class="btn btn-md btn-primary-outline display-4" href="#features8-4"><span class="mbri-arrow-down mbr-iconfont mbr-iconfont-btn"></span>SEE MORE FEATURES</a> <a class="btn btn-md btn-secondary display-4" href="https://community.makeroid.tk/t/server-ready-for-public-usage/99/3?u=barreeeiroo" target="_blank"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>START NOW!</a>
                     </div>
 
                     <div class="icons-media-container mbr-white">

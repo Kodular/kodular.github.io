@@ -32,7 +32,7 @@
                         Community<br></a></li>
             </ul>
             <div class="navbar-buttons mbr-section-btn">
-                <a class="btn btn-sm btn-secondary display-4" href="tel:+1-234-567-8901"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>
+                <a class="btn btn-sm btn-secondary display-4" href="https://community.makeroid.tk/t/server-ready-for-public-usage/99/3?u=barreeeiroo"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>
 
                     BUILDER</a>
             </div>
