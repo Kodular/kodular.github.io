@@ -124,6 +124,11 @@
                         <div class="item-role px-2">
                             <p>Developer</p>
                         </div>
+                        <div class="item-social pt-2">
+                          <div class="item-social pt-2">
+                              <a href="https://twitter.com/theMuonDecay" target="_blank"><span class="p-1 socicon-twitter socicon mbr-iconfont mbr-iconfont-social" style="color: rgb(255, 255, 255);" media-simple="true"></span></a>
+                          </div>
+                        </div>
                     </div>
                 </div><div class="team-item col-lg-3 col-md-6">
                     <div class="item-image">
