@@ -35,3 +35,12 @@ ErrorDocument 503 /error/503.html
   AuthUserFile /var/www/html/.htpasswd
   require valid-user
 </FilesMatch>
+
+
+# Download all files in  files/
+<Location "/files/">
+    <Files *.*>
+        ForceType application/octet-stream
+        Header set Content-Disposition attachment
+    </Files>
+</Location>
