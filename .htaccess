@@ -37,10 +37,8 @@ ErrorDocument 503 /error/503.html
 </FilesMatch>
 
 
-# Download all files in  files/
-<Location "/files/">
-    <Files *.*>
-        ForceType application/octet-stream
-        Header set Content-Disposition attachment
-    </Files>
-</Location>
+# Download all files with APK extension
+<FilesMatch "\.(apk)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
