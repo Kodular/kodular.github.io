@@ -4,6 +4,7 @@ RewriteBase /
 
 # Rewrite to www
 RewriteCond %{HTTP_HOST} !^www.makeroid.tk
+RewriteCond %{HTTP_HOST} !^users.makeroid.tk
 RewriteCond %{HTTPS}s ^on(s)|
 RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -31,6 +32,8 @@ ErrorDocument 503 /error/503.html
 Redirect 301 /files/companion.apk https://rink.hockeyapp.net/apps/93f5fed412b2457296f351cd0f1d824e
 
 
+# Forward Companion Download
+Redirect 301 /files/companion.apk https://rink.hockeyapp.net/apps/93f5fed412b2457296f351cd0f1d824e
 
 ###   FANCY INDEXING   ###
 
