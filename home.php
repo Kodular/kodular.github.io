@@ -1,15 +1,24 @@
 <?php
   $title = "Home | Makeroid";
   include "assets/templates/header.php";
+
+  $servername = "localhost";
+  $username = "id2206145_makeroid";
+  $password = "MY5QL";
+  $dbname = "id2206145_web";
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+  $sql = "SELECT * FROM testimonials ORDER BY RAND() LIMIT 1";
+  $result = $conn->query($sql);
+  while($row = $result->fetch_assoc()) {
 ?>
-<section class="header12 cid-qqY0BFdvY6 mbr-parallax-background" id="header12-3" data-rv-view="101">
 
-
-
+<section class="header12 cid-qqY0BFdvY6 mbr-parallax-background" id="header" data-rv-view="101">
     <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(15, 118, 153);">
     </div>
-
-    <div class="container  ">
+    <div class="container">
             <div class="media-container">
                 <div class="col-md-12 align-center">
                     <h1 class="mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style display-1">
@@ -18,7 +27,7 @@
                         A modern app builder without coding<br>
                     </p>
                     <div class="mbr-section-btn align-center py-2">
-                        <a class="btn btn-md btn-primary-outline display-4" href="#features8-4"><span class="mbri-arrow-down mbr-iconfont mbr-iconfont-btn"></span>SEE MORE FEATURES</a> <a class="btn btn-md btn-secondary display-4" href="https://community.makeroid.tk/t/server-ready-for-public-usage/99/3?u=barreeeiroo" target="_blank"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>START NOW!</a>
+                        <a class="btn btn-md btn-primary-outline display-4" href="#features"><span class="mbri-arrow-down mbr-iconfont mbr-iconfont-btn"></span>SEE MORE FEATURES</a> <a class="btn btn-md btn-secondary display-4" href="http://builder.makeroid.tk" target="_blank"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>START NOW!</a>
                     </div>
 
                     <div class="icons-media-container mbr-white">
@@ -62,11 +71,9 @@
                 </div>
             </div>
     </div>
-
-
 </section>
 
-<section class="features8 cid-qqY2eKt651 mbr-parallax-background" id="features8-4" data-rv-view="104">
+<section class="features8 cid-qqY2eKt651 mbr-parallax-background" id="features" data-rv-view="104">
 
 
 
@@ -130,7 +137,67 @@
     </div>
 </section>
 
+<section class="mbr-section info2 cid-qrhARMpiZE" id="status" data-rv-view="83">
+    <div class="container">
+        <div class="row">
+            <div class="media-container-column col-12 col-lg-3 col-md-4 offset-md-1">
+                <div class="mbr-section-btn align-left py-4">
+                    <a class="btn btn-primary display-4" target="_blank" href="https://status.makeroid.tk"><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span>
+                    STATUS</a>
+                </div>
+            </div>
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2">
+                    ARE OUR SERVERS DOWN?</h2>
+                <h3 class="mbr-section-subtitle align-right mbr-light mbr-white mbr-fonts-style display-5">
+                    Check that at our status server!</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials5 cid-qrmT11vsHd" id="testimonials" data-rv-view="86">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">
+                    OUR THOUGHTS
+                </h2>
+                <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-5">
+                    Check here to see some of our thoughts
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="media-container-column">
+        <div class="mbr-testimonial align-center col-12 col-md-10">
+                <div class="panel-item">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src=<?php echo '"'.$row['image'].'"'; ?> media-simple="true">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style mbr-white display-7">
+                           <?php echo $row['text']; ?>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">
+                             <?php echo $row['name']; ?>
+                        </div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">
+                               <?php echo $row['bio']; ?>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <?php
+  }
   include "assets/templates/footer.php";
 ?>

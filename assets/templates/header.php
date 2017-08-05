@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="/assets/vendor/mobirise/css/mbr-additional.css" type="text/css">
 
 
+    <?php include_once("config/ads.php"); ?>
+
+
   	<script type='application/ld+json'>
   	{
   	  "@context": "http://www.schema.org",
@@ -56,5 +59,3 @@
 
 	<body>
     <?php include_once("nav.php"); ?>
-
-    <?php include_once("config/ads.php"); ?>

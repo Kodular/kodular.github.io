@@ -14,7 +14,7 @@
                 </div>
                 <p class="mb-3 mbr-fonts-style foot-title display-7"><strong>
                     MAKEROID</strong></p>
-                <p class="mbr-text mbr-fonts-style display-7">Baked with &lt;3</p>
+                <p class="mbr-text mbr-fonts-style display-7">Maked with &lt;3</p>
             </div>
             <div class="col-md-4 col-sm-8">
                 <p class="mb-4 foot-title mbr-fonts-style display-7"><strong>
@@ -84,7 +84,7 @@
 
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
     <input name="animation" type="hidden">
-  <input name="cookieData" type="hidden" data-cookie-text="We use cookies to give you the best experience">
+  <!--<input name="cookieData" type="hidden" data-cookie-text="We use cookies to give you the best experience">-->
 
 <?php include_once("fab.php"); ?>
 <?php include_once("scripts.php"); ?>

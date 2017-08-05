@@ -2,8 +2,8 @@
 <script src="/assets/vendor/web/assets/jquery/jquery.min.js"></script>
 <script src="/assets/vendor/tether/tether.min.js"></script>
 <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/vendor/cookies-alert-plugin/cookies-alert-core.js"></script>
-<script src="/assets/vendor/cookies-alert-plugin/cookies-alert-script.js"></script>
+<!--<script src="/assets/vendor/cookies-alert-plugin/cookies-alert-core.js"></script>
+<script src="/assets/vendor/cookies-alert-plugin/cookies-alert-script.js"></script>-->
 <script src="/assets/vendor/smooth-scroll/smooth-scroll.js"></script>
 <script src="/assets/vendor/touch-swipe/jquery.touch-swipe.min.js"></script>
 <script src="/assets/vendor/viewport-checker/jquery.viewportchecker.js"></script>
