@@ -7,16 +7,6 @@
 
   <body>
     <div style="font-family:Amaranth,sans-serif;font-size:16px;text-align:center">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Builder Splash Screen -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9439286719204795"
-           data-ad-slot="7473645393"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
       <br>
       <span style="color:#673ab7;font-size:35px">Ooops</span><br>
       <span style="color:#673ab7;font-size:30px">It seems that your account has been disabled by our staff</span>
