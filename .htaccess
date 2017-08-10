@@ -3,8 +3,8 @@ RewriteEngine On
 RewriteBase /
 
 # Rewrite to www
+RewriteCond %{HTTP_HOST} !^localhost
 RewriteCond %{HTTP_HOST} !^www.makeroid.tk
-RewriteCond %{HTTP_HOST} !^users.makeroid.tk
 RewriteCond %{HTTPS}s ^on(s)|
 RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
