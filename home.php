@@ -3,9 +3,9 @@
   include "assets/templates/header.php";
 
   $servername = "localhost";
-  $username = "id2206145_makeroid";
-  $password = "MY5QL";
-  $dbname = "id2206145_web";
+  $username = "root";
+  $password = "";
+  $dbname = "web";
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
