@@ -2,6 +2,20 @@
 RewriteEngine On
 RewriteBase /
 
+# Browser Caching
+ExpiresActive On
+ExpiresDefault A0
+<FilesMatch “\.(gif|jpg|jpeg|png|swf)$”>
+# 2 weeks
+ExpiresDefault A1209600
+Header append Cache-Control “public”
+</FilesMatch>
+<FilesMatch “\.(js|css)$”>
+# 3 days
+ExpiresDefault A259200
+Header append Cache-Control “proxy-revalidate”
+</FilesMatch>
+
 # Rewrite to www
 RewriteCond %{HTTP_HOST} !^localhost
 RewriteCond %{HTTP_HOST} !^www.makeroid.tk
