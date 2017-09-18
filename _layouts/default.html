@@ -2,8 +2,10 @@
 <html lang="{{ site.lang | default: " en-US " }}">
 
 {% include head.html %}
+{% include scripts/scripts.html %}
 
 <body>
+    {% include nav.html %}
     <div class="wrapper">
         <header>
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -26,8 +28,8 @@
 
     {% include footer.html %}
     </div>
-    {% include ga.html %}
-    {% include tawkto.html %}
+    {% include scripts/ga.html %}
+    {% include scripts/tawkto.html %}
 </body>
 
 </html>
