@@ -3,3 +3,5 @@ title: Makeroid | Home
 description: Drag and drop Android app builder
 google_analytics: UA-102230060-3
 google_ads: ca-pub-9439286719204795
+plugins:
+  - jemoji
