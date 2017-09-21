@@ -1,0 +1,27 @@
+<div class="col-md-8 col-md-offset-2">
+  <div id="testimonials-carousel" class="carousel carousel-fade" data-ride="carousel"><!-- data-ride="carousel" causes auto play -->
+    <div class="carousel-inner text-center">
+      {% for testimonial in site.data.testimonials %}
+        <div class="item{% if forloop.first == true %} active{% endif %}"> <!--TARGET FIRST ITEM -->
+          <blockquote>
+            <p>{{ testimonial.quote }}</p>
+            <footer>{{ testimonial.person }}</footer>
+          </blockquote>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="carousel-control-wrap">
+      <div class="row">
+      <div class="col-xs-4">
+        <a class="left" href="#testimonials-carousel" data-slide="prev" title="Previous Testimonial"><i class="fa fa-chevron-left"></i></a>
+      </div>
+      <div class="col-xs-4">
+        <a class="play-pause" id="pause-carousel" title="Pause Testimonials"><i class="fa fa-pause"></i></a>
+        <a class="play-pause" id="play-carousel" title="Play Testimonials"><i class="fa fa-play"></i></a>
+      </div>
+      <div class="col-xs-4">
+        <a class="right" href="#testimonials-carousel" data-slide="next" title="Next Testimonial"><i class="fa fa-chevron-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>
