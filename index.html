@@ -142,42 +142,4 @@ layout: default
     </div>
 </section>
 
-<section class="testimonials5 cid-qrmT11vsHd" id="testimonials" data-rv-view="86">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 align-center">
-                <h2 class="pb-3 mbr-fonts-style display-2">
-                    OUR THOUGHTS
-                </h2>
-                <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-5">
-                    Check here to see some of our thoughts
-                </h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="media-container-column">
-            <div class="mbr-testimonial align-center col-12 col-md-10">
-                <div class="panel-item">
-                    <div class="card-block">
-                        <div class="testimonial-photo">
-                            <img src=<?php echo '"'.$row[ 'image']. '"'; ?> media-simple="true">
-                        </div>
-                        <p class="mbr-text mbr-fonts-style mbr-white display-7">
-                            <?php echo $row['text']; ?>
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">
-                            <?php echo $row['name']; ?>
-                        </div>
-                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">
-                               <?php echo $row['bio']; ?>
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{% include testimonials.html %}
