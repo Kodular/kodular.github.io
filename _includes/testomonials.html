@@ -1,0 +1,59 @@
+<!-- Start of testimonials -->
+<section class="testimonials5 cid-qrmT11vsHd" id="testimonials" data-rv-view="86">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">
+                    OUR THOUGHTS
+                </h2>
+                <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-5">
+                    Check here to see some of our thoughts
+                </h3>
+            </div>
+        </div>
+    </div>
+
+  <!-- Adapted from https://gist.github.com/DavidCWebs/64cee8ce5cab0cdb3cef -->
+    <div class="container">
+        <div class="media-container-column" data-ride="carousel">
+                  {% for testimonial in site.data.testimonials %}
+            <div class="mbr-testimonial align-center col-12 col-md-10">
+                <div class="panel-item">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src={{ testimonial.photo }} media-simple="true">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style mbr-white display-7">
+                            {{ testimonial.text }}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">
+                            {{ testimonial.name }}
+                        </div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">
+                            {{ testimonial.desc }}
+                        </small>
+                    </div>
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+  <div class="carousel-control-wrap">
+      <div class="row">
+      <div class="col-xs-4">
+        <a class="left" href="#testimonials-carousel" data-slide="prev" title="Previous Testimonial"><i class="fa fa-chevron-left"></i></a>
+      </div>
+      <div class="col-xs-4">
+        <a class="play-pause" id="pause-carousel" title="Pause Testimonials"><i class="fa fa-pause"></i></a>
+        <a class="play-pause" id="play-carousel" title="Play Testimonials"><i class="fa fa-play"></i></a>
+      </div>
+      <div class="col-xs-4">
+        <a class="right" href="#testimonials-carousel" data-slide="next" title="Next Testimonial"><i class="fa fa-chevron-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End of testimonials -->
