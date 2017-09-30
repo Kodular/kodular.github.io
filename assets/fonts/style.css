@@ -2,3 +2,8 @@
    font-family: 'Amaranth-Regular';
    src: url('Amaranth-Regular/font.ttf');
 }
+
+@font-face {
+    font-family: "Makeroid-Regular";
+    src: url("Makeroid-Regular.otf");
+}
