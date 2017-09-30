@@ -37,6 +37,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
+/* Set Makeroid font */
+.navbar-brand {
+    font-family: Makeroid-Regular;
+    font-size: xx-large;
+}
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
 /* 100vw - current viewport width */
