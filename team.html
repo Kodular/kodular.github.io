@@ -2,34 +2,45 @@
 layout: default
 ---
 
-<section class="section team-section pb-5">
+<section class="section team-section pt-5">
 
     <!--Section heading-->
     <h2 class="section-heading h1 pt-4">Our Amazing Team</h2>
     <!--Section description-->
     <p class="section-description">All our team is working on this project to make it better!</p>
 
-    <div class="row text-center">
-
+    <div class="row">
+        
         <!--Grid column-->
-      {% for member in site.data.team %}
+        {% for member in site.data.team %}
         <div class="col-md-4 mb-r">
-
-            <div class="avatar">
-                <img src="{{ member.img }}" class="rounded-circle z-depth-1" alt="{{ member.name }}">
+            <div class="card card-cascade narrower mb-r">
+                            
+                <!--Card image-->
+                <div class="view overlay hm-white-slight">
+                    <img src="{{ member.img }}" class="img-fluid rounded-circle" alt="{{ member.name }}">
+                    <a>
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                </div>
+                <!--/.Card image-->
+                
+                <!--Card content-->
+                <div class="card-body text-center">
+                    <!--Title-->
+                    <h4 class="card-title"><strong>{{ member.name }}</strong></h4>
+                    <h5>{{ member.desc }}</h5>
+                    
+                    <!--Twitter-->
+                    <a href="https://twitter.com/{{ member.twitter }}" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                    
+                    <!--GitHub-->
+                    <a href="https://github.com/{{ member.github }}" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
+                </div>
+                <!--/.Card content-->
             </div>
-            <h4>{{ member.name }}</h4>
-            <h5>{{ member.desc }}</h5>
-
-            <!--Twitter-->
-            <a href="https://twitter.com/{{ member.twitter }}" type="button" class="btn-floating btn-small btn-tw "><i class="fa fa-twitter"></i></a>
-          
-            <!--GitHub-->
-            <a href="https://github.com/{{ member.github }}" type="button" class="btn-floating btn-small btn-git "><i class="fa fa-github"></i></a>
-
         </div>
         {% endfor %}
         <!--Grid column-->
-  
     </div>
 </section>
