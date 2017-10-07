@@ -1,59 +1,41 @@
-<!-- Start of testimonials -->
-<section class="testimonials5 cid-qrmT11vsHd" id="testimonials" data-rv-view="86">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 align-center">
-                <h2 class="pb-3 mbr-fonts-style display-2">
-                    OUR THOUGHTS
-                </h2>
-                <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-5">
-                    Check here to see some of our thoughts
-                </h3>
-            </div>
-        </div>
-    </div>
+<!--Section: Testimonials v.3-->
+<section class="section team-section text-center pb-3">
 
-  <!-- Adapted from https://gist.github.com/DavidCWebs/64cee8ce5cab0cdb3cef -->
-    <div class="container">
-        <div class="media-container-column" data-ride="carousel">
-                  {% for testimonial in site.data.testimonials %}
-            <div class="mbr-testimonial align-center col-12 col-md-10">
-                <div class="panel-item">
-                    <div class="card-block">
-                        <div class="testimonial-photo">
-                            <img src={{ testimonial.photo }} media-simple="true">
-                        </div>
-                        <p class="mbr-text mbr-fonts-style mbr-white display-7">
-                            {{ testimonial.text }}
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">
-                            {{ testimonial.name }}
-                        </div>
-                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">
-                            {{ testimonial.desc }}
-                        </small>
-                    </div>
+    <!--Section heading-->
+    <h1 class="section-heading h1 pt-4">Testimonials</h1>
+    <!--Section description-->
+    <p class="section-description">Read what our users say about Makeroid.</p>
+
+    <!--Grid row-->
+    <div class="row text-center">
+        {% for testimonial in site.data.testimonials %}
+        <!--Grid column-->
+        <div class="col-md-4 mb-r">
+            
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <img src="{{ testimonial.photo }}" class="rounded-circle z-depth-1 img-fluid">
+                </div>
+                
+                <!--Content-->
+                <h4 class="mb-3">{{ testimonial.name }}</h4>
+                <h6 class="mb-3 font-bold grey-text">{{ testimonial.desc }}</h6>
+                <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
+
+                <!--Review-->
+                <div class="orange-text">
+                    {% capture stars %}{{ testimonial.rating }}{% endcapture %}
+                    {% for i in (1...stars) %}
+                    <i class="fa fa-star"> </i>
+                    {% endfor %}
                 </div>
             </div>
-          {% endfor %}
         </div>
+        <!--Grid column-->  
+        {% endfor %}
     </div>
-  <div class="carousel-control-wrap">
-      <div class="row">
-      <div class="col-xs-4">
-        <a class="left" href="#testimonials-carousel" data-slide="prev" title="Previous Testimonial"><i class="fa fa-chevron-left"></i></a>
-      </div>
-      <div class="col-xs-4">
-        <a class="play-pause" id="pause-carousel" title="Pause Testimonials"><i class="fa fa-pause"></i></a>
-        <a class="play-pause" id="play-carousel" title="Play Testimonials"><i class="fa fa-play"></i></a>
-      </div>
-      <div class="col-xs-4">
-        <a class="right" href="#testimonials-carousel" data-slide="next" title="Next Testimonial"><i class="fa fa-chevron-right"></i></a></div>
-      </div>
-    </div>
-  </div>
-</div>
+    <!--Grid row-->
+
 </section>
-<!-- End of testimonials -->
+<!--Section: Testimonials v.3-->
