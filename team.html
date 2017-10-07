@@ -8,9 +8,9 @@ layout: default
     <h2 class="section-heading h1 pt-4">Our Amazing Team</h2>
     <!--Section description-->
     <p class="section-description">All our team is working on this project to make it better!</p>
-
+    
+    <div class="container">
     <div class="row">
-        
         <!--Grid column-->
         {% for member in site.data.team %}
         <div class="col-md-4 mb-r">
@@ -42,5 +42,6 @@ layout: default
         </div>
         {% endfor %}
         <!--Grid column-->
+    </div>
     </div>
 </section>
