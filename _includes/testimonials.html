@@ -25,8 +25,7 @@
 
                 <!--Review-->
                 <div class="orange-text">
-                    {% assign stars = testimonial[rating] %}
-                    {% for x in (1...stars) %}
+                    {% for x in (1..testimonial.rating) %}
                     <i class="fa fa-star"> </i>
                     {% endfor %}
                 </div>
