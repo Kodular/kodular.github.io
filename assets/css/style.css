@@ -1,12 +1,12 @@
 .top-nav-collapse {
-	background-color: mediumpurple !important; 
+	background-color: #673ab7 !important; 
 }
 .navbar:not(.top-nav-collapse) {
-	background: transparent !important;
+	background: #673ab7 !important;
 }
 @media (max-width: 768px) {
 	.navbar:not(.top-nav-collapse) {
-		background: mediumpurple !important;
+		background: #673ab7 !important;
 	} 
 }
 @media (max-width: 740px) {
