@@ -13,12 +13,12 @@ layout: default
     <div class="row">
         <!--Grid column-->
         {% for member in site.data.team %}
-        <div class="col-md-4 mb-r">
+        <div class="col-md-3 mb-r">
             <div class="card card-cascade narrower mb-r">
                             
                 <!--Card image-->
                 <div class="view overlay hm-white-slight">
-                    <img src="{{ member.img }}" class="img-fluid rounded-circle" alt="{{ member.name }}">
+                    <img src="{{ member.img }}" class="img-fluid rounded-circle" alt="{{ member.name }}" style="width: -webkit-fill-available;">
                     <a>
                         <div class="mask waves-effect waves-light"></div>
                     </a>
