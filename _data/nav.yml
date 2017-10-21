@@ -1,0 +1,19 @@
+- title: "Home"
+  href: "/"
+  icon: "home"
+
+- title: "Team"
+  href: "/team"
+  icon: "users"
+
+- title: "About"
+  href: "/about"
+  icon: "info-circle"
+    
+- title: "Docs"
+  href: "https://docs.makeroid.io"
+  icon: "book"
+
+- title: "Community"
+  href: "https://community.makeroid.io"
+  icon: "wechat"
