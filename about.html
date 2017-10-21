@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <section class="section feature-box">
     <br><br>
     <!--Section heading-->
@@ -24,6 +25,38 @@ layout: default
                 <i class="fa fa-mobile purple-text"></i>
                 <h5 class="feature-title">+5000 Apps Compiled</h5>
                 <p class="grey-text">We have compiled lots of apps for our users to make world better and easier!</p>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-md-12 mb-r">
+                <div class="w3-content w3-display-container">
+                  <img class="mySlides" src="/assets/images/screenshot1.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot2.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot3.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot4.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot5.jpg" style="width:100%">
+
+                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    function plusDivs(n) {showDivs(slideIndex += n);}
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+                      x[slideIndex-1].style.display = "block";  
+                    }
+            </script>
             </div>
             <!--Grid column-->
         </div>
