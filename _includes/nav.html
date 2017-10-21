@@ -6,7 +6,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                         {% for nav in site.data.nav %}
-                        <li class="nav-item {% if page.url == nav.href %}active{% endif %}">
+                        <li class="nav-item{% if page.url contains nav.href %} active{% endif %}">
                                 <a class="nav-link" href="{{ nav.href }}">
                                         <i class="fa fa-{{ nav.icon }}"></i> {{ nav.title }}</a>
                         </li>
