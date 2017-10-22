@@ -1,6 +1,10 @@
 - title: "Home"
   href: "/"
   icon: "home"
+  
+- title: "Sample"
+  href: "/demo"
+  icon: "android"
 
 - title: "Team"
   href: "/team"
