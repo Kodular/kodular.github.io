@@ -1,0 +1,57 @@
+---
+layout: default
+title: Demo | Makeroid
+---
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<section class="section feature-box">
+    <br><br>
+    <!--Section heading-->
+    <h2 class="section-heading h1 pt-4">Sample App</h2>
+    <!--Section description-->
+    <p class="section-description">Check this demo app build with Makeroid and see all how amazing it is!</p>
+    
+    <div class="container">
+        <!--Grid row-->
+        <div class="row features-big">
+            <!--Grid column-->
+            <div class="col-md-12 mb-r">
+                <iframe src="https://appetize.io/embed/vhwk0j5hz3r2yzpxnn6xfc7g5r?device=nexus5&scale=75&orientation=portrait&osVersion=7.1">Your browser doesn't support iFrames</iframe>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        
+        <!--Grid row-->
+        <div class="row" id="gallery">
+            <!--Grid column-->
+            <div class="col-md-12 mb-r">
+                <div class="w3-content w3-display-container">
+                  <img class="mySlides" src="/assets/images/screenshot1.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot2.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot3.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot4.jpg" style="width:100%">
+                  <img class="mySlides" src="/assets/images/screenshot5.jpg" style="width:100%">
+
+                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    function plusDivs(n) {showDivs(slideIndex += n);}
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+                      x[slideIndex-1].style.display = "block";  
+                    }
+            </script>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+    </div>
+</section>
