@@ -32,25 +32,25 @@ title: Home | Makeroid
     
 <div class="container">
     <!-- Add sections inside this div -->
-    
-    <section class="section feature-box">
-        <div class="row features-big" style="height: 500px;">
+    <section class="section">
+        <div class="row align-items-center my-5">
             <!--Grid column-->
-            <div class="col-md-6 mb-r">
-                <h4 class="feature-title">Get Started</h5>
-                <p class="grey-text">Check this video for getting started with Makeroid!</p>
+            <div class="col-md-6">
+                <h2 class="font-up ">Get Started</h2>
+                <p class="lead grey-text">Check this video for getting started with Makeroid in a few minutes!!!</p>
             </div>
             <!--Grid column-->
             <!--Grid column-->
-            <div class="col-md-6 mb-r">
-                <br>
-                <iframe height="300px" style="width: inherit;" src="https://www.youtube.com/embed/_bZj-LOXdH8" frameborder="0" allowfullscreen></iframe>
+            <div class="col-md-6">
+                <div class="mt-4 embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_bZj-LOXdH8" allowfullscreen=""></iframe>
+                </div>
             </div>
             <!--Grid column-->
         </div>
         <!--Grid row-->
     </section>
-    
+    <hr class="between-sections">
     <section class="section feature-box">
         <!--Section heading-->
         <h1 class="section-heading pt-4">Why is it so great?</h1>
@@ -60,36 +60,46 @@ title: Home | Makeroid
         <div class="row features-big">
             <!--Grid column-->
             <div class="col-md-3 mb-r">
-                <i class="fa fa-shopping-cart purple-text"></i>
+                <i class="fa fa-shopping-cart deep-purple-text"></i>
                 <h5 class="feature-title">Monetization</h5>
                 <p class="grey-text">Do you need to make an app for your business or just want to gain money?<br>Just add ads or InApp Purchases with us or our AdMob components!</p>
             </div>
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-3 mb-r">
-                <i class="fa fa-bell-o purple-text"></i>
+                <i class="fa fa-bell-o deep-purple-text"></i>
                 <h5 class="feature-title">Push Notifications</h5>
-                <p class="grey-text">Thanks to our amazing engineer team, you can use a background push notification system!<br>This will allow you to send notifications to your users even if the app is closed</p>
+                <p class="grey-text">
+                    Thanks to our amazing engineer team, you can use a background push notification system!
+                    <br>
+                    This will allow you to send notifications to your users even if the app is closed.
+                </p>
             </div>
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-3 mb-r">
-                <i class="fa fa-paint-brush purple-text"></i>
+                <i class="fa fa-paint-brush deep-purple-text"></i>
                 <h5 class="feature-title">Material Design</h5>
-                <p class="grey-text">We have added Material Design theme to all app builds with us. If you run Android 5.0+, you will get an app with latest design templates from Google</p>
+                <p class="grey-text">
+                    We have added Material Design theme to all app build with us. If you run Android 5.0+, you will get an app with latest design templates from Google.
+                </p>
             </div>
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-3 mb-r">
-                <i class="fa fa-plus purple-text"></i>
+                <i class="fa fa-plus deep-purple-text"></i>
                 <h5 class="feature-title">Much more</h5>
-                <p class="grey-text">We are open to every suggestion you want to add<br>If it's possible, we will do it to improve our builder</p>
+                <p class="grey-text">
+                    We are open to every suggestion you want to add.
+                    <br>
+                    If it's possible, we will do it to improve our builder.
+                </p>
             </div>
             <!--Grid column-->
         </div>
         <!--Grid row-->
     </section>
-    
+    <hr class="between-sections">
     <!-- Status Section -->
     <section class="section text-center" id="status">
         <div class="jumbotron">
@@ -98,7 +108,6 @@ title: Home | Makeroid
             <a class="btn btn-lg purple-gradient waves-effect waves-light" href="https://status.makeroid.io" target="_blank" role="button">Check Server Status</a>
         </div>
     </section>
-
-{% include testimonials.html %}
-    
+    <hr class="between-sections">
+    {% include testimonials.html %}   
 </div>
