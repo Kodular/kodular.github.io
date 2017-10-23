@@ -1,40 +1,32 @@
-<!--Section: Testimonials v.3-->
-<section class="section team-section text-center pb-3">
-
+<section class="section team-section text-center">
     <!--Section heading-->
-    <h1 class="section-heading h1 pt-4">Testimonials</h1>
+    <h1 class="section-heading pt-4">Testimonials</h1>
     <!--Section description-->
-    <p class="section-description">Read what our users say about Makeroid.</p>
-
-    <!--Grid row-->
-    <div class="row text-center">
+    <p class="section-description lead grey-text">Read what our users say about Makeroid.</p>
+    <div class="row">
+    
         {% for testimonial in site.data.testimonials %}
-        <!--Grid column-->
         <div class="col-md-4 mb-r">
-            
-            <div class="testimonial">
+            <!--Card-->
+            <div class="card testimonial-card">
+                <!--Bacground color-->
+                <div class="card-up indigo lighten-1"></div>
+
                 <!--Avatar-->
                 <div class="avatar">
-                    <img src="{{ testimonial.photo }}" class="rounded-circle z-depth-1 img-fluid">
+                    <img src="{{ testimonial.photo }}" class="rounded-circle">
                 </div>
-                
-                <!--Content-->
-                <h4 class="mb-3">{{ testimonial.name }}</h4>
-                <h6 class="mb-3 font-bold grey-text">{{ testimonial.desc }}</h6>
-                <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
 
-                <!--Review-->
-                <div class="orange-text">
-                    {% for x in (1..testimonial.rating) %}
-                    <i class="fa fa-star"> </i>
-                    {% endfor %}
+                <div class="card-body">
+                    <!--Name-->
+                    <h4 class="card-title">{{ testimonial.name }}</h4>
+                    <hr>
+                    <!--Quotation-->
+                    <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
                 </div>
+                <!--/.Card-->
             </div>
         </div>
-        <!--Grid column-->  
         {% endfor %}
     </div>
-    <!--Grid row-->
-
 </section>
-<!--Section: Testimonials v.3-->
