@@ -1,11 +1,11 @@
 - name: Abdul Maajith
-  desc: MakerChamp
   photo: https://community.makeroid.io/user_avatar/community.makeroid.io/abdul_maajith/500/89_1.png
   text: I have always been crazy on technology and making mobile apps. Makeroid helps me to make the most professional apps.
-  rating: 5
   
 - name: Peter Mathijssen
-  desc: MakerChamp
   photo: https://community.makeroid.io/user_avatar/community.makeroid.io/peter/250/88_1.png
   text: I am really impressed by the way Makeroid evolves into the most professional of all the available App Inventor clones around.
-  rating: 5
+  
+- name: You?
+  photo: https://i1.wp.com/theactiveplace.com/wp-content/uploads/2017/07/UnknownProfile.jpg
+  text: Mail us your views about Makeroid at <a href="mailto:support.makeroid.io">support@makeroid.io</a>
