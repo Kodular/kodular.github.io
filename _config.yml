@@ -8,3 +8,6 @@ social:
   fb: https://www.facebook.com/Makeroid
   github: https://github.com/Makeroid
   gplus: https://plus.google.com/111643344046547332656
+
+gems:
+  - jekyll-redirect-from
