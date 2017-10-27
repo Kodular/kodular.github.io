@@ -1,36 +1,59 @@
 <head>
-    <meta charset="UTF-8">
-    <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="/assets/images/logo-70x70-1.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Makeroid">
-    <meta name="apple-mobile-web-app-title" content="Makeroid">
-    <meta name="theme-color" content="#673ab7">
-    <meta name="msapplication-navbutton-color" content="#4527a0">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="/">
     
     {% if page.title %}
       {% assign page-title = page.title | escape %}
     {% else %}
       {% assign page-title = site.title | escape %}
     {% endif %}
-
     <title>{{ page-title }}</title>
     
-    {% include styles.html %}
+    <!-- Android  -->
+    <meta name="theme-color" content="#673ab7">
+    <meta name="mobile-web-app-capable" content="yes">
 
-    <meta name="description" content="A new era of app building">
-    <meta property="og:title" content="Makeroid App Builder" />
-    <meta property="og:description" content="Makeroid - Try our app builder without learning a new language; just drag and drop blocks!" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.makeroid.io" />
-    <meta property="og:image" content="https://www.makeroid.io/assets/logo.png" />
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Makeroid App Builder">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Windows  -->
+    <meta name="msapplication-navbutton-color" content="#673ab7">
+    <meta name="msapplication-TileColor" content="#673ab7">
+    <meta name="msapplication-TileImage" content="assets/logo.png">
+
+    <!-- Pinned Sites  -->
+    <meta name="application-name" content="Makeroid App Builder">
+    <meta name="msapplication-starturl" content="/">
+
+    <!-- Search Engine -->
+    <meta name="description" content="Drag and Drop Android App Builder. No coding required!">
+    <meta name="image" content="assets/logo.png">
+    
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Makeroid App Builder">
+    <meta itemprop="description" content="Drag and Drop Android App Builder. No coding required!">
+    <meta itemprop="image" content="assets/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Makeroid App Builder">
+    <meta name="twitter:description" content="Drag and Drop Android App Builder. No coding required!">
+    <meta name="twitter:site" content="@MakeroidBuilder">
+    
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Makeroid App Builder">
+    <meta name="og:description" content="Drag and Drop Android App Builder. No coding required!">
+    <meta name="og:url" content="https://makeroid.io">
+    <meta name="og:site_name" content="Makeroid App Builder">
+    <meta name="og:locale" content="en">
+    <meta name="fb:admins" content="261025611048691">
+    <meta name="og:type" content="website">
+    
+    {% include styles.html %}
     
     <!-- Google Stuff -->
     <script type='application/ld+json'>
