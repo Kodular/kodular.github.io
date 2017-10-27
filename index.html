@@ -29,29 +29,34 @@ title: Home | Makeroid
         </div>
     </div>
 </section>
-    
-<div class="container">
-    <!-- Add sections inside this div -->
-    <section class="section">
+
+<!-- Get Started Section -->
+<section class="section" id="getstarted">
+    <div class="container">
+        <!--Grid row-->
         <div class="row align-items-center my-5">
             <!--Grid column-->
             <div class="col-md-6">
-                <h2 class="font-up ">Get Started</h2>
+                <h2>Get Started</h2>
                 <p class="lead grey-text">Check this video for getting started with Makeroid in a few minutes!!!</p>
             </div>
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6">
-                <div class="mt-4 embed-responsive embed-responsive-16by9">
+                <div class="mt-4 embed-responsive embed-responsive-16by9 hoverable">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_bZj-LOXdH8" allowfullscreen=""></iframe>
                 </div>
             </div>
             <!--Grid column-->
         </div>
         <!--Grid row-->
-    </section>
-    <hr class="between-sections">
-    <section class="section feature-box">
+    </div>
+</section>
+
+<hr class="between-sections">
+<!-- Features Section -->
+<section class="section feature-box" id="features">
+    <div class="container">
         <!--Section heading-->
         <h1 class="section-heading pt-4">Why is it so great?</h1>
         <!--Section description-->
@@ -98,16 +103,20 @@ title: Home | Makeroid
             <!--Grid column-->
         </div>
         <!--Grid row-->
-    </section>
-    <hr class="between-sections">
-    <!-- Status Section -->
-    <section class="section text-center" id="status">
-        <div class="jumbotron">
+    </div>
+</section>
+
+<hr class="between-sections">
+<!-- Status Section -->
+<section class="section text-center" id="status">
+    <div class="container">
+        <div class="jumbotron hoverable">
             <h1 class="h1-responsive">Check our servers status!</h1>
             <p class="lead">If you are getting network issues while using Makeroid, you can check if its our servers' problem</p>
             <a class="btn btn-lg purple-gradient waves-effect waves-light" href="https://status.makeroid.io" target="_blank" role="button">STATUS</a>
         </div>
-    </section>
-    <hr class="between-sections">
-    {% include testimonials.html %}   
-</div>
+    </div>
+</section>
+
+<hr class="between-sections">
+{% include testimonials.html %}
