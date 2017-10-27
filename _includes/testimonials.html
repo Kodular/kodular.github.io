@@ -1,32 +1,34 @@
-<section class="section team-section text-center">
-    <!--Section heading-->
-    <h1 class="section-heading pt-4">Testimonials</h1>
-    <!--Section description-->
-    <p class="section-description lead grey-text">Read what our users say about Makeroid.</p>
-    <div class="row">
-    
-        {% for testimonial in site.data.testimonials %}
-        <div class="col-md-4 mb-r">
-            <!--Card-->
-            <div class="card testimonial-card hoverable">
-                <!--Bacground color-->
-                <div class="card-up {% cycle 'pink', 'indigo', 'default-color' %} lighten-1"></div>
+<section class="section team-section text-center" id="testimonials">
+    <div class="container">
+        <!--Section heading-->
+        <h1 class="section-heading pt-4">Testimonials</h1>
+        <!--Section description-->
+        <p class="section-description lead grey-text">Read what our users say about Makeroid.</p>
+        <div class="row">
 
-                <!--Avatar-->
-                <div class="avatar">
-                    <img src="{{ testimonial.photo }}" class="rounded-circle">
-                </div>
+            {% for testimonial in site.data.testimonials %}
+            <div class="col-md-4 mb-r">
+                <!--Card-->
+                <div class="card testimonial-card hoverable">
+                    <!--Bacground color-->
+                    <div class="card-up {% cycle 'pink', 'indigo', 'default-color' %} lighten-1"></div>
 
-                <div class="card-body">
-                    <!--Name-->
-                    <h4 class="card-title">{{ testimonial.name }}</h4>
-                    <hr>
-                    <!--Quotation-->
-                    <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="{{ testimonial.photo }}" class="rounded-circle">
+                    </div>
+
+                    <div class="card-body">
+                        <!--Name-->
+                        <h4 class="card-title">{{ testimonial.name }}</h4>
+                        <hr>
+                        <!--Quotation-->
+                        <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
+                    </div>
+                    <!--/.Card-->
                 </div>
-                <!--/.Card-->
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </section>
