@@ -1,4 +1,4 @@
-div > p.grey-text {
+p.grey-text:not(.lead) {
     text-align: justify;
 }
 
