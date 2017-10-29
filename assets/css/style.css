@@ -5,3 +5,133 @@ p.grey-text:not(.lead) {
 body {
     font-family: Lato, Roboto, sans-serif;
 }
+
+
+.browser-mockup {
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  margin:1em;
+  
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.browser-mockup.with-url:after {
+  display: block;
+  position: absolute;
+  content: ' http://builder.makeroid.io';
+  top: -1.6em;
+  left: 5.5em;
+  width: calc(100% - 6em);
+  height: 1.2em;
+  
+  border-radius: 2px;
+  background-color: white;
+  color: #616160;
+}
+
+.browser-mockup > * {
+  display: block;
+}
+
+.img-screenshot{
+	max-height: 100%; 
+	max-width: 100%; 
+	
+}
+
+.css-device {
+  position: relative;
+  margin: 0 auto;
+}
+
+.css-device__image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* =============================================================================
+  MOBILE
+============================================================================= */
+.css-device--mobile {
+  width: 144px;
+  border-top: solid 24px #ddd;
+  border-left: solid 12px #ddd;
+  border-right: solid 12px #ddd;
+  border-bottom: solid 48px #ddd;
+  border-radius: 12px;
+  margin:1em;
+}
+
+.css-device--mobile::before {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -14px;
+  width: 2px;
+  height: 12px;
+  background-color: #bbb;
+  box-shadow: 0 0 0 0 #bbb, 0 24px 0 0 #bbb;
+  border-radius: 2px 0 0 2px;
+  content: "";
+}
+
+.css-device--mobile::after {
+  display: block;
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 24px;
+  background-color: #bbb;
+  border-radius: 12px;
+  content: "";
+}
+
+@media all and (min-width: 720px) {
+  .css-device--mobile {
+    width: 205px;
+    border-top: solid 36px #ddd;
+    border-left: solid 18px #ddd;
+    border-right: solid 18px #ddd;
+    border-bottom: solid 72px #ddd;
+    border-radius: 18px;
+  }
+
+  .css-device--mobile::before {
+    top: 18px;
+    left: -21px;
+    width: 3px;
+    height: 18px;
+    background-color: #bbb;
+    box-shadow: 0 0 0 0 #bbb, 0 36px 0 0 #bbb;
+    border-radius: 3px 0 0 3px;
+    content: "";
+  }
+
+  .css-device--mobile::after {
+    bottom: -54px;
+    margin-left: -18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    content: "";
+  }
+}
