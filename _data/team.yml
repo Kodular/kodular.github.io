@@ -1,47 +1,39 @@
 - name: Conor
   desc: Developer
-  img: /assets/images/conor.png
   twitter: ConorShipp
   github: conorshipp
   
 - name: Diego Barreiro
   desc: Infrastructure Manager
-  img: /assets/images/diego.png
   twitter: Barreeeiroo
   github: barreeeiroo
   
 - name: Domhnall O'Hanlon
   desc: Developer
-  img: /assets/images/domhnall.png
   twitter: domhnallohanlon
   github: domhnallohanlon
   
 - name: Mika
   desc: Developer
-  img: /assets/images/mika.png
   twitter: nmd_official
   github: NmdOfficial
   
 - name: Pavitra Golchha
   desc: Developer
-  img: /assets/images/pavitra.png
   twitter: PavitraGolchha
   github: pavi2410
   
 - name: Sander Jochems
   desc: Developer
-  img: /assets/images/sander.png
   twitter: Sander0542
   github: Sander0542
   
 - name: Sivagiri Visakan
   desc: Developer
-  img: /assets/images/sivagiri.png
   twitter: Sivagiri_
   github: SivagiriVisakan
   
 - name: Vishwas Adiga
   desc: UI Designer
-  img: /assets/images/vishwas.png
   twitter: theMuonDecay
   github: Vishwas-Adiga
