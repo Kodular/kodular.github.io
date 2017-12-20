@@ -29,14 +29,18 @@ title: Team | Makeroid
                 <!--Card content-->
                 <div class="card-body text-center">
                     <!--Title-->
-                    <h4 class="card-title"><strong>{{ member.name }}</strong></h4>
+                    <h4 class="card-title">
+                        <a class="card-title h4" href="https://community.makeroid.io/u/{{ member.username }}/summary" target="_blank">
+                            <strong>{{ memeber.name }}</strong>
+                        </a>
+                    </h4>
                     <h5>{{ member.desc }}</h5>
                     
                     <!--Twitter-->
-                    <a href="https://twitter.com/{{ member.twitter }}" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                    <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
                     
                     <!--GitHub-->
-                    <a href="https://github.com/{{ member.github }}" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/{{ member.github }}" target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
                 </div>
                 <!--/.Card content-->
             </div>
