@@ -2,10 +2,10 @@ body {
     font-family: "Varela Round", Lato, sans-serif;
 }
 
-img-grayscale-hover-effect {
+img.grayscale-hover-effect {
   filter: grayscale(1);
 }
 
-img-grayscale-hover-effect:hover {
+img.grayscale-hover-effect:hover {
   filter: grayscale(0);
 }
