@@ -1,0 +1,12 @@
+<section class="section text-center" id="featuredon">
+  <div class="container">
+  <h1 class="section-heading">As featured on...</h1>
+    <div class="row align-items-center">
+      {% for site in site.data.featuredon %}
+      <div class="col">
+        <img class="img-fluid img-grayscale-hover-effect" src="/assets/images/{{ site.name | downcase | remove: " " }}.png" alt="{{ site.name }}"/>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
