@@ -1,34 +1,31 @@
-<section class="section team-section text-center" id="testimonials">
-    <div class="container">
-        <!--Section heading-->
-        <h1 class="section-heading pt-5 mb-4">Testimonials</h1>
-        <!--Section description-->
-        <p class="section-description lead grey-text">Read what our users say about Makeroid.</p>
-        <div class="row">
-
-            {% for testimonial in site.data.testimonials %}
-            <div class="col-md-4 mb-r">
-                <!--Card-->
-                <div class="card testimonial-card hoverable">
-                    <!--Bacground color-->
-                    <div class="card-up {% cycle 'purple', 'peach', 'aqua' %}-gradient"></div>
-
-                    <!--Avatar-->
-                    <div class="avatar mb-0">
-                        <img src="https://community.makeroid.io/user_avatar/community.makeroid.io/{{ testimonial.username }}/120/1.png" class="rounded-circle">
-                    </div>
-
-                    <div class="card-body">
-                        <!--Name-->
-                        <a class="card-title h4" href="https://community.makeroid.io/u/{{ testimonial.username }}" target="_blank">{{ testimonial.name }}</a>
-                        <hr>
-                        <!--Quotation-->
-                        <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
-                    </div>
-                    <!--/.Card-->
-                </div>
-            </div>
-            {% endfor %}
+<section class="section team-section py-5 text-center" id="testimonials">
+  <div class="container">
+    <!--Section heading-->
+    <h1 class="section-heading mb-4">Testimonials</h1>
+    <!--Section description-->
+    <p class="section-description lead grey-text">Read what our users say about Makeroid.</p>
+    <div class="row">
+      {% for testimonial in site.data.testimonials %}
+      <div class="col-md-4 mb-r">
+        <!--Card-->
+        <div class="card testimonial-card hoverable">
+          <!--Bacground color-->
+          <div class="card-up {% cycle 'purple', 'peach', 'aqua' %}-gradient"></div>
+          <!--Avatar-->
+          <div class="avatar mb-0">
+            <img src="https://community.makeroid.io/user_avatar/community.makeroid.io/{{ testimonial.username }}/120/1.png" class="rounded-circle">
+          </div>
+          <div class="card-body">
+            <!--Name-->
+            <a class="card-title h4" href="https://community.makeroid.io/u/{{ testimonial.username }}" target="_blank">{{ testimonial.name }}</a>
+            <hr>
+            <!--Quotation-->
+            <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
+          </div>
+          <!--/.Card-->
         </div>
+      </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
