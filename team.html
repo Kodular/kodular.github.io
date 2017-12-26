@@ -11,42 +11,42 @@ title: Team | Makeroid
     <p class="section-description lead grey-text">Here are our amazing team members:</p>
     
     <div class="container">
-    <div class="row">
-        <!--Grid column-->
-        {% for member in site.data.team %}
-        <div class="col-md-3 mb-r">
-            <div class="card card-cascade narrower mb-r">
-                            
-                <!--Card image-->
-                <div class="view overlay hm-white-slight">
-                    <img src="{% if member.img %}{{ member.img }}{% else %}https://github.com/{{ member.github }}.png?size=300{% endif %}" class="img-fluid" alt="{{ member.name }}" style="width: -webkit-fill-available;">
-                    <a>
-                        <div class="mask waves-effect waves-light"></div>
-                    </a>
-                </div>
-                <!--/.Card image-->
-                
-                <!--Card content-->
-                <div class="card-body text-center">
-                    <!--Title-->
-                    <h4 class="card-title">
-                        <a class="card-title h4" href="https://community.makeroid.io/u/{{ member.username }}" target="_blank">
-                            <strong>{{ member.name }}</strong>
+        <div class="row flex-center">
+            <!--Grid column-->
+            {% for member in site.data.team %}
+            <div class="col-md-3">
+                <div class="card card-cascade narrower mb-r">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="{% if member.img %}{{ member.img }}{% else %}https://github.com/{{ member.github }}.png?size=300{% endif %}" class="img-fluid" alt="{{ member.name }}" style="width: -webkit-fill-available;">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
                         </a>
-                    </h4>
-                    <h5>{{ member.desc }}</h5>
-                    
-                    <!--Twitter-->
-                    <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
-                    
-                    <!--GitHub-->
-                    <a href="https://github.com/{{ member.github }}" target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-body text-center">
+                        <!--Title-->
+                        <h4 class="card-title">
+                            <a class="card-title h4" href="https://community.makeroid.io/u/{{ member.username }}" target="_blank">
+                                <strong>{{ member.name }}</strong>
+                            </a>
+                        </h4>
+                        <h5>{{ member.desc }}</h5>
+
+                        <!--Twitter-->
+                        <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+
+                        <!--GitHub-->
+                        <a href="https://github.com/{{ member.github }}" target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
+                    </div>
+                    <!--/.Card content-->
                 </div>
-                <!--/.Card content-->
             </div>
+            {% endfor %}
+            <!--Grid column-->
         </div>
-        {% endfor %}
-        <!--Grid column-->
-    </div>
     </div>
 </section>
