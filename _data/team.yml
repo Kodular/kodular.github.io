@@ -1,6 +1,6 @@
 - name: Conor
   desc: Developer
-  img: /assets/images/conor.png
+  img: assets/images/conor.png
   username: Conor
   twitter: ConorShipp
   github: conorshipp
@@ -37,7 +37,7 @@
   
 - name: Vishwas Adiga
   desc: UI Designer
-  img: /assets/images/vishwas.png
+  img: assets/images/vishwas.png
   username: Vishwas
   twitter: theMuonDecay
   github: Vishwas-Adiga
