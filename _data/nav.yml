@@ -1,12 +1,7 @@
-- title: "Home"
-  href: "/"
-  icon: "home"
-
 - title: "Team"
-  href: "/team"
+  href: "team"
   icon: "users"
 
 - title: "About"
-  href: "/about"
+  href: "about"
   icon: "info-circle"
-  
