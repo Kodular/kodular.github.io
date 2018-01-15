@@ -6,7 +6,7 @@
   github: conorshipp
   
 - name: Diego Barreiro
-  desc: Infrastructure Manager
+  desc: Makeroid CTO
   username: Barreeeiroo
   twitter: Barreeeiroo
   github: barreeeiroo
@@ -41,3 +41,8 @@
   username: Vishwas
   twitter: theMuonDecay
   github: Vishwas-Adiga
+
+- name: María Viña
+  desc: Makeroid CDO
+  img: assets/images/maria.png
+  username: mariavilop
