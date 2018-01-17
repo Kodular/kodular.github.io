@@ -4,41 +4,50 @@
   username: Conor
   twitter: ConorShipp
   github: conorshipp
+  email: conor@makeroid.io
 
 - name: Diego Barreiro
   desc: Makeroid CTO
   username: Barreeeiroo
   twitter: Barreeeiroo
   github: barreeeiroo
+  email: diego@makeroid.io
   
 - name: María Viña
   desc: Makeroid CDO
   img: assets/images/maria.png
   username: mariavilop
+  twitter: MakeroidBuilder
+  github: Makeroid
+  email: maria@makeroid.io
   
 - name: Mika
   desc: Developer
   username: Mika
   twitter: nmd_official
   github: NmdOfficial
+  email: mika@makeroid.io
   
 - name: Pavitra Golchha
   desc: Developer
   username: pavi2410
   twitter: PavitraGolchha
   github: pavi2410
+  email: pavitra@makeroid.io
   
 - name: Sander Jochems
   desc: Developer
   username: Sander
   twitter: Sander0542
   github: Sander0542
+  email: sander@makeroid.io
   
 - name: Sivagiri Visakan
   desc: Developer
   username: sivagiri
   twitter: Sivagiri_
   github: SivagiriVisakan
+  email: sivagiri@makeroid.io
   
 - name: Vishwas Adiga
   desc: UI Designer
@@ -46,3 +55,4 @@
   username: Vishwas
   twitter: theMuonDecay
   github: Vishwas-Adiga
+  email: vishwas@makeroid.io
