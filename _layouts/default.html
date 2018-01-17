@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-{% include head.html %}
+    {% include head.html %}
 
-<body class="deep-purple lighten-5 scrollbar-gradient">
-    {% include nav.html %}
-    
-    {{ content }}
+    <body class="deep-purple lighten-5 scrollbar-gradient">
+        {% include nav.html %}
 
-    {% include footer.html %}
-    {% include scripts/scripts.html %}
-    {% include scripts/ads.html %}
-    {% include scripts/ga.html %}
-</body>
+        {{ content }}
 
+        {% include footer.html %}
+        {% include scripts/scripts.html %}
+        {% include scripts/ads.html %}
+        {% include scripts/ga.html %}
+
+        <!-- Floating Button -->
+        <div class="fixed-action-btn" style="bottom: 1em; right: 1em;">
+            <a class="btn-floating btn-lg lighten-1 pink" href="https://community.makeroid.io" target="_blank">
+                <i class="fa fa-comments"></i>
+            </a>
+        </div>
+    </body>
 </html>
