@@ -1,7 +1,22 @@
-- title: "Team"
-  href: "team"
-  icon: "users"
+- title: Team
+  href: team
+  icon: users
+  external: false
 
-- title: "About"
-  href: "about"
-  icon: "info-circle"
+- title: About
+  href: about
+  icon: info-circle
+  external: false
+
+- title: Blog
+  href: //blog.makeroid.io
+  icon: rss
+  
+- title: Community
+  href: //community.makeroid.io
+  icon: comments
+  
+- title: Docs
+  href: //docs.makeroid.io
+  icon: book
+  
