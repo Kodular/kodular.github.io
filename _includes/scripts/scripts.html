@@ -9,9 +9,17 @@
     new WOW().init();
     
     $('#testimonials .row').slick({
+      arrows: false,
       slidesToShow: 3,
       autoplay: true,
       autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
     });
   });
 </script>			
