@@ -5,5 +5,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.9.3/jarallax.min.js" integrity="sha256-nayLqs5VTSn5wF5AwSu9Bd9g4G0g0g/FzePb5cnM5Bo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
-  new WOW().init();
-</script>
+  $(() => {
+    new WOW().init();
+    
+    $('#testimonials .row').slick({
+      dots: true,
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  });
+</script>			
