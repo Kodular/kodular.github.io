@@ -9,6 +9,8 @@
     new WOW().init();
     
     $('#testimonials .row').slick({
+      prevArrow: '<button class="btn-floating"><i class="fa fa-chevron-left"></i></button>',
+      nextArrow: '<button class="btn-floating"><i class="fa fa-chevron-right"></i></button>',
       slidesToShow: 3,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -16,8 +18,7 @@
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 1
           }
         }]
     });
