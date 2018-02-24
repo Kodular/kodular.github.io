@@ -9,7 +9,7 @@ title: Team | Makeroid
     <h1 class="section-heading pt-4 mb-4">Our Amazing Team</h1>
     <!--Section description-->
     <p class="section-description lead grey-text">Here are our amazing team members:</p>
-    
+
     <div class="container">
         <div class="row flex-center">
             <!--Grid column-->
@@ -30,8 +30,8 @@ title: Team | Makeroid
                     <div class="card-body text-center">
                         <!--Title-->
                         <h4 class="card-title">
-                            <a class="card-title h4" href="https://community.makeroid.io/u/{{ member.username }}" target="_blank">
-                                <strong>{{ member.name }}</strong>
+                            <a class="card-title h4 emojione" href="https://community.makeroid.io/u/{{ member.username }}" target="_blank">
+                                <strong>{{ member.name }} :flag_{{ member.country }}:</strong>
                             </a>
                         </h4>
                         <h5>{{ member.desc }}</h5>
@@ -52,4 +52,13 @@ title: Team | Makeroid
             <!--Grid column-->
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $(".emojione").each(function() {
+                var original = $(this).html();
+                var converted = emojione.shortnameToImage(original);
+                $(this).html(converted);
+            });
+        });
+    </script>
 </section>
