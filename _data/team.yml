@@ -15,15 +15,6 @@
   email: diego@makeroid.io
   country: es
 
-- name: María Viña
-  desc: Makeroid CDO
-  img: assets/images/maria.png
-  username: mariavilop
-  twitter: MakeroidBuilder
-  github: Makeroid
-  email: maria@makeroid.io
-  country: es
-
 - name: Mika
   desc: Developer
   username: Mika
