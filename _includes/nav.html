@@ -7,6 +7,16 @@
   </button>
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-globe"></i> Services
+        </a>
+        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-5">
+          {% for service in site.data.services %}
+          <a class="dropdown-item" href="{{ service.href }}">{{ service.title }}</a>
+          {% endfor %}
+        </div>
+      </li>
       {% for nav in site.data.nav %}
       {% assign current_url = page.url | remove: '.html' %}
       <li class="nav-item{% if current_url == nav.href %} active{% endif %}">
