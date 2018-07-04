@@ -7,10 +7,6 @@
   href: about
   icon: info-circle
   external: false
-
-- title: Blog
-  href: //medium.com/the-makeroid-corner
-  icon: rss
   
 - title: Community
   href: //community.makeroid.io
