@@ -9,10 +9,10 @@
   external: false
   
 - title: Community
-  href: //community.makeroid.io
+  href: //community.kodular.io
   icon: comments
   
 - title: Docs
-  href: //docs.makeroid.io
+  href: //docs.kodular.io
   icon: book
   
