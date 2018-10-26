@@ -1,9 +1,9 @@
 {
-  "name": "Makeroid",
-  "short_name": "Makeroid",
+  "name": "Kodular",
+  "short_name": "Kodular",
   "description": "A new era of app building",
   "lang": "en",
-  "start_url": "/home",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#4527a0",
