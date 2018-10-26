@@ -4,15 +4,15 @@
   username: Conor
   twitter: ConorShipp
   github: conorshipp
-  email: conor@makeroid.io
+  email: conor@kodular.io
   country: gb
 
 - name: Diego Barreiro
-  desc: Makeroid CTO
+  desc: Kodular CTO
   username: Barreeeiroo
   twitter: Barreeeiroo
   github: barreeeiroo
-  email: diego@makeroid.io
+  email: diego@kodular.io
   country: es
 
 - name: Mika
@@ -20,7 +20,7 @@
   username: Mika
   twitter: nmd_official
   github: NmdOfficial
-  email: mika@makeroid.io
+  email: mika@kodular.io
   country: de
 
 - name: Pavitra Golchha
@@ -28,15 +28,15 @@
   username: pavi2410
   twitter: PavitraGolchha
   github: pavi2410
-  email: pavitra@makeroid.io
+  email: pavitra@kodular.io
   country: in
 
 - name: Sander Jochems
-  desc: Makeroid CEO
+  desc: Kodular CEO
   username: Sander
   twitter: Sander0542
   github: Sander0542
-  email: sander@makeroid.io
+  email: sander@kodular.io
   country: nl
 
 - name: Sivagiri Visakan
@@ -44,7 +44,7 @@
   username: sivagiri
   twitter: Sivagiri_
   github: SivagiriVisakan
-  email: sivagiri@makeroid.io
+  email: sivagiri@kodular.io
   country: in
 
 - name: Vishwas Adiga
@@ -52,5 +52,5 @@
   username: Vishwas
   twitter: theMuonDecay
   github: Vishwas-Adiga
-  email: vishwas@makeroid.io
+  email: vishwas@kodular.io
   country: in
