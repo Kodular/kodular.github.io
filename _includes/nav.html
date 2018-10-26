@@ -13,10 +13,10 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-globe"></i> Services
+          <i class="fa fa-globe"></i> Modules
         </a>
         <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-5">
-          {% for service in site.data.services %}
+          {% for service in site.data.modules %}
           <a class="dropdown-item" href="{{ service.href }}">{{ service.title }}</a>
           {% endfor %}
         </div>
