@@ -3,7 +3,7 @@
     <!--Section heading-->
     <h1 class="section-heading mb-4">Testimonials</h1>
     <!--Section description-->
-    <p class="section-description lead grey-text">Read what our users say about Makeroid.</p>
+    <p class="section-description lead grey-text">Read what our users say about Kodular.</p>
     <div class="row">
       {% for testimonial in site.data.testimonials %}
       <div class="col-md-4 mb-r d-flex align-items-stretch">
@@ -13,11 +13,11 @@
           <div class="card-up {% cycle 'purple', 'peach', 'aqua' %}-gradient"></div>
           <!--Avatar-->
           <div class="avatar mb-0">
-            <img src="//community.makeroid.io/user_avatar/community.makeroid.io/{{ testimonial.username }}/120/1.png" class="rounded-circle">
+            <img src="//community.kodular.io/user_avatar/community.kodular.io/{{ testimonial.username }}/120/1.png" class="rounded-circle">
           </div>
           <div class="card-body">
             <!--Name-->
-            <a class="card-title h4" href="//community.makeroid.io/u/{{ testimonial.username }}" target="_blank">{{ testimonial.name }}</a>
+            <a class="card-title h4" href="//community.kodular.io/u/{{ testimonial.username }}" target="_blank">{{ testimonial.name }}</a>
             <hr>
             <!--Quotation-->
             <p><i class="fa fa-quote-left"></i> {{ testimonial.text }}</p>
