@@ -13,5 +13,5 @@ social:
   telegram: https://telegram.me/Kodular
   instagram: https://instagram.com/Kodular
 
-gems:
+plugins:
   - jekyll-redirect-from
