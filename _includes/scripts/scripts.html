@@ -8,29 +8,45 @@
 <script src="https://cdn.jsdelivr.net/npm/emojione@3.1.2/lib/js/emojione.min.js"></script>
 
 <script>
-  $(() => {
-    new WOW().init();
+  	$(() => {
+    	new WOW().init();
+		$('#testimonials .row').slick({
+			arrows: false,
+			slidesToShow: 3,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+  	});
 
-    $('#testimonials .row').slick({
-      arrows: false,
-      slidesToShow: 3,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
-    });
-  });
+	$(document).ready(function() {
+		$(".emojione").each(function() {
+			var original = $(this).html();
+			var converted = emojione.shortnameToImage(original);
+			$(this).html(converted);
+		});
 
-  $(document).ready(function() {
-      $(".emojione").each(function() {
-          var original = $(this).html();
-          var converted = emojione.shortnameToImage(original);
-          $(this).html(converted);
-      });
-  });
+		var ul = document.getElementById("prokoders");
+		$.getJSON('https://community.kodular.io/groups/prokoders/members.json?limit=100', function(data) {
+			data.members.forEach(function(v, i) {
+				console.log(v);
+				var team = ['Barreeeiroo', 'sivagiri', 'Vishwas', 'Conor', 'Mika', 'pavi2410', 'Sander'];
+				if (!team.includes(v.username)) {
+					var li = document.createElement("li");
+					var a = document.createElement('a');
+					a.appendChild(document.createTextNode(v.name!='' ? v.name : v.username));
+					a.title = v.name;
+					a.href = "https://community.kodular.io/u/"+v.username;
+					li.appendChild(a);
+					ul.appendChild(li);
+				}
+			});
+		});
+		
+	});
 </script>

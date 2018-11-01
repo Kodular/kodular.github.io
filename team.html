@@ -51,5 +51,54 @@ title: Team | Kodular
             {% endfor %}
             <!--Grid column-->
         </div>
+        <div class="row flex-center">
+            <button type="button" class="btn purple-gradient btn-rounded btn-lg" data-toggle="modal" data-target="#acknowledgment">
+                Acknowledgment
+            </button>
+        </div>
+    </div>
+
+    <!-- Acknowledgment -->
+    <div class="modal fade" id="acknowledgment" tabindex="-1" role="dialog" aria-labelledby="acknowledgmentL" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="acknowledgmentL">Acknowledgment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>MIT App Inventor</h3>
+                    First of all, we have to thank <big><a href="http://appinventor.mit.edu/explore/our-team.html" target="_blank">App Inventor Team</a></big>
+                    for building that incredible paltform. Without them, Kodular would have never existed.<br>
+                    App Inventor starter its development at Google on 2007, until 2010 when it was moved to MIT.<br>
+                    <hr>
+                    <h4>Former Team</h3>
+                    <ul>
+                    {% for u in site.data.acknowledgment %}
+                        {% if u.type == "former" %}
+                        <li><big>{{ u.name }}</big>: {{ u.text }}</li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                    <br>
+                    <h4>Moderators</h3>
+                    <ul>
+                    {% for u in site.data.acknowledgment %}
+                        {% if u.type == "moderator" %}
+                        <li><big>{{ u.name }}</big>: {{ u.text }}</li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                    <br>
+                    <h4>Beta Testers</h3>
+                    <ul id="prokoders" style="columns: 2; -webkit-columns: 2; -moz-columns: 2;"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
