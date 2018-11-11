@@ -3,7 +3,7 @@
   <h1 class="section-heading">As featured on...</h1>
     <div class="row align-items-center">
       {% for site in site.data.featuredon %}
-      <div class="col">
+      <div class="col-md-3">
         <a href="{{ site.url }}" target="_blank">
           <img class="img-fluid grayscale-hover-effect" src="/assets/images/{{ site.name | downcase | remove: " " }}.png" alt="{{ site.name }}"/>
         </a>
