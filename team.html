@@ -30,8 +30,10 @@ title: Team | Kodular
                     <div class="card-body text-center">
                         <!--Title-->
                         <h4 class="card-title">
-                            <a class="card-title h4" href="https://community.kodular.io/u/{{ member.username }}" target="_blank">
-                                <strong>{{ member.name }}</strong><br><span class="emojione">:flag_{{ member.country }}:</span>
+                            <a class="card-title h4" href="{% if member.website %}{{ member.website }}{% else %}https://community.kodular.io/u/{{ member.username }}{% endif %}" target="_blank">
+                                <strong>{{ member.name }}</strong>
+                                <br>
+                                <span class="emojione">:flag_{{ member.country }}:</span>
                             </a>
                         </h4>
                         <h5>{{ member.desc }}</h5>

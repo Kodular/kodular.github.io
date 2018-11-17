@@ -6,6 +6,7 @@
   github: conorshipp
   email: conor@kodular.io
   country: gb
+  website: http://conorshipp.me
 
 - name: Diego Barreiro
   desc: Kodular CTO
@@ -14,6 +15,7 @@
   github: barreeeiroo
   email: diego@kodular.io
   country: es
+  website: https://www.barreiro.xyz
 
 - name: Mika
   desc: Developer
@@ -22,6 +24,7 @@
   github: NmdOfficial
   email: mika@kodular.io
   country: de
+  website: https://nmd-apps.jimdo.com
 
 - name: Pavitra Golchha
   desc: Developer
@@ -30,6 +33,7 @@
   github: pavi2410
   email: pavitra@kodular.io
   country: in
+  website: https://pavi2410.tk
 
 - name: Sander Jochems
   desc: Kodular CEO
@@ -38,6 +42,7 @@
   github: Sander0542
   email: sander@kodular.io
   country: nl
+  website: https://www.sanderjochems.com
 
 - name: Sivagiri Visakan
   desc: Developer
