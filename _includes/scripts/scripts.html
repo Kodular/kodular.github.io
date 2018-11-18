@@ -26,14 +26,8 @@
   	});
 
 	$(document).ready(function() {
-		$(".emojione").each(function() {
-			var original = $(this).html();
-			var converted = emojione.shortnameToImage(original);
-			$(this).html(converted);
-		});
-
-		var ul = document.getElementById("prokoders");
-		if (ul != null) {
+		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "") {
+			var ul = document.getElementById("prokoders");
 			$.getJSON('https://community.kodular.io/groups/prokoders/members.json?limit=100', function(data) {
 				data.members.forEach(function(v, i) {
 					var team = ['Barreeeiroo', 'sivagiri', 'Vishwas', 'Conor', 'Mika', 'pavi2410', 'Sander'];
@@ -47,6 +41,20 @@
 						ul.appendChild(li);
 					}
 				});
+			});
+		}
+
+		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "team") {
+			$(".emojione").each(function() {
+				var original = $(this).html();
+				var converted = emojione.shortnameToImage(original);
+				$(this).html(converted);
+			});
+		}
+
+		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "donate") {
+			document.querySelectorAll('[role="button"]').forEach(function (e){
+				e.style.width = "100%";
 			});
 		}
 	});
