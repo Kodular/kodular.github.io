@@ -14,7 +14,11 @@
         </a>
         <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-5">
           {% for service in site.data.modules %}
-          <a class="dropdown-item" href="{{ service.href }}">{{ service.title }}</a>
+            {% if service.title == "div" %}
+              <div class="dropdown-divider"></div>
+            {% else %}
+              <a class="dropdown-item" href="{{ service.href }}">{{ service.title }}</a>
+            {% endif %}
           {% endfor %}
         </div>
       </li>
