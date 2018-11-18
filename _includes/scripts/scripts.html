@@ -25,6 +25,10 @@
   	});
 
 	$(document).ready(function() {
+		$('.navbar-toggler').on('click', function () {
+			$('.animated-icon').toggleClass('open');
+		});
+
 		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "") {
 			var ul = document.getElementById("prokoders");
 			$.getJSON('https://community.kodular.io/groups/prokoders/members.json?limit=100', function(data) {
