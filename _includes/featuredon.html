@@ -15,15 +15,15 @@
       </div>
       {% endfor %}
       {% if offset > 0 %}
+      <div class="col-md-{% if counter | minus: offset  == 2 %}{{ 2 }}{% else %}{{4}}{% endif %}"></div>
         {% for site in site.data.featuredon offset: offset %}
-        <div class="col-md-{% if counter | minus: offset  == 2 %}{{ 2 }}{% else %}{{4}}{% endif %}"></div>
         <div class="col-md-4">
           <a href="{{ site.url }}" target="_blank">
             <img class="img-fluid grayscale-hover-effect" src="/assets/images/{{ site.name | downcase | remove: " " }}.png" alt="{{ site.name }}"/>
           </a>
         </div>
-        <div class="col-md-{% if counter | minus: offset  == 2 %}{{ 2 }}{% else %}{{4}}{% endif %}"></div>
         {% endfor %}
+        <div class="col-md-{% if counter | minus: offset  == 2 %}{{ 2 }}{% else %}{{4}}{% endif %}"></div>
       {% endif %}
     </div>
   </div>
