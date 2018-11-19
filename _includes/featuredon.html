@@ -2,13 +2,29 @@
   <div class="container">
   <h1 class="section-heading">As featured on...</h1>
     <div class="row align-items-center">
+      {% assign counter = 0 %}
       {% for site in site.data.featuredon %}
+        {% assign counter=counter | plus:1 %}
+      {% endfor %}
+      {% assign offset = counter | divided_by: 3 | times: 3 %}
+      {% for site in site.data.featuredon limit: offset %}
       <div class="col-md-4">
         <a href="{{ site.url }}" target="_blank">
           <img class="img-fluid grayscale-hover-effect" src="/assets/images/{{ site.name | downcase | remove: " " }}.png" alt="{{ site.name }}"/>
         </a>
       </div>
       {% endfor %}
+      {% if offset > 0 %}
+        {% for site in site.data.featuredon offset: offset %}
+        <div class="col-md-{% if counter | minus: offset  == 2 %}{{ 2 }}{% else %}{{4}}{% endif %}"></div>
+        <div class="col-md-4">
+          <a href="{{ site.url }}" target="_blank">
+            <img class="img-fluid grayscale-hover-effect" src="/assets/images/{{ site.name | downcase | remove: " " }}.png" alt="{{ site.name }}"/>
+          </a>
+        </div>
+        <div class="col-md-{% if counter | minus: offset  == 2 %}{{ 2 }}{% else %}{{4}}{% endif %}"></div>
+        {% endfor %}
+      {% endif %}
     </div>
   </div>
 </section>
