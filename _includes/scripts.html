@@ -6,23 +6,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.9.3/jarallax.min.js" integrity="sha256-nayLqs5VTSn5wF5AwSu9Bd9g4G0g0g/FzePb5cnM5Bo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/emojione@3.1.2/lib/js/emojione.min.js"></script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 
 <script>
-  	$(() => {
-    	new WOW().init();
-		$('#testimonials .row').slick({
-			arrows: false,
-			slidesToShow: 3,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			responsive: [{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1
-				}
-			}]
-		});
-  	});
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-102230060-3', 'auto');
+	ga('send', 'pageview');
+	  
+	var OneSignal = window.OneSignal || [];
+	OneSignal.push(function() { OneSignal.init({ appId: "cf5b90e4-ef6b-4f5b-ae22-ee72ec3cb083", }); });
 
 	$(document).ready(function() {
 		$('.navbar-toggler').on('click', function () {
@@ -30,6 +32,24 @@
 		});
 
 		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "") {
+			$(() => {
+				new WOW().init();
+				$('#testimonials .row').slick({
+					arrows: false,
+					slidesToShow: 3,
+					autoplay: true,
+					autoplaySpeed: 2000,
+					responsive: [{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1
+						}
+					}]
+				});
+			});
+		}
+
+		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "team") {
 			var ul = document.getElementById("prokoders");
 			$.getJSON('https://community.kodular.io/groups/prokoders/members.json?limit=100', function(data) {
 				data.members.forEach(function(v, i) {
@@ -45,9 +65,7 @@
 					}
 				});
 			});
-		}
 
-		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "team") {
 			$(".emojione").each(function() {
 				var original = $(this).html();
 				var converted = emojione.shortnameToImage(original);
