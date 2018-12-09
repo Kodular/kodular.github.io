@@ -53,7 +53,7 @@
 			var ul = document.getElementById("prokoders");
 			$.getJSON('https://community.kodular.io/groups/prokoders/members.json?limit=100', function(data) {
 				data.members.forEach(function(v, i) {
-					var team = ['Barreeeiroo', 'sivagiri', 'Vishwas', 'Conor', 'Mika', 'pavi2410', 'Sander'];
+					var team = ['Diego', 'sivagiri', 'Vishwas', 'Conor', 'Mika', 'pavi2410', 'Sander'];
 					if (!team.includes(v.username)) {
 						var li = document.createElement("li");
 						var a = document.createElement('a');
