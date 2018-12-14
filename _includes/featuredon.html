@@ -10,7 +10,7 @@
       {% for site in site.data.featuredon limit: offset %}
       <div class="col-md-4">
         <a href="{{ site.url }}" target="_blank">
-          <img class="img-fluid grayscale-hover-effect" src="/assets/images/{{ site.name | downcase | remove: " " }}.png" alt="{{ site.name }}"/>
+          <img class="lazy img-fluid grayscale-hover-effect" src="/assets/images/{{ site.name | downcase | remove: " " }}.png" alt="{{ site.name }}"/>
         </a>
       </div>
       {% endfor %}
