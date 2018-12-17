@@ -27,6 +27,12 @@
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 	gtag('config', 'UA-102230060-3');
+
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TWN2HFZ');
 	  
 	var OneSignal = window.OneSignal || [];
 	OneSignal.push(function() { OneSignal.init({ appId: "cf5b90e4-ef6b-4f5b-ae22-ee72ec3cb083", }); });
@@ -55,7 +61,12 @@
 		}
 
 		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "team") {
-			var ul = document.getElementById("prokoders");
+			$(".emojione").each(function() {
+				var original = $(this).html();
+				var converted = emojione.shortnameToImage(original);
+				$(this).html(converted);
+			});
+
 			$.getJSON('https://community.kodular.io/groups/prokoders/members.json?limit=100', function(data) {
 				data.members.forEach(function(v, i) {
 					var team = ['Diego', 'sivagiri', 'Vishwas', 'Conor', 'Mika', 'pavi2410', 'Sander'];
@@ -66,15 +77,9 @@
 						a.title = (v.name!='' ? v.name : v.username);
 						a.href = "https://community.kodular.io/u/"+v.username;
 						li.appendChild(a);
-						ul.appendChild(li);
+						document.getElementById("prokoders").appendChild(li);
 					}
 				});
-			});
-
-			$(".emojione").each(function() {
-				var original = $(this).html();
-				var converted = emojione.shortnameToImage(original);
-				$(this).html(converted);
 			});
 		}
 	});
