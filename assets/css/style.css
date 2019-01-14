@@ -205,9 +205,9 @@ html {
   .carbon-text {
     float: left;
     margin-bottom: 0;
-    padding: 8px 20px;
+    padding: 8px 8px 8px 10px;
     text-align: left;
-    max-width: calc(100% - 130px - 3em);
+    max-width: calc(100% - 140px - 2em);
   }
   .carbon-poweredby {
     left: 130px;
