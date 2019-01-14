@@ -207,7 +207,7 @@ html {
     margin-bottom: 0;
     padding: 8px 8px 8px 10px;
     text-align: left;
-    max-width: calc(100% - 140px - 2em);
+    max-width: calc(100% -10em);
   }
   .carbon-poweredby {
     left: 130px;
