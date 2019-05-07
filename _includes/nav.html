@@ -7,28 +7,38 @@
     <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
   </button>
   <div class="collapse navbar-collapse" id="navbar">
-    <ul class="navbar-nav ml-auto">
+    {% assign current_url = page.url | remove: '.html' %}
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-globe"></i> Modules
         </a>
         <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-5">
-          {% for service in site.data.modules %}
-            {% if service.title == "div" %}
+              <a class="dropdown-item" href="/creator">Creator</a>
+              <a class="dropdown-item" href="//ide.kodular.io">Extensions IDE</a>
+              <a class="dropdown-item" href="//store.kodular.io">Store</a>
               <div class="dropdown-divider"></div>
-            {% else %}
-              <a class="dropdown-item" href="{{ service.href }}">{{ service.title }}</a>
-            {% endif %}
-          {% endfor %}
+              <a class="dropdown-item" href="//account.kodular.io">Account</a>
         </div>
       </li>
-      {% for nav in site.data.nav %}
-      {% assign current_url = page.url | remove: '.html' %}
-      <li class="nav-item{% if current_url == nav.href %} active{% endif %}">
-        <a class="nav-link" href="{{ nav.href }}" {% if nav.external %}target="_blank"{% endif %}>
-        <i class="fa fa-{{ nav.icon }}"></i> {{ nav.title }}</a>
+      <li class="nav-item{% if current_url == '/team' %} active{% endif %}">
+        <a class="nav-link" href="/team">
+        <i class="fa fa-users"></i> Team</a>
       </li>
-      {% endfor %}
+      <li class="nav-item{% if current_url == '/about' %} active{% endif %}">
+        <a class="nav-link" href="/about">
+        <i class="fa fa-info-circle"></i> About</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="//community.kodular.io">
+        <i class="fa fa-comments"></i> Community</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="//docs.kodular.io">
+        <i class="fa fa-book"></i> Docs</a>
+      </li>
       <li class="nav-item pink lighten-1 rounded">
         <a class="nav-link" href="https://c.kodular.io" target="_blank">
         <i class="fa fa-cloud"></i> Create Apps!</a>
