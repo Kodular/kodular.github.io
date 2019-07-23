@@ -1,5 +1,5 @@
 - name: Conor
-  desc: Developer
+  desc: VP of Engineering
   img: assets/images/conor.png
   username: Conor
   twitter: ConorShipp
@@ -18,7 +18,7 @@
   website: https://www.barreiro.xyz
 
 - name: Mika
-  desc: Developer
+  desc: VP of Product
   username: Mika
   twitter: nmd_official
   github: NmdOfficial
@@ -27,7 +27,7 @@
   website: https://nmd-apps.jimdo.com
 
 - name: Pavitra Golchha
-  desc: Developer
+  desc: VP of Innovation
   username: pavi2410
   twitter: PavitraGolchha
   github: pavi2410
@@ -36,7 +36,7 @@
   website: https://pavi2410.tk
 
 - name: Sander Jochems
-  desc: Developer
+  desc: VP of Digital Tech
   username: Sander
   twitter: Sander0542
   github: Sander0542
@@ -45,7 +45,7 @@
   website: https://www.sanderjochems.com
 
 - name: Sivagiri Visakan
-  desc: Developer
+  desc: VP of User Experience
   username: sivagiri
   twitter: Sivagiri_
   github: SivagiriVisakan
