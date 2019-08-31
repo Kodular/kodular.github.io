@@ -1,4 +1,4 @@
-- name: Conor
+- name: Conor Shipp
   desc: VP of Engineering
   img: assets/images/conor.png
   username: Conor
@@ -17,7 +17,7 @@
   country: es
   website: https://www.barreiro.xyz
 
-- name: Mika
+- name: Michael Rüdiger
   desc: VP of Product
   username: Mika
   twitter: nmd_official
