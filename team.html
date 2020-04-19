@@ -41,11 +41,18 @@ title: Team | Kodular
                         <!--Email-->
                         <a href="mailto:{{ member.email }}" type="button" class="btn-floating btn-small btn-pink waves-effect waves-light"><i class="fa fa-envelope"></i></a>
 
-                        <!--Twitter-->
-                        <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
-
                         <!--GitHub-->
                         <a href="https://github.com/{{ member.github }}" target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
+
+                        {% if member.twitter %}
+                        <!--Twitter-->
+                        <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                        {% endif %}
+
+                        {% if member.instagram %}
+                        <!--Twitter-->
+                        <a href="https://instagram.com/{{ member.instagram }}" target="_blank" type="button" class="btn-floating btn-small btn-ig waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                        {% endif %}
                     </div>
                     <!--/.Card content-->
                 </div>
