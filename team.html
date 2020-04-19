@@ -47,11 +47,9 @@ title: Team | Kodular
                         {% if member.twitter %}
                         <!--Twitter-->
                         <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
-                        {% endif %}
-
-                        {% if member.instagram %}
-                        <!--Twitter-->
-                        <a href="https://instagram.com/{{ member.instagram }}" target="_blank" type="button" class="btn-floating btn-small btn-ig waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                        {% elsif member.instagram %}
+                        <!--Instagram-->
+                        <a href="https://instagram.com/{{ member.instagram }}" target="_blank" type="button" class="btn-floating btn-small btn-ins waves-effect waves-light"><i class="fa fa-instagram"></i></a>
                         {% endif %}
                     </div>
                     <!--/.Card content-->
