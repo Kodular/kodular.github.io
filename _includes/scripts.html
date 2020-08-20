@@ -63,21 +63,6 @@
 				var converted = emojione.shortnameToImage(original);
 				$(this).html(converted);
 			});
-
-			$.getJSON('https://community.kodular.io/groups/prokoders/members.json?limit=100', function(data) {
-				data.members.forEach(function(v, i) {
-					var team = ['Diego', 'sivagiri', 'Vishwas', 'Conor', 'Mika', 'pavi2410', 'Sander'];
-					if (!team.includes(v.username)) {
-						var li = document.createElement("li");
-						var a = document.createElement('a');
-						a.appendChild(document.createTextNode(v.name!='' ? v.name : v.username));
-						a.title = (v.name!='' ? v.name : v.username);
-						a.href = "https://community.kodular.io/u/"+v.username;
-						li.appendChild(a);
-						document.getElementById("prokoders").appendChild(li);
-					}
-				});
-			});
 		}
 	});
 </script>
