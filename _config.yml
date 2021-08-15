@@ -13,3 +13,4 @@ social:
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
+  
