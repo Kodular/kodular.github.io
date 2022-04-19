@@ -1,52 +1,56 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-brand-color">
-  <a class="navbar-brand" href="/" style="font-family: 'Varela Round', sans-serif;">
+  <a class="navbar-brand me-2" href="/">
     <strong>Kodular</strong>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+  <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar"
     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+    <i class="fab bi bi-list fs-1"></i>
   </button>
   <div class="collapse navbar-collapse" id="navbar">
     {% assign current_url = page.url | remove: '.html' %}
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-globe"></i> Modules
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fab bi bi-globe"></i> Modules
         </a>
         <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-5">
-              <a class="dropdown-item" href="/creator">Creator</a>
-              <a class="dropdown-item" href="//ide.kodular.io">Extensions IDE</a>
-              <a class="dropdown-item" href="//store.kodular.io">Store</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="//my.kodular.io">Account</a>
+          <a class="dropdown-item" href="/creator">Creator</a>
+          <a class="dropdown-item" href="//ide.kodular.io">Extensions IDE</a>
+          <a class="dropdown-item" href="//store.kodular.io">Store</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="//my.kodular.io">Account</a>
         </div>
       </li>
       <li class="nav-item{% if current_url == '/pricing' %} active{% endif %}">
         <a class="nav-link" href="/pricing">
-        <i class="fa fa-credit-card"></i> Pricing</a>
+        <i class="fab bi bi-tag"></i> Pricing</a>
       </li>
       <li class="nav-item{% if current_url == '/team' %} active{% endif %}">
         <a class="nav-link" href="/team">
-        <i class="fa fa-users"></i> Team</a>
+        <i class="fab bi bi-people"></i> Team</a>
       </li>
       <li class="nav-item{% if current_url == '/about' %} active{% endif %}">
         <a class="nav-link" href="/about">
-        <i class="fa fa-info-circle"></i> About</a>
+        <i class="fab bi bi-info-circle"></i> About</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="//community.kodular.io">
-        <i class="fa fa-comments"></i> Community</a>
+        <i class="fab bi bi-chat"></i> Community</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="//docs.kodular.io">
-        <i class="fa fa-book"></i> Docs</a>
+        <i class="fab bi bi-book"></i> Docs</a>
       </li>
       <li class="nav-item pink lighten-1 rounded">
         <a class="nav-link" href="https://c.kodular.io" target="_blank">
-        <i class="fa fa-cloud"></i> Create Apps!</a>
+        <i class="fab bi bi-lightning-charge-fill"></i> Create Apps!</a>
       </li>
     </ul>
+  </div>
+  <!-- Right elements -->
+  <div class="d-flex align-items-center">
+
   </div>
 </nav>
