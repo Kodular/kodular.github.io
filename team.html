@@ -33,7 +33,7 @@ title: Team | Kodular
                             <a class="card-title h4" href="{% if member.website %}{{ member.website }}{% else %}https://community.kodular.io/u/{{ member.username }}{% endif %}" target="_blank">
                                 <strong>{{ member.name }}</strong>
                                 <br>
-                                <span class="emojione">:flag_{{ member.country }}:</span>
+                                <img src="https://flagcdn.com/{{ member.country }}.svg" alt="Flag" class="rounded-circle" height="32" width="32" style="object-fit:cover" />
                             </a>
                         </h4>
                         <h5>{{ member.desc }}</h5>
