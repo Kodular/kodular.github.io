@@ -3,25 +3,25 @@ layout: default
 title: Team | Kodular
 ---
 
-<section class="section team-section pt-5">
+<section class="container pt-5">
 
     <!--Section heading-->
-    <h1 class="section-heading pt-4 mb-4">Our Amazing Team</h1>
+    <h1 class="text-center pt-4 mb-4">Our Amazing Team</h1>
     <!--Section description-->
-    <p class="section-description lead grey-text">Our team is composed with people from <a href="https://timezone.io/team/kodular" target="_blank">several countries around the world</a></p>
+    <p class="text-center lead grey-text">Our team is composed with people from <a href="https://timezone.io/team/kodular" target="_blank">several countries around the world</a></p>
 
-    <div class="container">
-        <div class="row flex-center">
+    <div class="">
+        <div class="row row-cols-4 g-5">
             <!--Grid column-->
             {% for member in site.data.team %}
-            <div class="col-md-3">
+            <div class="col">
                 <div class="card card-cascade narrower mb-r">
 
                     <!--Card image-->
-                    <div class="view overlay hm-white-slight">
-                        <img src="{% if member.img %}{{ member.img }}{% else %}https://github.com/{{ member.github }}.png?size=300{% endif %}" class="lazy img-fluid" alt="{{ member.name }}" style="width: -webkit-fill-available;">
-                        <a>
-                            <div class="mask waves-effect waves-light"></div>
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="{% if member.img %}{{ member.img }}{% else %}https://github.com/{{ member.github }}.png?size=300{% endif %}" class="img-fluid" alt="{{ member.name }}" width="100%">
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                         </a>
                     </div>
                     <!--/.Card image-->
@@ -30,7 +30,7 @@ title: Team | Kodular
                     <div class="card-body text-center">
                         <!--Title-->
                         <h4 class="card-title">
-                            <a class="card-title h4" href="{% if member.website %}{{ member.website }}{% else %}https://community.kodular.io/u/{{ member.username }}{% endif %}" target="_blank">
+                            <a href="{% if member.website %}{{ member.website }}{% else %}https://community.kodular.io/u/{{ member.username }}{% endif %}" target="_blank">
                                 <strong>{{ member.name }}</strong>
                                 <br>
                                 <img src="https://flagcdn.com/{{ member.country }}.svg" alt="Flag" class="rounded-circle" height="32" width="32" style="object-fit:cover" />
@@ -38,19 +38,20 @@ title: Team | Kodular
                         </h4>
                         <h5>{{ member.desc }}</h5>
 
-                        <!--Email-->
-                        <a href="mailto:{{ member.email }}" type="button" class="btn-floating btn-small btn-pink waves-effect waves-light"><i class="fa fa-envelope"></i></a>
+                        <div class="d-flex justify-content-evenly"> <!--Email-->
+                        <a href="mailto:{{ member.email }}" type="button" class="btn btn-floating btn-small btn-danger"><i class="fab bi bi-envelope"></i></a>
 
                         <!--GitHub-->
-                        <a href="https://github.com/{{ member.github }}" target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
+                        <a href="https://github.com/{{ member.github }}" target="_blank" type="button" class="btn btn-floating btn-small btn-black"><i class="fab bi bi-github"></i></a>
 
                         {% if member.twitter %}
                         <!--Twitter-->
-                        <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/{{ member.twitter }}" target="_blank" type="button" class="btn btn-floating btn-small btn-primary"><i class="fab bi bi-twitter"></i></a>
                         {% elsif member.instagram %}
                         <!--Instagram-->
-                        <a href="https://instagram.com/{{ member.instagram }}" target="_blank" type="button" class="btn-floating btn-small btn-ins waves-effect waves-light"><i class="fa fa-instagram"></i></a>
+                        <a href="https://instagram.com/{{ member.instagram }}" target="_blank" type="button" class="btn btn-floating btn-small"><i class="fab bi bi-instagram"></i></a>
                         {% endif %}
+                        </div>
                     </div>
                     <!--/.Card content-->
                 </div>
@@ -59,7 +60,7 @@ title: Team | Kodular
             <!--Grid column-->
         </div>
         <div class="row flex-center">
-            <button type="button" class="btn peach-gradient btn-rounded btn-lg" data-toggle="modal" data-target="#acknowledgment">
+            <button type="button" class="btn peach-gradient btn-rounded btn-lg" data-mdb-toggle="modal" data-mdb-target="#acknowledgment">
                 Acknowledgment
             </button>
         </div>
@@ -89,9 +90,7 @@ title: Team | Kodular
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="acknowledgmentL">Acknowledgment</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <h3>MIT App Inventor</h3>
@@ -116,9 +115,6 @@ title: Team | Kodular
                         {% endif %}
                     {% endfor %}
                     </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

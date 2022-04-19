@@ -2,7 +2,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.9.3/jarallax.min.js" integrity="sha256-nayLqs5VTSn5wF5AwSu9Bd9g4G0g0g/FzePb5cnM5Bo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emojione@3.1.2/lib/js/emojione.min.js"></script>
 <script src="https://www.googletagmanager.com/gtag/js?id=UA-102230060-3" async></script>
 
 <!-- Google AdSense -->
@@ -25,15 +24,13 @@
 	gtag('js', new Date());
 	gtag('config', 'UA-102230060-3');
 
-	var OneSignal = window.OneSignal || [];
-	OneSignal.push(function() { OneSignal.init({ appId: "cf5b90e4-ef6b-4f5b-ae22-ee72ec3cb083", }); });
 
 	$(document).ready(function() {
 		$('.navbar-toggler').on('click', function () {
 			$('.animated-icon').toggleClass('open');
 		});
 
-		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "") {
+		if (window.location.pathname === "/") {
 			$(() => {
 				new WOW().init();
 				$('#testimonials .row').slick({
@@ -48,14 +45,6 @@
 						}
 					}]
 				});
-			});
-		}
-
-		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "team") {
-			$(".emojione").each(function() {
-				var original = $(this).html();
-				var converted = emojione.shortnameToImage(original);
-				$(this).html(converted);
 			});
 		}
 	});
