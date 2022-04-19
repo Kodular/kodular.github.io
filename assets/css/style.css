@@ -217,8 +217,3 @@ html {
     margin-top: 15px;
   }
 }
-
-footer.page-footer a:hover {
-  text-decoration: underline dotted;
-  text-decoration-thickness: 2px;
-}
