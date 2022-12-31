@@ -40,7 +40,7 @@ interface Acknowledgement {
 
 							<!--Card image-->
 							<div class="view overlay hm-white-slight">
-								<img src={ member.img || `https://github.com/${ member.github }.png?size=300` } class="lazy img-fluid" alt={ member.name } style="width: -webkit-fill-available;">
+								<img src={ member.img || `https://github.com/${ member.github }.png?size=300` } class="lazy img-fluid" alt={ member.name } style="width: 100%;">
 								<a>
 									<div class="mask waves-effect waves-light"></div>
 								</a>
@@ -63,13 +63,13 @@ interface Acknowledgement {
 								<a href={`mailto:${ member.email }`} type="button" class="btn-floating btn-small btn-pink waves-effect waves-light"><i class="fa fa-envelope"></i></a>
 
 								<!--GitHub-->
-								<a href={`https://github.com/${ member.github }`} target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fa fa-github"></i></a>
+								<a href={`https://github.com/${ member.github }`} target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fab fa-github"></i></a>
 
 								{ member.twitter ? (
-									<a href={`https://twitter.com/${ member.twitter }`} target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+									<a href={`https://twitter.com/${ member.twitter }`} target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fab fa-twitter"></i></a>
 									) :
 								 member.instagram ? (
-									<a href={`https://instagram.com/${ member.instagram }`} target="_blank" type="button" class="btn-floating btn-small btn-ins waves-effect waves-light"><i class="fa fa-instagram"></i></a>
+									<a href={`https://instagram.com/${ member.instagram }`} target="_blank" type="button" class="btn-floating btn-small btn-ins waves-effect waves-light"><i class="fab fa-instagram"></i></a>
 								) : null}
 							</div>
 							<!--/.Card content-->
