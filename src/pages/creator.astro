@@ -18,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
 							<a class="btn btn-lg btn-rounded deep-purple accent-4 text-uppercase" target="_blank" href="https://creator.kodular.io">
 								<i class="fa fa-rocket left"></i> Get Started
 							</a>
-							<a class="btn btn-lg btn-rounded btn-outline-deep-purple accent-4 waves-effect text-uppercase" style="background-color: #FFFFFF;" href="#features">
+							<a class="btn btn-lg btn-rounded btn-outline-deep-purple accent-4 waves-effect text-uppercase" style="background-color: #FFFFFF;" href="#aboutcreator">
 								<i class="fa fa-plus left"></i> More Features
 							</a>
 						</div>
@@ -34,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<main>
 		<div class="container">
-			<section class="mt-5 wow fadeIn">
+			<section class="mt-5 wow fadeIn" id="aboutcreator">
 				<h3 class="h3 text-center mb-5">About Kodular Creator</h3>
 				<div class="row wow fadeIn">
 					<div class="col-lg-6 col-md-12 px-4">
@@ -243,7 +243,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="col-xl-3 col-lg-6">
 						<div class="row">
 							<div class="col-2">
-								<i class="fa fa-bell-o fa-2x mb-1 deep-purple-text" aria-hidden="true"></i>
+								<i class="fa fa-bell fa-2x mb-1 deep-purple-text" aria-hidden="true"></i>
 							</div>
 							<div class="col-10 mb-2">
 								<h5 class="feature-title font-bold mb-1">Push Notifications</h5>
@@ -338,3 +338,9 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</main>
 </Layout>
+
+<style>
+#aboutcreator {
+	scroll-margin-top: 100px;
+}
+</style>
