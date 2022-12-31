@@ -38,7 +38,7 @@
 			$('.animated-icon').toggleClass('open');
 		});
 
-		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "") {
+		if (window.location.pathname === "/") {
 			$(() => {
 				new WOW().init();
 				$('#testimonials .row').slick({
@@ -56,7 +56,7 @@
 			});
 		}
 
-		if (window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "") == "team") {
+		if (window.location.pathname === "/team") {
 			$(".emojione").each(function() {
 				var original = $(this).html();
 				var converted = emojione.shortnameToImage(original);
