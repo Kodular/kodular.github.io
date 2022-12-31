@@ -1,0 +1,39 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Support emails</title>
+</head>
+<body>
+<ul>
+	<li>
+		For general support - <a href="mailto:support@kodular.io">support@kodular.io</a>
+	</li>
+	<li>
+		For billing/purchases related support - <a href="mailto:support-billing@kodular.io">support-billing@kodular.io</a>
+	</li>
+	<li>
+		For account deletion requests - <a href="mailto:support-deletion@kodular.io">support-deletion@kodular.io</a>
+	</li>
+	<li>
+		For account related support - <a href="mailto:support-recovery@kodular.io">support-recovery@kodular.io</a>
+	</li>
+</ul>
+
+<script>
+	var urlParams = new URLSearchParams(window.location.search);
+	var emailType = urlParams.get('type');
+	var email = 'support@kodular.io';
+	 if (emailType === 'delete-request') {
+		email = 'support-deletion@kodular.io';
+	} else if (emailType === 'billing') {
+		email = 'support-billing@kodular.io';
+	} else if (emailType === 'account') {
+		email = 'support-recovery@kodular.io';
+	}
+	window.location.href = 'mailto:' + email;
+</script>
+</body>
+</html>
