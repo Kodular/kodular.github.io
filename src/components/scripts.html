@@ -40,7 +40,7 @@
             });
 		}
 
-		if (window.location.pathname === "/team") {
+		if (window.location.pathname.startswith("/team")) {
             document.querySelectorAll('.joypixels').forEach(function (element) {
               const original = element.innerHTML;
               element.innerHTML = joypixels.shortnameToImage(original);
