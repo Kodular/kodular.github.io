@@ -41,11 +41,10 @@
 		}
 
 		if (window.location.pathname === "/team") {
-			$(".emojione").each(function() {
-              const original = $(this).html();
-              const converted = joypixels.shortnameToImage(original);
-              $(this).html(converted);
-			});
+            document.querySelectorAll('.joypixels').forEach(function (element) {
+              const original = element.innerHTML;
+              element.innerHTML = joypixels.shortnameToImage(original);
+            });
 		}
 	});
 </script>
