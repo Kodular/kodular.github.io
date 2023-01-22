@@ -8,13 +8,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.9.3/jarallax.min.js" integrity="sha256-nayLqs5VTSn5wF5AwSu9Bd9g4G0g0g/FzePb5cnM5Bo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/emoji-toolkit@7.0.0/lib/js/joypixels.min.js"></script>
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-102230060-3" async></script>
-
-<!-- Google AdSense -->
-<script data-ad-client="ca-pub-4476675487994598" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script>
-	$(function() {
+	$(() => {
 		$('.lazy').Lazy({
 			scrollDirection: 'vertical',
 			effect: 'fadeIn',
@@ -23,41 +19,32 @@
 				console.log('Error Loading | ' + element.data('src'));
 			}
 		});
-	});
 
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-102230060-3');
-
-	$(document).ready(function() {
 		$('.navbar-toggler').on('click', function () {
 			$('.animated-icon').toggleClass('open');
 		});
 
 		if (window.location.pathname === "/") {
-			$(() => {
-				new WOW().init();
-				$('#testimonials .row').slick({
-					arrows: false,
-					slidesToShow: 3,
-					autoplay: true,
-					autoplaySpeed: 2000,
-					responsive: [{
-						breakpoint: 768,
-						settings: {
-							slidesToShow: 1
-						}
-					}]
-				});
-			});
+            new WOW().init();
+            $('#testimonials .row').slick({
+                arrows: false,
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
 		}
 
 		if (window.location.pathname === "/team") {
 			$(".emojione").each(function() {
-				var original = $(this).html();
-				var converted = joypixels.shortnameToImage(original);
-				$(this).html(converted);
+              const original = $(this).html();
+              const converted = joypixels.shortnameToImage(original);
+              $(this).html(converted);
 			});
 		}
 	});
