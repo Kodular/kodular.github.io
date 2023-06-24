@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install, build, and upload your site output
-        uses: SecondThundeR/action@v2
+        uses: SecondThundeR/action@v2.1.0
 
   deploy:
     needs: build
