@@ -13,7 +13,7 @@ interface Featuredon {
 		<div class="row align-items-center">
 			{featuredon.map((site: Featuredon, i: number) => (
 				<div class="col-md-4">
-					<a href="{{ site.url }}" target="_blank">
+					<a href={site.url} target="_blank">
 						<img class="lazy img-fluid grayscale-hover-effect" src={`/images/${ site.name.toLowerCase().replaceAll(' ', '') }.png`} alt={ site.name } />
 					</a>
 				</div>
