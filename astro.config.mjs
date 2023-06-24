@@ -8,5 +8,13 @@ export default defineConfig({
   integrations: [sitemap()],
   vite: {
     plugins: [yaml()]
+  },
+  experimental: {
+    redirects: true
+  },
+  redirects: {
+    '/account': 'https://account.kodular.io/',
+    '/ide': 'https://ide.kodular.io/',
+    '/store': 'https://store.kodular.io/',
   }
 });
