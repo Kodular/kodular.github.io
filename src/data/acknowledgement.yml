@@ -1,10 +1,22 @@
+- name: Michael Winkler
+  type: former
+  text: Former VP of Product, Mika has been one of the founding members who helped to start the project and reach its peak potential.
+
+- name: Sander Jochems
+  type: former
+  text: Former VP of Digital Tech, Mika has been one of the founding members who helped to start the project and reach its peak potential.
+
+- name: Vishwas Adiga
+  type: former
+  text: Former VP of Design, Mika has been one of the founding members who helped to start the project and reach its peak potential.
+
 - name: Peter Mathijssen
   type: moderator
   text: Power User in App Inventor forum, moderator in our community... Peter is a really active person in App Inventor world, that's why he is also a moderator in our community.
   
 - name: Kleyber Derick
   type: moderator
-  text: Since the beggining of Kodular, Kleyber has been supporting and helping us making it bigger. That's only one reason from the large list we have.
+  text: Since the beginning of Kodular, Kleyber has been supporting and helping us make it bigger. That's only one reason from the large list we have.
   
 - name: Boban Stojmenovic
   type: moderator
@@ -12,4 +24,4 @@
  
 - name: Maria Viña Lopez
   type: former
-  text: Former CMO, Maria helped us launching Kodular to the world, promoting us on social networks, presenting Kodular on several fairs and more.
+  text: Former CMO, Maria helped us launch Kodular to the world, promoting us on social networks, presenting Kodular at several fairs and more.
