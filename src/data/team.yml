@@ -18,13 +18,6 @@
   instagram: barreeeiroo
   website: https://www.barreiro.xyz
 
-- name: Michael Winkler
-  desc: VP of Product
-  username: Mika
-  email: mika@kodular.io
-  country: de
-  github: michael-winkler
-
 - name: Hossein Amerkashi
   desc: Head of Development
   username: Hossein
@@ -44,16 +37,6 @@
   twitter: PavitraGolchha
   website: https://pavi2410.me
 
-- name: Sander Jochems
-  desc: VP of Digital Tech
-  username: Sander
-  email: sander@kodular.io
-  country: nl
-  github: Sander0542
-  twitter: Sander0542
-  instagram: Sander0542
-  website: https://www.sanderjochems.com
-
 - name: Sivagiri Visakan
   desc: VP of User Experience
   username: sivagiri
@@ -62,11 +45,3 @@
   github: SivagiriVisakan
   twitter: Sivagiri_
   instagram: sivagiri.v
-
-- name: Vishwas Adiga
-  desc: VP of Design
-  username: Vishwas
-  email: vishwas@kodular.io
-  country: in
-  github: Vishwas-Adiga
-  twitter: theMuonDecay
