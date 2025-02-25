@@ -1,13 +1,3 @@
-- name: Conor Shipp
-  desc: VP of Engineering
-  img: /images/conor.png
-  username: Conor
-  email: conor@kodular.io
-  country: gb
-  github: conorshipp
-  twitter: ConorShipp
-  website: http://conorshipp.me
-
 - name: Diego Barreiro
   desc: Chief Executive Officer
   username: Diego
@@ -36,12 +26,3 @@
   github: pavi2410
   twitter: PavitraGolchha
   website: https://pavi2410.me
-
-- name: Sivagiri Visakan
-  desc: VP of User Experience
-  username: sivagiri
-  email: sivagiri@kodular.io
-  country: in
-  github: SivagiriVisakan
-  twitter: Sivagiri_
-  instagram: sivagiri.v
