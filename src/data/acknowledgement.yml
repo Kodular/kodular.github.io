@@ -1,14 +1,22 @@
+- name: Conor Shipp
+  type: former
+  text: Former VP of Engineering
+
 - name: Michael Winkler
   type: former
-  text: Former VP of Product, Mika has been one of the founding members who helped to start the project and reach its peak potential.
+  text: Former VP of Product
 
 - name: Sander Jochems
   type: former
-  text: Former VP of Digital Tech, Mika has been one of the founding members who helped to start the project and reach its peak potential.
+  text: Former VP of Digital Tech
+
+- name: Sivagiri Visakan
+  type: former
+  text: Former VP of User Experience
 
 - name: Vishwas Adiga
   type: former
-  text: Former VP of Design, Mika has been one of the founding members who helped to start the project and reach its peak potential.
+  text: Former VP of Design
 
 - name: Peter Mathijssen
   type: moderator
