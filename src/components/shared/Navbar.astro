@@ -1,0 +1,113 @@
+---
+---
+
+<nav class="fixed top-0 z-50 w-full bg-primary-500 text-white shadow-md">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-3">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <img 
+          src="//assets.kodular.io/images/logo/inverted/512x512.png" 
+          alt="Kodular Logo" 
+          class="h-8 w-auto"
+        />
+        <span class="text-xl font-bold">Kodular</span>
+      </a>
+      
+      <!-- Mobile menu button -->
+      <button 
+        id="menu-toggle" 
+        class="lg:hidden focus:outline-none" 
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      
+      <!-- Desktop and Mobile Navigation -->
+      <div id="navbar" class="hidden lg:flex lg:items-center lg:justify-end lg:w-auto absolute lg:static top-full left-0 right-0 bg-primary-500 lg:bg-transparent shadow-md lg:shadow-none">
+        <div class="container mx-auto px-4 lg:p-0 flex flex-col lg:flex-row lg:items-center w-full">
+          <!-- All Navigation Links in a single group -->
+          <ul class="lg:flex lg:items-center lg:space-x-6 py-2 lg:py-0 border-b lg:border-b-0 border-primary-400">
+            <li>
+              <a 
+                href="/pricing" 
+                class={`flex items-center py-3 lg:py-2 px-2 lg:px-0 hover:bg-primary-400 lg:hover:bg-transparent lg:hover:text-white/80 rounded-md ${Astro.url.pathname.startsWith('/pricing') ? 'bg-primary-400 lg:bg-transparent lg:border-b-2 lg:border-white' : ''}`}
+              >
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Pricing</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                href="//my.kodular.io" 
+                class="flex items-center py-3 lg:py-2 px-2 lg:px-0 hover:bg-primary-400 lg:hover:bg-transparent lg:hover:text-white/80 rounded-md"
+              >
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+                <span>My Kodular</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                href="//community.kodular.io" 
+                class="flex items-center py-3 lg:py-2 px-2 lg:px-0 hover:bg-primary-400 lg:hover:bg-transparent lg:hover:text-white/80 rounded-md"
+              >
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
+                  <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
+                </svg>
+                <span>Community</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                href="//docs.kodular.io" 
+                class="flex items-center py-3 lg:py-2 px-2 lg:px-0 hover:bg-primary-400 lg:hover:bg-transparent lg:hover:text-white/80 rounded-md"
+              >
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
+                </svg>
+                <span>Docs</span>
+              </a>
+            </li>
+            <li class="mt-2 lg:mt-0">
+              <a 
+                href="https://c.kodular.io" 
+                target="_blank" 
+                class="flex items-center justify-center px-4 py-2 bg-pink-500 hover:bg-pink-600 transition-colors rounded-md"
+              >
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"></path>
+                </svg>
+                <span>Create Apps!</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Add padding to account for fixed navbar -->
+<div class="h-14"></div>
+
+<script>
+  // Toggle mobile menu
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+  
+  if (menuToggle && navbar) {
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+      const expanded = navbar.classList.contains('hidden') ? 'false' : 'true';
+      menuToggle.setAttribute('aria-expanded', expanded);
+    });
+  }
+</script>
