@@ -9,14 +9,6 @@
   /* Font family */
   --font-display: "Jost", sans-serif;
   --font-sans: "Jost", sans-serif;
-  
-  /* Custom blur values */
-  --blur-hero: 100px;
-}
-
-/* Custom utilities */
-@utility bg-blur-hero {
-  backdrop-filter: blur(var(--blur-hero));
 }
 
 /* Custom variants */

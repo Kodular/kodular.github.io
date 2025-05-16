@@ -1,50 +1,157 @@
 ---
 ---
 
-<!-- Hero Section with blurred background -->  
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <!-- Background image with blur effect -->  
+<!-- Hero Section with clean white background -->  
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+  <!-- Background with subtle design elements -->  
   <div class="absolute inset-0 z-0">
-    <div 
-      class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-      style="background-image: url('/images/background.png');"
-    ></div>
-    <!-- Blur overlay with 100px blur as requested -->  
-    <div class="absolute inset-0 bg-blur-hero bg-primary-500/30"></div>
+    <!-- Base background -->  
+    <div class="absolute inset-0 bg-white"></div>
+    
+    <!-- Subtle grid pattern -->  
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+    
+    <!-- Decorative elements -->  
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <!-- Top-right corner decoration -->  
+      <div class="absolute -top-20 -right-20 w-96 h-96">
+        <div class="absolute top-0 right-0 w-full h-full bg-primary-100 rounded-full opacity-20"></div>
+        <div class="absolute top-10 right-10 w-3/4 h-3/4 bg-primary-200 rounded-full opacity-20"></div>
+        <div class="absolute top-20 right-20 w-1/2 h-1/2 bg-primary-300 rounded-full opacity-20"></div>
+      </div>
+      
+      <!-- Bottom wave decoration spanning full width -->  
+      <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+        <div class="relative w-[102%] left-[-1%] h-64">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" class="w-full h-full fill-primary-400/10">
+            <path d="M0,160 C240,320 480,0 720,160 C960,320 1200,0 1440,160 L1440,320 L0,320 Z" />
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Subtle dot pattern -->  
+      <div class="absolute top-1/4 left-1/4 w-1/2 h-1/2 opacity-5">
+        <div class="grid grid-cols-10 gap-8 w-full h-full">
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Content -->  
-  <div class="container mx-auto px-4 relative z-10 text-center">
-    <div class="max-w-4xl mx-auto">
-      <!-- Animated title with playful design -->  
-      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">
-        KODULAR
-      </h1>
-      
-      <!-- Subtitle with animation delay -->  
-      <h2 class="text-xl md:text-2xl text-white/90 mb-10 animate-fade-in-up animate-delay-200">
-        Much more than a modern app creator without coding
-      </h2>
-      
-      <!-- CTA buttons with modern design -->  
-      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-400">
-        <a 
-          href="https://c.kodular.io" 
-          target="_blank" 
-          class="px-8 py-4 bg-primary-500 text-white rounded-full font-medium hover:bg-primary-600 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
-        >
-          <i class="fa fa-shapes"></i> CREATE APPS!
-        </a>
-        <a 
-          href="#getstarted" 
-          class="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-full font-medium hover:bg-white/30 transition-colors border border-white/30 flex items-center justify-center gap-2"
-        >
-          <i class="fa fa-plus"></i> SEE MORE
-        </a>
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center min-h-[80vh] py-12">
+      <!-- Left side: Text content -->  
+      <div class="text-left lg:pr-8 animate-fade-in-up lg:col-span-2">
+        <!-- Animated title with modern design -->  
+        <div class="relative mb-6">
+          <h1 class="text-5xl md:text-7xl font-bold text-primary-500 inline-block">
+            <span class="relative inline-block">K<span class="absolute -top-1 -right-1 h-2 w-2 bg-primary-300 rounded-full animate-ping"></span></span><span class="text-primary-400">o</span>dular
+          </h1>
+          <div class="h-1 w-24 bg-gradient-to-r from-primary-400 to-primary-300 mt-4 rounded-full"></div>
+        </div>
+        
+        <!-- Subtitle with animation delay -->  
+        <h2 class="text-xl md:text-2xl text-gray-600 mb-6 animate-fade-in-up animate-delay-200 leading-relaxed">
+          Much more than a modern app creator without coding
+        </h2>
+        
+        <!-- Feature tags -->  
+        <div class="flex flex-wrap gap-2 mb-10 animate-fade-in-up animate-delay-300">
+          <span class="px-3 py-1 bg-primary-50 rounded-full text-sm text-primary-600 border border-primary-100">Drag & Drop</span>
+          <span class="px-3 py-1 bg-primary-50 rounded-full text-sm text-primary-600 border border-primary-100">No Coding</span>
+          <span class="px-3 py-1 bg-primary-50 rounded-full text-sm text-primary-600 border border-primary-100">Publish Anywhere</span>
+        </div>
+        
+        <!-- Clean, elegant CTA buttons -->  
+        <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-400">
+          <a 
+            href="https://c.kodular.io" 
+            target="_blank" 
+            class="group px-6 py-3 bg-primary-500 text-white rounded-md font-medium hover:bg-primary-400 transition-all duration-300 shadow-md flex items-center justify-center gap-2"
+          >
+            <i class="fa fa-code"></i>
+            <span>Create Apps</span>
+          </a>
+          
+          <a 
+            href="#getstarted" 
+            class="px-6 py-3 bg-gray-100 text-gray-700 rounded-md font-medium hover:bg-gray-200 transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200"
+          >
+            <i class="fa fa-arrow-down"></i>
+            <span>Learn More</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side: Creator Screenshot -->  
+      <div class="relative lg:pr-8 animate-fade-in-up animate-delay-300 lg:col-span-3">
+        <div class="relative group">
+          <!-- Main screenshot with interactive elements -->  
+          <div class="relative transform transition-all duration-500 lg:scale-110 lg:origin-left group-hover:translate-y-[-8px]">
+            <img 
+              src="/images/creator_light.png" 
+              alt="Kodular Creator Interface" 
+              class="w-full h-auto relative z-10"
+              loading="eager"
+            />
+          </div>
+          
+          <!-- Decorative elements -->  
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-primary-400/30 rounded-full blur-xl group-hover:bg-primary-400/40 transition-all duration-500"></div>
+          <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary-600/20 rounded-full blur-xl group-hover:bg-primary-500/30 transition-all duration-500"></div>
+          
+          <!-- Floating badges -->  
+          <div class="absolute -right-4 top-1/4 bg-white shadow-lg rounded-xl px-4 py-3 transform translate-x-[calc(40%)] group-hover:translate-x-[calc(35%)] transition-all duration-300 z-30 lg:block hidden border border-gray-100 shadow-gray-200">
+            <div class="flex items-center gap-3 relative">
+              <div class="bg-primary-500 h-10 w-10 rounded-full flex items-center justify-center text-white shadow-md relative z-10 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa fa-vial"></i>
+                <div class="absolute inset-0 bg-primary-400/30 rounded-full blur-sm -z-10"></div>
+              </div>
+              <div class="text-left">
+                <p class="font-medium text-gray-800">Live Testing</p>
+                <p class="text-sm text-gray-600">Instant app previews</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="absolute -left-4 bottom-1/4 bg-white shadow-lg rounded-xl px-4 py-3 transform -translate-x-[calc(5%)] group-hover:translate-x-0 transition-all duration-300 z-30 lg:block hidden border border-gray-100 shadow-gray-200">
+            <div class="flex items-center gap-3 relative">
+              <div class="bg-primary-500 h-10 w-10 rounded-full flex items-center justify-center text-white shadow-md relative z-10 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa fa-puzzle-piece"></i>
+                <div class="absolute inset-0 bg-primary-400/30 rounded-full blur-sm -z-10"></div>
+              </div>
+              <div class="text-left">
+                <p class="font-medium text-gray-800">Drag & Drop</p>
+                <p class="text-sm text-gray-600">Visual Builder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caption with badge -->  
+        <div class="flex items-center justify-center gap-2 mt-6">
+          <span class="bg-primary-500/20 backdrop-blur-sm text-primary-500 px-3 py-1 rounded-full text-xs font-medium">POWERFUL EDITOR</span>
+          <p class="text-gray-600 text-sm">Build beautiful mobile apps with our intuitive interface</p>
+        </div>
       </div>
     </div>
   </div>
   
-  <!-- Decorative elements for playful design -->  
-  <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent"></div>
+  <!-- Scroll indicator -->  
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce-slow">
+    <p class="text-gray-500 text-sm mb-2">Scroll to explore</p>
+    <div class="h-10 w-6 border-2 border-gray-300 rounded-full flex items-start justify-center p-1">
+      <div class="h-2 w-2 bg-primary-400 rounded-full animate-scroll-dot"></div>
+    </div>
+  </div>
 </section>
