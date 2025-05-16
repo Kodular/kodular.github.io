@@ -3,75 +3,324 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Pricing | Kodular">
-	<!-- Section: Creator -->
-	<section class="section feature-box pt-5" id="creator">
-		<div class="container">
+  <!-- Pricing Header Section with clean design -->
+  <section class="relative py-16 bg-white overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      <!-- Subtle grid pattern -->
+      <div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+      
+      <!-- Top-right corner decoration -->
+      <div class="absolute -top-20 -right-20 w-96 h-96">
+        <div class="absolute top-0 right-0 w-full h-full bg-primary-100 rounded-full opacity-20"></div>
+        <div class="absolute top-10 right-10 w-3/4 h-3/4 bg-primary-200 rounded-full opacity-20"></div>
+      </div>
+      
+      <!-- Bottom-left decoration -->
+      <div class="absolute bottom-0 left-0 w-64 h-64 opacity-10">
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:16px_16px] transform rotate-12"></div>
+      </div>
+      
+      <!-- Floating circle decoration -->
+      <div class="absolute top-1/3 right-1/4 w-20 h-20">
+        <div class="absolute inset-0 rounded-full bg-primary-300 opacity-10"></div>
+      </div>
+    </div>
 
-			<!-- Section heading -->
-			<h2 class="section-heading pt-4 mb-5">Kodular Creator</h2>
+    <div class="container mx-auto px-4 relative z-10">
+      <!-- Section heading with modern typography -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-primary-500 mb-4">Pricing Plans</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the perfect plan for your app development needs</p>
+        <div class="flex items-center justify-center mt-6 gap-2">
+          <span class="inline-flex items-center gap-1 text-sm bg-primary-50 text-primary-600 px-3 py-1 rounded-full border border-primary-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            <span>No credit card required</span>
+          </span>
+          <span class="inline-flex items-center gap-1 text-sm bg-primary-50 text-primary-600 px-3 py-1 rounded-full border border-primary-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            <span>Cancel anytime</span>
+          </span>
+        </div>
+      </div>
 
-			<div id="premium-header" class="premium-section card purple-gradient rounded p-5 m-5 text-left">
-				<h1 id="leading" class="text-white font-bold">
-					Get more from Kodular.
-					<br>
-					Upgrade to Premium today.
-				</h1>
-				<div class="mt-4 d-flex flex-wrap">
-					<a class="btn-white purple-text p-2 px-3 mr-3 d-inline rounded" href="https://my.kodular.io/premium/#monthly">
-						Upgrade now for $3.50/month
-					</a>
-					<a class="btn-outline-white p-2 px-3 d-inline rounded" href="https://my.kodular.io/premium/#yearly">
-						or for $35/year
-					</a>
-				</div>
-			</div>
+      <!-- Premium Card -->
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden mb-16 border border-gray-100">
+        <div class="bg-gradient-to-r from-primary-600 to-primary-400 p-8 relative">
+          <!-- Decorative elements -->
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mt-12 -mr-12 blur-2xl"></div>
+          <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full -mb-8 -ml-8 blur-xl"></div>
+          
+          <div class="relative z-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <h2 class="text-3xl font-bold text-white mb-2">Get more from Kodular</h2>
+                <p class="text-white/90 text-lg">Upgrade to Premium today and unlock all features</p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a href="https://my.kodular.io/premium/#monthly" class="px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 shadow-md text-center">
+                  $3.50/month
+                </a>
+                <a href="https://my.kodular.io/premium/#yearly" class="px-6 py-3 bg-primary-700 text-white rounded-lg font-medium hover:bg-primary-800 transition-all duration-300 border border-white/20 text-center flex items-center justify-center gap-2">
+                  <span>$35/year</span>
+                  <span class="bg-primary-500 text-white text-xs px-2 py-0.5 rounded-full">2 months free</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<hr class="hr-width" />
-
-			<div id="premium-benefits" class="premium-section m-5">
-				<h2 id="benefits-title">What you get with Premium</h2>
-				<p id="benefits-subtitle">Gain unrestricted access to all of Kodular. Build powerful apps without limits.</p>
+        <!-- Benefits Section -->
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">What you get with Premium</h3>
+          <p class="text-gray-600 mb-8 text-center">Gain unrestricted access to all of Kodular. Build powerful apps without limits.</p>
 				
-				<table class="benefits__table table table-bordered rounded-lg mt-5">
-					<tr>
-						<th class="benefits__th"></th>
-						<th class="benefits__th font-bold">Free</th>
-						<th class="benefits__th font-bold">Premium</th>
-					</tr>
-					<tr>
-						<td class="benefits__td text-left">Number of projects</td>
-						<td class="benefits__td">10</td>
-						<td class="benefits__td">Unlimited</td>
-					</tr>
-					<tr>
-						<td class="benefits__td text-left">Total asset size</td>
-						<td class="benefits__td">5MB</td>
-						<td class="benefits__td">Unlimited</td>
-					</tr>
-					<tr>
-						<td class="benefits__td text-left">Number of extensions per project</td>
-						<td class="benefits__td">5</td>
-						<td class="benefits__td">Unlimited</td>
-					</tr>
-					<tr>
-						<td class="benefits__td text-left">Monetization extensions</td>
-						<td class="benefits__td">Cannot be used in projects</td>
-						<td class="benefits__td">Any extension can be used, including monetization extensions</td>
-					</tr>
-					<tr>
-						<td class="benefits__td text-left">Monetization components</td>
-						<td class="benefits__td">Only Google Ad Manager components, with commission</td>
-						<td class="benefits__td">Google Ad Manager components with commission + all other monetization components without commission</td>
-					</tr>
-					<tr>
-						<td class="benefits__td text-left">Monetization approvals</td>
-						<td class="benefits__td">Regular review process</td>
-						<td class="benefits__td">Fast-tracked approval process</td>
-					</tr>
-				</table>
+          <!-- Modern comparison table -->  
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Feature column -->  
+            <div class="bg-gray-50 rounded-xl p-6">
+              <h4 class="text-lg font-semibold text-gray-800 mb-12 text-center">Features</h4>
+              <ul class="space-y-6">
+                <li class="font-medium text-gray-700">Number of projects</li>
+                <li class="font-medium text-gray-700">Total asset size</li>
+                <li class="font-medium text-gray-700">Number of extensions per project</li>
+                <li class="font-medium text-gray-700">Monetization extensions</li>
+                <li class="font-medium text-gray-700">Monetization components</li>
+                <li class="font-medium text-gray-700">Monetization approvals</li>
+              </ul>
+            </div>
+            
+            <!-- Free plan column -->  
+            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+              <div class="text-center mb-6">
+                <h4 class="text-lg font-semibold text-gray-800">Free</h4>
+                <p class="text-sm text-gray-500 mt-1">Get started with basic features</p>
+              </div>
+              <ul class="space-y-6">
+                <li class="text-gray-600 flex items-center gap-2">
+                  <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">10</span>
+                </li>
+                <li class="text-gray-600 flex items-center gap-2">
+                  <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">5MB</span>
+                </li>
+                <li class="text-gray-600 flex items-center gap-2">
+                  <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">5</span>
+                </li>
+                <li class="text-gray-600 text-sm">Cannot be used in projects</li>
+                <li class="text-gray-600 text-sm">Only Google Ad Manager components, with commission</li>
+                <li class="text-gray-600 text-sm">Regular review process</li>
+              </ul>
+            </div>
+            
+            <!-- Premium plan column -->  
+            <div class="bg-white rounded-xl p-6 border border-primary-200 shadow-md relative">
+              <!-- Recommended badge -->  
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-500 text-white text-xs px-3 py-1 rounded-full font-medium">RECOMMENDED</div>
+              
+              <div class="text-center mb-6">
+                <h4 class="text-lg font-semibold text-primary-600">Premium</h4>
+                <p class="text-sm text-gray-500 mt-1">Unlock all features</p>
+              </div>
+              <ul class="space-y-6">
+                <li class="text-gray-700 flex items-center gap-2">
+                  <span class="bg-primary-50 text-primary-600 rounded-full px-3 py-1 text-sm font-medium">Unlimited</span>
+                </li>
+                <li class="text-gray-700 flex items-center gap-2">
+                  <span class="bg-primary-50 text-primary-600 rounded-full px-3 py-1 text-sm font-medium">Unlimited</span>
+                </li>
+                <li class="text-gray-700 flex items-center gap-2">
+                  <span class="bg-primary-50 text-primary-600 rounded-full px-3 py-1 text-sm font-medium">Unlimited</span>
+                </li>
+                <li class="text-gray-700 text-sm">Any extension can be used, including monetization extensions</li>
+                <li class="text-gray-700 text-sm">Google Ad Manager components with commission + all other monetization components without commission</li>
+                <li class="text-gray-700 text-sm">Fast-tracked approval process</li>
+              </ul>
+            </div>
+          </div>
 			</div>
 		</div>
 
+    <!-- Testimonials Section -->  
+    <div class="max-w-4xl mx-auto mt-16 bg-gradient-to-br from-primary-50 to-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 p-8 md:p-12">
+      <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">What Our Users Say</h3>
+      <p class="text-gray-600 text-center mb-8">Thousands of developers trust Kodular Premium for their app development</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4 italic">"Upgrading to Premium was a game-changer for my app development. The unlimited projects and assets gave me the freedom to create without constraints."</p>
+          <div class="flex items-center gap-3">
+            <p class="font-medium text-gray-800">Alex Chen</p>
+            <span class="text-gray-400">|</span>
+            <p class="text-sm text-gray-500">App Developer</p>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4 italic">"The monetization options with Premium have helped me turn my hobby into a sustainable business. Well worth the investment!"</p>
+          <div class="flex items-center gap-3">
+            <p class="font-medium text-gray-800">Sarah Johnson</p>
+            <span class="text-gray-400">|</span>
+            <p class="text-sm text-gray-500">Indie Developer</p>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-primary-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4 italic">"Fast-tracked approval process saved me weeks of waiting. The Premium features have significantly improved my app's quality and user experience."</p>
+          <div class="flex items-center gap-3">
+            <p class="font-medium text-gray-800">Michael Torres</p>
+            <span class="text-gray-400">|</span>
+            <p class="text-sm text-gray-500">Startup Founder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FAQ Section -->  
+    <div class="max-w-4xl mx-auto mt-16 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 p-8 md:p-12">
+      <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Frequently Asked Questions</h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-lg font-semibold text-primary-600 mb-2">How do I upgrade to Premium?</h4>
+            <p class="text-gray-600">You can upgrade to Premium by visiting your account dashboard and selecting the Premium subscription option that works best for you.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-primary-600 mb-2">Can I cancel my subscription anytime?</h4>
+            <p class="text-gray-600">Yes, you can cancel your Premium subscription at any time. Your Premium benefits will remain active until the end of your billing period.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-primary-600 mb-2">Do you offer student discounts?</h4>
+            <p class="text-gray-600">We currently don't offer student discounts, but we're constantly evaluating our pricing options to make Kodular accessible to everyone.</p>
+          </div>
+        </div>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-lg font-semibold text-primary-600 mb-2">What payment methods do you accept?</h4>
+            <p class="text-gray-600">We accept all major credit cards, PayPal, and various regional payment methods. Check the payment page for the full list of options.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-primary-600 mb-2">What happens to my projects if I downgrade?</h4>
+            <p class="text-gray-600">If you downgrade from Premium to Free, your projects will remain intact, but you'll be limited to the Free plan restrictions. You may need to adjust your projects accordingly.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-primary-600 mb-2">Is there a trial period for Premium?</h4>
+            <p class="text-gray-600">We don't currently offer a trial period, but our Free plan allows you to explore many features before deciding to upgrade to Premium.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Call to Action Section -->  
+    <div class="max-w-4xl mx-auto mt-16 mb-16 bg-gradient-to-r from-primary-600 to-primary-400 rounded-2xl overflow-hidden shadow-xl relative">
+      <!-- Decorative elements for CTA -->  
+      <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mt-12 -mr-12 blur-2xl"></div>
+      <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full -mb-8 -ml-8 blur-xl"></div>
+      
+      <div class="p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-3">Ready to unlock the full potential?</h3>
+          <p class="text-white/90">Join thousands of developers who have upgraded to Premium</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://my.kodular.io/premium/#monthly" class="px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 shadow-md text-center flex items-center justify-center gap-2">
+            <span>Get Premium Now</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+              <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
 	</section>
-	<!-- Section: Pricing v.6 -->
 </Layout>
