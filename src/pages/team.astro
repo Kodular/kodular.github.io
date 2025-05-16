@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import team from '../data/team.yml';
 import acknowledgement from '../data/acknowledgement.yml';
+import team from '../data/team.yml';
 
 interface Member {
 	name: string;
@@ -24,102 +24,189 @@ interface Acknowledgement {
 ---
 
 <Layout title="Team | Kodular">
-	<section class="section team-section pt-5">
+	<section class="relative py-16 bg-white overflow-hidden">
+		<!-- Background elements -->
+		<div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+			<!-- Subtle grid pattern -->
+			<div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+			
+			<!-- Top-right corner decoration -->
+			<div class="absolute -top-20 -right-20 w-96 h-96">
+				<div class="absolute top-0 right-0 w-full h-full bg-primary-100 rounded-full opacity-20"></div>
+				<div class="absolute top-10 right-10 w-3/4 h-3/4 bg-primary-200 rounded-full opacity-20"></div>
+			</div>
+			
+			<!-- Bottom-left decoration -->
+			<div class="absolute bottom-0 left-0 w-64 h-64 opacity-10">
+				<div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:16px_16px] transform rotate-12"></div>
+			</div>
+		</div>
 
-		<!--Section heading-->
-		<h1 class="section-heading pt-4 mb-4">Our Amazing Team</h1>
-		<!--Section description-->
-		<p class="section-description lead grey-text">Our team is composed with people from <a href="https://timezone.io/team/kodular" target="_blank">several countries around the world</a></p>
-
-		<div class="container">
-			<div class="row flex-center">
-				<!--Grid column-->
-				{team.map((member: Member, i: number) => (
-					<div class="col-md-3">
-						<div class="card card-cascade narrower mb-r">
-
-							<!--Card image-->
-							<div class="view overlay hm-white-slight">
-								<img src={ member.img || `https://github.com/${ member.github }.png?size=300` } class="lazy img-fluid" alt={ member.name } style="width: 100%;">
-								<a>
-									<div class="mask waves-effect waves-light"></div>
+		<div class="container mx-auto px-4 relative z-10">
+			<!-- Section heading with modern typography -->
+			<div class="text-center mb-16">
+				<span class="inline-block px-3 py-1 bg-primary-50 text-primary-600 rounded-full text-sm font-medium mb-3">Our People</span>
+				<h1 class="text-4xl md:text-5xl font-bold text-primary-500 mb-4">Meet Our Amazing Team</h1>
+				<p class="text-xl text-gray-600 max-w-3xl mx-auto">Our team is composed of talented individuals from <a href="https://timezone.io/team/kodular" target="_blank" class="text-primary-500 hover:text-primary-600 underline">several countries around the world</a></p>
+			</div>
+			<!-- Team member grid -->
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+				{team.map((member: Member) => (
+					<div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 group">
+						<!-- Member image with overlay effect -->
+						<div class="relative overflow-hidden">
+							<img 
+								src={member.img || `https://github.com/${member.github}.png?size=400`} 
+								class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105" 
+								alt={member.name} 
+								loading="lazy"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
+								<span class="inline-flex items-center gap-1 text-white text-sm">
+									<span class="joypixels text-lg">:flag_{member.country}:</span>
+									{member.country.toUpperCase()}
+								</span>
+							</div>
+						</div>
+						
+						<!-- Member info -->
+						<div class="p-6">
+							<div class="mb-4">
+								<a 
+									href={member.website || `https://community.kodular.io/u/${member.username}`} 
+									target="_blank" 
+									class="text-xl font-bold text-gray-800 hover:text-primary-500 transition-colors duration-200"
+								>
+									{member.name}
 								</a>
+								<p class="text-primary-500 font-medium mt-1">{member.desc}</p>
 							</div>
-							<!--/.Card image-->
-
-							<!--Card content-->
-							<div class="card-body text-center">
-								<!--Title-->
-								<h4 class="card-title">
-									<a class="card-title h4" href={ member.website || `https://community.kodular.io/u/${ member.username }` } target="_blank">
-										<strong>{ member.name }</strong>
-										<br>
-										<span class="joypixels">:flag_{ member.country }:</span>
+							
+							<!-- Social links -->
+							<div class="flex gap-3 mt-4">
+								<a 
+									href={`mailto:${member.email}`} 
+									class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-50 hover:text-primary-500 transition-colors duration-200"
+									title="Email"
+								>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+										<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+										<path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+									</svg>
+								</a>
+								
+								<a 
+									href={`https://github.com/${member.github}`} 
+									target="_blank" 
+									class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-50 hover:text-primary-500 transition-colors duration-200"
+									title="GitHub"
+								>
+									<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+									</svg>
+								</a>
+								
+								{member.twitter && (
+									<a 
+										href={`https://twitter.com/${member.twitter}`} 
+										target="_blank" 
+										class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-50 hover:text-primary-500 transition-colors duration-200"
+										title="Twitter"
+									>
+										<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+											<path d="M22 5.8a8.49 8.49 0 0 1-2.36.64 4.13 4.13 0 0 0 1.81-2.27 8.21 8.21 0 0 1-2.61 1 4.1 4.1 0 0 0-7 3.74 11.64 11.64 0 0 1-8.45-4.29 4.16 4.16 0 0 0-.55 2.07 4.09 4.09 0 0 0 1.82 3.41 4.05 4.05 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4 3.93 3.93 0 0 1-1.1.17 4.9 4.9 0 0 1-.77-.07 4.11 4.11 0 0 0 3.83 2.84A8.22 8.22 0 0 1 3 18.34a7.93 7.93 0 0 1-1-.06 11.57 11.57 0 0 0 6.29 1.85A11.59 11.59 0 0 0 20 8.45v-.53a8.43 8.43 0 0 0 2-2.12Z"/>
+										</svg>
 									</a>
-								</h4>
-								<h5>{ member.desc }</h5>
-
-								<!--Email-->
-								<a href={`mailto:${ member.email }`} type="button" class="btn-floating btn-small btn-pink waves-effect waves-light"><i class="fa fa-envelope"></i></a>
-
-								<!--GitHub-->
-								<a href={`https://github.com/${ member.github }`} target="_blank" type="button" class="btn-floating btn-small btn-git waves-effect waves-light"><i class="fab fa-github"></i></a>
-
-								{ member.twitter ? (
-									<a href={`https://twitter.com/${ member.twitter }`} target="_blank" type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fab fa-twitter"></i></a>
-									) :
-								 member.instagram ? (
-									<a href={`https://instagram.com/${ member.instagram }`} target="_blank" type="button" class="btn-floating btn-small btn-ins waves-effect waves-light"><i class="fab fa-instagram"></i></a>
-								) : null}
+								)}
+								
+								{member.instagram && (
+									<a 
+										href={`https://instagram.com/${member.instagram}`} 
+										target="_blank" 
+										class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-50 hover:text-primary-500 transition-colors duration-200"
+										title="Instagram"
+									>
+										<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+											<path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.247-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.987.01-4.04.059-.977.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.88-.344 1.857-.047 1.053-.059 1.37-.059 4.04 0 2.67.01 2.988.059 4.04.045.977.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.88.3 1.857.344 1.054.047 1.37.059 4.04.059 2.67 0 2.987-.01 4.04-.059.977-.045 1.504-.207 1.857-.344.467-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.88.344-1.857.047-1.054.059-1.37.059-4.04 0-2.67-.01-2.987-.059-4.04-.045-.977-.207-1.504-.344-1.857a3.097 3.097 0 0 0-.748-1.15 3.098 3.098 0 0 0-1.15-.748c-.353-.137-.88-.3-1.857-.344-1.053-.047-1.37-.059-4.04-.059zm0 3.063a5.135 5.135 0 1 1 0 10.27 5.135 5.135 0 0 1 0-10.27zm0 8.468a3.333 3.333 0 1 0 0-6.666 3.333 3.333 0 0 0 0 6.666zm6.538-8.469a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>
+										</svg>
+									</a>
+								)}
 							</div>
-							<!--/.Card content-->
 						</div>
 					</div>
 				))}
-				<!--Grid column-->
 			</div>
-			<div class="row flex-center">
-				<button type="button" class="btn peach-gradient btn-rounded btn-lg" data-toggle="modal" data-target="#acknowledgment">
-					Acknowledgment
-				</button>
-			</div>
-		</div>
-
-		<!-- Acknowledgment -->
-		<div class="modal fade" id="acknowledgment" tabindex="-1" role="dialog" aria-labelledby="acknowledgmentL" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="acknowledgmentL">Acknowledgment</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
+			<!-- Acknowledgment section divider -->
+			<div class="mt-24 mb-16">
+				<div class="flex items-center justify-center">
+					<div class="h-px bg-gray-200 w-full max-w-xs"></div>
+					<div class="px-6">
+						<span class="inline-block px-3 py-1 bg-primary-50 text-primary-600 rounded-full text-sm font-medium">Acknowledgments</span>
 					</div>
-					<div class="modal-body">
-						<h3>MIT App Inventor</h3>
-						First of all, we have to thank <big><a href="http://appinventor.mit.edu/explore/our-team.html" target="_blank">App Inventor Team</a></big>
-						for building that incredible paltform. Without them, Kodular would have never existed.<br>
-						App Inventor starter its development at Google on 2007, until 2010 when it was moved to MIT.<br>
-						<hr>
-						<h4>Former Team</h4>
-						<ul>
-						{acknowledgement.filter((u: Acknowledgement) => u.type === 'former').map((u: Acknowledgement, i: number) => (
-							<li><big>{ u.name }</big>: { u.text }</li>
-						))}
-						</ul>
-						<br>
-						<h4>Moderators</h4>
-						<ul>
-						{acknowledgement.filter((u: Acknowledgement) => u.type === 'moderator').map((u: Acknowledgement, i: number) => (
-							<li><big>{ u.name }</big>: { u.text }</li>
-						))}
-						</ul>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
+					<div class="h-px bg-gray-200 w-full max-w-xs"></div>
 				</div>
 			</div>
 		</div>
+
+		<!-- Acknowledgment Section -->
+		<div class="container mx-auto px-4 relative z-10 mb-20">
+			<div class="max-w-4xl mx-auto bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+				<!-- MIT App Inventor Section -->
+				<div class="bg-gradient-to-r from-primary-600 to-primary-400 p-8 relative">
+					<!-- Decorative elements -->
+					<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mt-12 -mr-12 blur-2xl"></div>
+					<div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full -mb-8 -ml-8 blur-xl"></div>
+					
+					<div class="relative z-10">
+						<h3 class="text-2xl font-bold text-white mb-4">MIT App Inventor</h3>
+						<p class="text-white/90 mb-2">
+							First of all, we have to thank <a href="http://appinventor.mit.edu/explore/our-team.html" target="_blank" class="font-medium text-white hover:text-white/80 underline">App Inventor Team</a>
+							for building that incredible platform. Without them, Kodular would have never existed.
+						</p>
+						<p class="text-white/90">
+							App Inventor started its development at Google in 2007, until 2010 when it was moved to MIT.
+						</p>
+					</div>
+				</div>
+				
+				<div class="p-8">
+					<!-- Former Team Section -->
+					<div class="mb-8">
+						<h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-primary-500">
+								<path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+							</svg>
+							Former Team
+						</h4>
+						<ul class="space-y-3">
+						{acknowledgement.filter((u: Acknowledgement) => u.type === 'former').map((u: Acknowledgement) => (
+							<li class="bg-gray-50 p-3 rounded-lg">
+								<span class="font-semibold text-primary-600">{ u.name }</span>: <span class="text-gray-700">{ u.text }</span>
+							</li>
+						))}
+						</ul>
+					</div>
+					
+					<div class="h-px bg-gray-200 my-6"></div>
+					
+					<!-- Moderators Section -->
+					<div>
+						<h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-primary-500">
+								<path fill-rule="evenodd" d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z" clip-rule="evenodd" />
+								<path d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z" />
+							</svg>
+							Moderators
+						</h4>
+						<ul class="space-y-3">
+						{acknowledgement.filter((u: Acknowledgement) => u.type === 'moderator').map((u: Acknowledgement) => (
+							<li class="bg-gray-50 p-3 rounded-lg">
+								<span class="font-semibold text-primary-600">{ u.name }</span>: <span class="text-gray-700">{ u.text }</span>
+							</li>
+						))}
+						</ul>
+					</div>
+				</div>
+			</div>
 	</section>
 </Layout>
