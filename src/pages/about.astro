@@ -3,72 +3,167 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="About | Kodular">
-	<section class="section feature-box pt-5">
-		<div class="container">
-			<!--Section heading-->
-			<h1 class="section-heading pt-4 mb-4">Get to know us better</h1>
-			<!--Section description-->
-			<p class="section-description lead grey-text">Kodular was baked from MIT App Inventor to make app coding easier.<br>We are getting our aim to reality.</p>
+	<!-- Hero Section -->
+	<section class="relative pt-16 pb-8 overflow-hidden">
+		<!-- Background decorative elements -->
+		<div class="absolute inset-0 z-0">
+			<div class="absolute top-0 right-0 w-96 h-96 bg-primary-100/50 rounded-full -mt-20 -mr-20 blur-3xl"></div>
+			<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-100/30 rounded-full -mb-10 -ml-10 blur-2xl"></div>
+			
+			<!-- Grid pattern -->
+      <div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+		</div>
 
-			<!--Grid row-->
-			<div class="row features-big">
-				<!--Grid column-->
-				<div class="col-md-4 mb-r">
-					<i class="fa fa-users deep-purple-text"></i>
-					<h5 class="feature-title">1.8M+ Active Users</h5>
-					<p class="grey-text">Our amazing users from more than 200 countries trust us to easily create their desired apps!</p>
+		<div class="container mx-auto px-4 relative z-10">
+			<div class="max-w-3xl mx-auto text-center">
+				<div class="inline-block mb-4">
+					<span class="inline-block px-3 py-1 bg-primary-50 text-primary-600 rounded-full text-sm font-medium">About Us</span>
 				</div>
-				<!--Grid column-->
-				<!--Grid column-->
-				<div class="col-md-4 mb-r">
-					<i class="fa fa-mobile deep-purple-text"></i>
-					<h5 class="feature-title">4.1M+ App Projects</h5>
-					<p class="grey-text">It's so easy to create an app that our users create thousands of them in our platform!</p>
-				</div>
-				<!--Grid column-->
-				<!--Grid column-->
-				<div class="col-md-4 mb-r">
-					<i class="fa fa-feed deep-purple-text"></i>
-					<h5 class="feature-title">4.7M+ Daily Users in Apps</h5>
-					<p class="grey-text">Millions of people all over the world use an app made with Kodular every day!</p>
-				</div>
-				<!--Grid column-->
+				<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get to know us better</h1>
+				<p class="text-xl text-gray-600 leading-relaxed">
+					Kodular was baked from MIT App Inventor to make app coding easier.
+					<br>We are turning our vision into reality.
+				</p>
 			</div>
-			<!--Grid row-->
+		</div>
+	</section>
 
-			<!-- Info -->
-			<div class="row features-big">
-				<div class="col-xl-4 col-lg-4">
-					<div class="row">
-						<div class="col-12 mb-2">
-							<a type="button" href="https://legal.junnovate.com/info/" target="_blank" class="btn btn-pink">
-								Company Information
-							</a>
+	<!-- Stats Section -->
+	<section class="py-16 bg-white relative">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Stat Card 1 -->
+				<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300 relative overflow-hidden group">
+					<!-- Decorative gradient -->
+					<div class="absolute inset-0 bg-gradient-to-r from-primary-50/0 to-primary-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+					
+					<div class="relative z-10">
+						<div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center mb-6 text-primary-500">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+								<path d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+							</svg>
 						</div>
+						<h3 class="text-3xl font-bold text-gray-900 mb-2">1.8M+</h3>
+						<h4 class="text-lg font-semibold text-gray-800 mb-3">Active Users</h4>
+						<p class="text-gray-600">
+							Our amazing users from more than 200 countries trust us to easily create their desired apps!
+						</p>
 					</div>
 				</div>
 
-				<div class="col-xl-4 col-lg-4">
-					<div class="row">
-						<div class="col-12 mb-2">
-							<a type="button" href="https://legal.junnovate.com/kodular/disclaimer/" target="_blank" class="btn btn-pink">
-								Disclaimer
-							</a>
+				<!-- Stat Card 2 -->
+				<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300 relative overflow-hidden group">
+					<!-- Decorative gradient -->
+					<div class="absolute inset-0 bg-gradient-to-r from-primary-50/0 to-primary-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+					
+					<div class="relative z-10">
+						<div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center mb-6 text-primary-500">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+								<path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
+								<path fill-rule="evenodd" d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z" clip-rule="evenodd" />
+							</svg>
 						</div>
+						<h3 class="text-3xl font-bold text-gray-900 mb-2">4.1M+</h3>
+						<h4 class="text-lg font-semibold text-gray-800 mb-3">App Projects</h4>
+						<p class="text-gray-600">
+							It's so easy to create an app that our users create thousands of them in our platform!
+						</p>
 					</div>
 				</div>
 
-				<div class="col-xl-4 col-lg-4">
-					<div class="row">
-						<div class="col-12 mb-2">
-							<a type="button" class="btn btn-pink" target="_blank" href="https://legal.junnovate.com/kodular/tac/">
-								Terms and Conditions
-							</a>
+				<!-- Stat Card 3 -->
+				<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300 relative overflow-hidden group">
+					<!-- Decorative gradient -->
+					<div class="absolute inset-0 bg-gradient-to-r from-primary-50/0 to-primary-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+					
+					<div class="relative z-10">
+						<div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center mb-6 text-primary-500">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+								<path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z" />
+							</svg>
 						</div>
+						<h3 class="text-3xl font-bold text-gray-900 mb-2">4.7M+</h3>
+						<h4 class="text-lg font-semibold text-gray-800 mb-3">Daily Users in Apps</h4>
+						<p class="text-gray-600">
+							Millions of people all over the world use an app made with Kodular every day!
+						</p>
 					</div>
 				</div>
 			</div>
-			<!-- Info -->
+		</div>
+	</section>
+
+	<!-- Mission Section -->
+	<section class="py-20 bg-gray-50 relative overflow-hidden">
+		<!-- Decorative elements -->
+		<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600"></div>
+		<div class="absolute -right-20 top-20 w-80 h-80 bg-primary-100/50 rounded-full blur-3xl"></div>
+		<div class="absolute -left-20 bottom-20 w-80 h-80 bg-primary-100/30 rounded-full blur-3xl"></div>
+
+		<div class="container mx-auto px-4 relative z-10">
+			<div class="max-w-3xl mx-auto">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
+					<p class="text-lg text-gray-600">We're on a mission to democratize app development and make it accessible to everyone.</p>
+				</div>
+
+				<div class="bg-white rounded-2xl p-8 shadow-md">
+					<p class="text-gray-700 mb-6 leading-relaxed">
+						At Kodular, we believe that technology should be accessible to everyone. Our platform empowers individuals with no coding experience to create functional and beautiful mobile applications through an intuitive drag-and-drop interface.
+					</p>
+					<p class="text-gray-700 leading-relaxed">
+						Built on the foundation of MIT App Inventor, we've enhanced and expanded the platform to make it even more powerful and user-friendly. Our goal is to continue innovating and providing tools that enable creativity and problem-solving through technology.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Legal Links Section -->
+	<section class="py-16 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-3xl mx-auto">
+				<div class="text-center mb-10">
+					<h2 class="text-2xl font-bold text-gray-900 mb-4">Legal Information</h2>
+					<p class="text-gray-600">Important documents about our company and services</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<a href="https://legal.junnovate.com/info/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
+						<div class="flex items-center gap-3">
+							<div class="text-primary-500 group-hover:text-primary-600 transition-colors">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+									<path fill-rule="evenodd" d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z" clip-rule="evenodd" />
+									<path d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 01-3 0V6.75z" />
+								</svg>
+							</div>
+							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Company Information</span>
+						</div>
+					</a>
+
+					<a href="https://legal.junnovate.com/kodular/disclaimer/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
+						<div class="flex items-center gap-3">
+							<div class="text-primary-500 group-hover:text-primary-600 transition-colors">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+									<path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+								</svg>
+							</div>
+							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Disclaimer</span>
+						</div>
+					</a>
+
+					<a href="https://legal.junnovate.com/kodular/tac/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
+						<div class="flex items-center gap-3">
+							<div class="text-primary-500 group-hover:text-primary-600 transition-colors">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+									<path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clip-rule="evenodd" />
+								</svg>
+							</div>
+							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Terms and Conditions</span>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 </Layout>
