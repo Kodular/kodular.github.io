@@ -17,51 +17,64 @@ const gradientColors = [
 ];
 ---
 
-<section class="py-16 bg-gray-50" id="testimonials">
+<section class="py-24 bg-gray-50" id="testimonials">
   <div class="container mx-auto px-4">
-    <!-- Section heading -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Testimonials</h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">Read what our users say about Kodular.</p>
+    <!-- Section heading with decorative elements -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4 relative inline-block">
+        Testimonials
+        <div class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full"></div>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">See what our community has to say about Kodular</p>
     </div>
     
-    <!-- Testimonial wall - masonry grid layout -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <!-- Testimonial wall - masonry grid layout with auto-rows -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
       {testimonials.map((testimonial: Testimonial, i: number) => (
         <div class="h-full">
           <!-- Card with playful animation on hover -->
-          <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col overflow-hidden">
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 h-full flex flex-col overflow-hidden group">
             <!-- Gradient header -->
-            <div class={`h-3 bg-gradient-to-r ${gradientColors[i % gradientColors.length]}`}></div>
+            <div class={`h-2 bg-gradient-to-r ${gradientColors[i % gradientColors.length]} group-hover:h-3 transition-all duration-300`}></div>
             
             <div class="p-6 flex flex-col flex-grow">
-              <!-- Avatar and name -->
-              <div class="flex items-center mb-4">
-                <img 
-                  src={`//community.kodular.io/user_avatar/community.kodular.io/${testimonial.username}/120/1.png`} 
-                  alt={testimonial.name}
-                  class="w-12 h-12 rounded-full object-cover border-2 border-primary-500"
-                  loading="lazy"
-                />
+              <!-- Avatar and name with improved styling -->
+              <div class="flex items-center mb-6">
+                <div class="relative">
+                  <img 
+                    src={`//community.kodular.io/user_avatar/community.kodular.io/${testimonial.username}/120/1.png`} 
+                    alt={testimonial.name}
+                    class="w-14 h-14 rounded-full object-cover border-2 border-primary-500 group-hover:border-primary-600 transition-colors shadow-sm"
+                    loading="lazy"
+                  />
+                  <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
                 <div class="ml-4">
                   <a 
                     href={`//community.kodular.io/u/${testimonial.username}`} 
                     target="_blank"
-                    class="font-medium text-gray-900 hover:text-primary-500 transition-colors"
+                    class="font-medium text-gray-900 hover:text-primary-500 transition-colors block"
                   >
                     {testimonial.name}
                   </a>
-                  <p class="text-sm text-gray-500">@{testimonial.username}</p>
+                  <p class="text-sm text-gray-500 flex items-center">
+                    <span class="text-primary-500 mr-1">@</span>{testimonial.username}
+                  </p>
                 </div>
               </div>
               
-              <!-- Testimonial text -->
+              <!-- Testimonial text with enhanced styling -->
               <div class="flex-grow">
-                <p class="text-gray-700 italic">
-                  <span class="text-primary-500 text-xl mr-2">"</span>
-                  {testimonial.text}
-                  <span class="text-primary-500 text-xl ml-1">"</span>
-                </p>
+                <div class="relative">
+                  <svg class="absolute -top-3 -left-2 w-8 h-8 text-primary-300 opacity-50" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                  </svg>
+                  <p class="text-gray-700 italic pl-6 leading-relaxed" set:html={testimonial.text.replace(/Kodular/gi, '<span class="text-primary-600 font-medium decoration-primary-500/50 decoration-wavy underline underline-offset-4">Kodular</span>')}></p>
+                </div>
               </div>
             </div>
           </div>
