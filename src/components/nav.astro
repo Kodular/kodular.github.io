@@ -1,54 +1,100 @@
 ---
 ---
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark deep-purple">
-	<a class="navbar-brand" href="/">
-		<strong>Kodular</strong>
-	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-		aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-		<div class="animated-icon"><span></span><span></span><span></span><span></span></div>
-	</button>
-	<div class="collapse navbar-collapse" id="navbar">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<i class="fa fa-globe"></i> Modules
-				</a>
-				<div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-5">
-							<a class="dropdown-item" href="/creator">Creator</a>
-							<a class="dropdown-item" href="//ide.kodular.io">Extensions IDE</a>
-							<a class="dropdown-item" href="//store.kodular.io">Store</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="//my.kodular.io">My Kodular</a>
-				</div>
-			</li>
-			<li class={`nav-item ${ Astro.url.pathname.startsWith('/pricing') && 'active' }`}>
-				<a class="nav-link" href="/pricing">
-				<i class="fa fa-credit-card"></i> Pricing</a>
-			</li>
-			<li class={`nav-item ${ Astro.url.pathname.startsWith('/team') && 'active' }`}>
-				<a class="nav-link" href="/team">
-				<i class="fa fa-users"></i> Team</a>
-			</li>
-			<li class={`nav-item ${ Astro.url.pathname.startsWith('/about') && 'active' }`}>
-				<a class="nav-link" href="/about">
-				<i class="fa fa-info-circle"></i> About</a>
-			</li>
-		</ul>
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="//community.kodular.io">
-				<i class="fa fa-comments"></i> Community</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="//docs.kodular.io">
-				<i class="fa fa-book"></i> Docs</a>
-			</li>
-			<li class="nav-item pink lighten-1 rounded">
-				<a class="nav-link" href="https://c.kodular.io" target="_blank">
-				<i class="fa fa-shapes"></i> Create Apps!</a>
-			</li>
-		</ul>
-	</div>
+<nav class="fixed top-0 z-50 w-full bg-primary-500 text-white shadow-md">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-3">
+      <a href="/" class="text-xl font-bold">Kodular</a>
+      
+      <button id="menu-toggle" class="lg:hidden focus:outline-none" aria-label="Toggle navigation">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      
+      <div id="navbar" class="hidden lg:flex lg:items-center lg:w-auto w-full">
+        <ul class="lg:flex lg:space-x-6 pt-4 lg:pt-0">
+          <li class="group relative">
+            <a href="#" class="flex items-center py-2 hover:text-white/80" id="modules-dropdown-toggle">
+              <i class="fa fa-globe mr-2"></i> Modules
+              <svg class="h-4 w-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <div id="modules-dropdown" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 text-gray-800">
+              <a href="/creator" class="block px-4 py-2 hover:bg-gray-100">Creator</a>
+              <a href="//ide.kodular.io" class="block px-4 py-2 hover:bg-gray-100">Extensions IDE</a>
+              <a href="//store.kodular.io" class="block px-4 py-2 hover:bg-gray-100">Store</a>
+              <div class="border-t border-gray-100 my-1"></div>
+              <a href="//my.kodular.io" class="block px-4 py-2 hover:bg-gray-100">My Kodular</a>
+            </div>
+          </li>
+          <li>
+            <a href="/pricing" class={`flex items-center py-2 hover:text-white/80 ${Astro.url.pathname.startsWith('/pricing') ? 'border-b-2 border-white' : ''}`}>
+              <i class="fa fa-credit-card mr-2"></i> Pricing
+            </a>
+          </li>
+          <li>
+            <a href="/team" class={`flex items-center py-2 hover:text-white/80 ${Astro.url.pathname.startsWith('/team') ? 'border-b-2 border-white' : ''}`}>
+              <i class="fa fa-users mr-2"></i> Team
+            </a>
+          </li>
+          <li>
+            <a href="/about" class={`flex items-center py-2 hover:text-white/80 ${Astro.url.pathname.startsWith('/about') ? 'border-b-2 border-white' : ''}`}>
+              <i class="fa fa-info-circle mr-2"></i> About
+            </a>
+          </li>
+        </ul>
+        
+        <ul class="lg:flex lg:items-center lg:ml-auto lg:space-x-4 pt-4 lg:pt-0">
+          <li>
+            <a href="//community.kodular.io" class="flex items-center py-2 hover:text-white/80">
+              <i class="fa fa-comments mr-2"></i> Community
+            </a>
+          </li>
+          <li>
+            <a href="//docs.kodular.io" class="flex items-center py-2 hover:text-white/80">
+              <i class="fa fa-book mr-2"></i> Docs
+            </a>
+          </li>
+          <li>
+            <a href="https://c.kodular.io" target="_blank" class="flex items-center px-4 py-2 bg-pink-500 rounded-md hover:bg-pink-600 transition-colors">
+              <i class="fa fa-shapes mr-2"></i> Create Apps!
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
+
+<script>
+  // Toggle mobile menu
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+  
+  if (menuToggle && navbar) {
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+  }
+  
+  // Toggle dropdown
+  const modulesToggle = document.getElementById('modules-dropdown-toggle');
+  const modulesDropdown = document.getElementById('modules-dropdown');
+  
+  if (modulesToggle && modulesDropdown) {
+    modulesToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      modulesDropdown.classList.toggle('hidden');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      const target = e.target as Node;
+      if (!modulesToggle.contains(target) && !modulesDropdown.contains(target)) {
+        modulesDropdown.classList.add('hidden');
+      }
+    });
+  }
+</script>

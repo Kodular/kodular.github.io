@@ -1,0 +1,72 @@
+---
+import testimonials from '../../data/testimonials.yml';
+
+interface Testimonial {
+	name: string;
+	username: string;
+	text: string;
+}
+
+// Define gradient colors for testimonial cards
+const gradientColors = [
+  'from-primary-400 to-primary-600',  // Purple gradient
+  'from-pink-400 to-pink-600',        // Pink gradient
+  'from-indigo-400 to-indigo-600',    // Indigo gradient
+  'from-blue-400 to-blue-600',        // Blue gradient
+  'from-sky-400 to-sky-600'           // Sky gradient
+];
+---
+
+<section class="py-16 bg-gray-50" id="testimonials">
+  <div class="container mx-auto px-4">
+    <!-- Section heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Testimonials</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">Read what our users say about Kodular.</p>
+    </div>
+    
+    <!-- Testimonial wall - masonry grid layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {testimonials.map((testimonial: Testimonial, i: number) => (
+        <div class="h-full">
+          <!-- Card with playful animation on hover -->
+          <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col overflow-hidden">
+            <!-- Gradient header -->
+            <div class={`h-3 bg-gradient-to-r ${gradientColors[i % gradientColors.length]}`}></div>
+            
+            <div class="p-6 flex flex-col flex-grow">
+              <!-- Avatar and name -->
+              <div class="flex items-center mb-4">
+                <img 
+                  src={`//community.kodular.io/user_avatar/community.kodular.io/${testimonial.username}/120/1.png`} 
+                  alt={testimonial.name}
+                  class="w-12 h-12 rounded-full object-cover border-2 border-primary-500"
+                  loading="lazy"
+                />
+                <div class="ml-4">
+                  <a 
+                    href={`//community.kodular.io/u/${testimonial.username}`} 
+                    target="_blank"
+                    class="font-medium text-gray-900 hover:text-primary-500 transition-colors"
+                  >
+                    {testimonial.name}
+                  </a>
+                  <p class="text-sm text-gray-500">@{testimonial.username}</p>
+                </div>
+              </div>
+              
+              <!-- Testimonial text -->
+              <div class="flex-grow">
+                <p class="text-gray-700 italic">
+                  <span class="text-primary-500 text-xl mr-2">"</span>
+                  {testimonial.text}
+                  <span class="text-primary-500 text-xl ml-1">"</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

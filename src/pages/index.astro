@@ -1,244 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Featuredon from '../components/featuredon.astro';
-import Testimonials from '../components/testimonials.astro';
+
+// Import home section components
+import Hero from '../components/home/Hero.astro';
+import GetStarted from '../components/home/GetStarted.astro';
+import Modules from '../components/home/Modules.astro';
+import Status from '../components/home/Status.astro';
+import Features from '../components/home/Features.astro';
+import FeaturedOn from '../components/home/FeaturedOn.astro';
+import Testimonials from '../components/home/Testimonials.astro';
+import SectionDivider from '../components/shared/SectionDivider.astro';
 ---
 
 <Layout title="Kodular">
-	<!-- Intro Section -->
-	<section>
-		<div class="lazy view hm-purple-slight jarallax" data-speed="0.2" style="background-image: url('/images/background.png'); height: 100vh !important;">
-			<div class="full-bg-img">
-				<div class="container flex-center">
-					<div class="row pt-5 mt-3">
-						<div class="col-md-12 wow fadeIn mb-3">
-							<div class="text-center">
-								<ul>
-									<li>
-										<h1 class="display-4 font-bold mb-5 wow fadeInUp text-uppercase">Kodular</h1>
-									</li>
-									<li>
-										<h5 class="mb-5 wow fadeInUp" data-wow-delay="0.2s">Much more than a modern app creator without coding</h5>
-									</li>
-									<li class="wow fadeInUp" data-wow-delay="0.4s">
-										<a class="btn btn-lg btn-rounded deep-purple accent-4 text-uppercase" target="_blank" href="https://c.kodular.io">
-											<i class="fa fa-shapes left"></i> Create Apps!
-										</a>
-										<a class="btn btn-lg btn-rounded btn-outline-deep-purple accent-4 waves-effect text-uppercase" href="#getstarted">
-											<i class="fa fa-plus left"></i> See More
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Get Started Section -->
-	<section class="section" id="getstarted">
-		<div class="container">
-			<!--Grid row-->
-			<div class="row align-items-center my-5">
-				<!--Grid column-->
-				<div class="col-md-6 center-on-small-only">
-					<h1 class="section-heading text-lg-left text-md-center mb-5">Kodular, powerful tools for you</h1>
-					<p class="lead grey-text">We provide several "modules" (services) to create Android apps without coding, just
-						scroll down a little bit to check them!</p>
-				</div>
-				<!--Grid column-->
-				<div class="col-md-6">
-					<a href="https://community.kodular.io/t/kodular-fenix/132021" target="_blank">
-						<img src="//assets.kodular.io/images/creator/versions/fenix_white.png" class="lazy img-fluid z-depth-1-half" alt="">
-					</a>
-				</div>
-			</div>
-			<!--Grid row-->
-		</div>
-	</section>
-
-	<hr class="hr-width">
-
-	<!--Section: Cards-->
-	<section class="section text-center" id="modules">
-		<h1 class="section-heading mb-4">Our Modules</h1>
-		<div class="container">
-			<div class="row mb-4 wow fadeIn">
-				<div class="col-lg-3 col-md-12 mb-3">
-					<div class="card">
-						<div class="view overlay">
-							<div class="embed-responsive embed-responsive-16by9 rounded-top">
-								<iframe class="lazy embed-responsive-item" src="https://www.youtube.com/embed/iK-J6U12NQc" allowfullscreen></iframe>
-							</div>
-						</div>
-						<div class="card-body">
-							<h4 class="card-title">Kodular Creator</h4>
-							<p class="card-text">
-								With Kodular Creator, you can start creating incredible apps without any coding knowledge!
-								<br>
-								Just drag some components and join blocks
-							</p>
-							<a href="/creator" class="btn btn-pink btn-md">Read More
-								<i class="fa fa-plus ml-2"></i>
-							</a>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 mb-3">
-					<div class="card">
-						<div class="view overlay">
-							<img src="/images/ide.png" class="lazy card-img-top" alt="">
-							<a href="/ide">
-								<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-						<div class="card-body">
-							<h4 class="card-title">Extensions IDE</h4>
-							<p class="card-text">
-								If you are an advanced user, why not code in Java and create amazing Extensions for the Creator?
-								<br>
-								Try it if you want something like Android Studio
-							</p>
-							<a target="_blank" href="https://ide.kodular.io" class="btn btn-pink btn-md">Start Now
-								<i class="fa fa-play ml-2"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 mb-3">
-					<div class="card">
-						<div class="view overlay">
-							<img src="/images/store.png" class="lazy card-img-top" alt="">
-							<a href="/store">
-								<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-						<div class="card-body">
-							<h4 class="card-title">Kodular Store</h4>
-							<p class="card-text">Share your apps, projects, extensions and screens in this free Store developed by Kodular
-								Team!</p>
-							<a target="_blank" href="https://store.kodular.io" class="btn btn-pink btn-md">Start Now
-								<i class="fa fa-play ml-2"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-12 mb-3">
-					<div class="card">
-						<div class="view overlay">
-							<img src="/images/account.png" class="lazy card-img-top" alt="">
-							<a href="/account">
-								<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-						<div class="card-body">
-							<h4 class="card-title">My Kodular</h4>
-							<p class="card-text">
-								Manage all Kodular Modules from this Control Panel. You will also need only one account to login in Kodular
-								<br>
-								You can see and control the data we have about you there
-							</p>
-							<a target="_blank" href="https://my.kodular.io" class="btn btn-pink btn-md">Start Now
-								<i class="fa fa-play ml-2"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--Section: Cards-->
-
-	<hr class="hr-width">
-
-	<!-- Status Section -->
-	<section class="section text-center" id="status">
-		<div class="container">
-			<div class="card success-color text-center z-depth-2">
-				<div class="card-body">
-					<div class="row">
-						<div class="col-md-9 d-flex align-items-center justify-content-center">
-							<p class="mb-0 white-text">If you are unable to use Kodular, you can check if there's any problem with our
-								servers.</p>
-						</div>
-						<div class="col-md-3">
-							<a href="https://status.kodular.io" target="_blank" class="btn btn-rounded btn-white">
-								<span class="green-text">Check Status</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<hr class="hr-width">
-
-	<!-- Features Section -->
-	<section class="section feature-box py-5" id="features">
-		<!--Section heading-->
-		<h1 class="section-heading mb-4">Why is it so great?</h1>
-		<div class="container">
-			<!--Grid row-->
-			<div class="row features-big">
-				<!--Grid column-->
-				<div class="col-md-3 mb-r">
-					<i class="fa fa-comments deep-purple-text"></i>
-					<h5 class="feature-title">Active Community</h5>
-					<p class="grey-text text-justify">
-						Why not take a look at our amazing community?
-						<br>
-						Our users are just amazing, and thanks to them our community is a really nice place to share your doubts, projects
-						or suggestions releated with Kodular.
-					</p>
-				</div>
-				<!--Grid column-->
-				<div class="col-md-3 mb-r">
-					<i class="fa fa-users deep-purple-text"></i>
-					<h5 class="feature-title">Our Team</h5>
-					<p class="grey-text text-justify">
-						Our Team is very enthusiastic and loves helping people. They will really like to help you on the road to create an
-						app.
-						<br>
-						We are devotees of the IT!
-					</p>
-				</div>
-				<!--Grid column-->
-				<div class="col-md-3 mb-r">
-					<i class="fa fa-server deep-purple-text"></i>
-					<h5 class="feature-title">Maximum Stability</h5>
-					<p class="grey-text text-justify">
-						Kodular Infrastructure is powered by our partner ArubaCloud, which guarantees a really good uptime and
-						performance.
-					</p>
-				</div>
-				<!--Grid column-->
-				<div class="col-md-3 mb-r">
-					<i class="fa fa-plus deep-purple-text"></i>
-					<h5 class="feature-title">Other Services!</h5>
-					<p class="grey-text text-justify">
-						We provide more than just an <a href="/creator">App Creator</a>. We also have a self-developed <a href="/store">App
-							Store</a>, an online <a href="/ide">Extensions IDE</a> and an <a href="/account">Account Control Panel</a>
-						<br>
-						Let's expand Kodular!
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<hr class="hr-width">
-
-	<Featuredon />
-
-	<hr class="hr-width">
-
+	<Hero />
+	
+	<GetStarted />
+	<SectionDivider />
+	
+	<Modules />
+	<SectionDivider />
+	
+	<Status />
+	<SectionDivider />
+	
+	<Features />
+	<SectionDivider />
+	
+	<FeaturedOn />
+	<SectionDivider />
+	
 	<Testimonials />
 </Layout>
 
