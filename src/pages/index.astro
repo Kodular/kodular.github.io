@@ -4,7 +4,9 @@ import Layout from '../layouts/Layout.astro';
 // Import home section components
 import Hero from '../components/home/Hero.astro';
 import GetStarted from '../components/home/GetStarted.astro';
-import Modules from '../components/home/Modules.astro';
+import CreatorAbout from '../components/home/CreatorAbout.astro';
+import CreatorGallery from '../components/home/CreatorGallery.astro';
+import CreatorFeatures from '../components/home/CreatorFeatures.astro';
 import Features from '../components/home/Features.astro';
 import FeaturedOn from '../components/home/FeaturedOn.astro';
 import Testimonials from '../components/home/Testimonials.astro';
@@ -17,10 +19,13 @@ import SectionDivider from '../components/shared/SectionDivider.astro';
 	<GetStarted />
 	<SectionDivider />
 	
-	<Modules />
+	<CreatorAbout />
 	<SectionDivider />
 	
-	<Features />
+	<CreatorGallery />
+	<SectionDivider />
+	
+	<CreatorFeatures />
 	<SectionDivider />
 	
 	<FeaturedOn />
