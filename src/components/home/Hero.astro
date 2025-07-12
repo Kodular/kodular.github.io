@@ -1,5 +1,6 @@
 ---
 import Button from '../ui/Button.astro';
+import WaveSvg from '../../assets/wave.svg';
 ---
 
 <!-- Hero Section with clean white background -->  
@@ -23,11 +24,7 @@ import Button from '../ui/Button.astro';
       
       <!-- Bottom wave decoration spanning full width -->  
       <div class="absolute bottom-0 left-0 w-full overflow-hidden">
-        <div class="relative w-[102%] left-[-1%] h-64">
-          <svg preserveAspectRatio="none" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" class="w-full h-full fill-primary-400/10">
-            <path d="M0,160 C240,320 480,0 720,160 C960,320 1200,0 1440,160 L1440,320 L0,320 Z" />
-          </svg>
-        </div>
+        <WaveSvg class="w-full h-64 fill-primary-500/10" />
       </div>
       
       <!-- Subtle dot pattern -->  
@@ -100,7 +97,7 @@ import Button from '../ui/Button.astro';
           <!-- Main screenshot with interactive elements -->  
           <div class="relative transform transition-all duration-500 lg:scale-110 lg:origin-left group-hover:translate-y-[-8px]">
             <img 
-              src="/images/creator_light.png" 
+              src="/images/creator/creator_light.png" 
               alt="Kodular Creator Interface" 
               class="w-full h-auto relative z-10"
               loading="eager"
@@ -140,7 +137,7 @@ import Button from '../ui/Button.astro';
         </div>
 
         <!-- Caption with badge -->  
-        <div class="flex items-center justify-center gap-2 mt-6">
+        <div class="hidden lg:flex items-center justify-center gap-2 mt-6">
           <span class="bg-primary-500/20 backdrop-blur-sm text-primary-500 px-3 py-1 rounded-full text-xs font-medium">POWERFUL EDITOR</span>
           <p class="text-gray-600 text-sm">Build beautiful mobile apps with our intuitive interface</p>
         </div>
