@@ -58,35 +58,152 @@
       <!-- Center - Smartphone -->
       <div class="relative z-10 flex-shrink-0">
         <div class="smartphone-container relative">
-          <!-- Phone Frame -->
-          <div class="w-64 h-[500px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
-            <!-- Screen -->
-            <div class="w-full h-full bg-gradient-to-br from-primary-400 to-purple-600 rounded-[2.5rem] p-6 flex flex-col justify-center items-center text-white relative overflow-hidden">
-              <!-- App UI Elements -->
-              <div class="absolute inset-0 opacity-20">
-                <!-- Background pattern -->
-                <div class="absolute top-4 left-4 w-8 h-8 border-2 border-white rounded-full"></div>
-                <div class="absolute top-4 right-4 w-6 h-6 border-2 border-white rounded"></div>
-                <div class="absolute bottom-20 left-6 w-12 h-2 bg-white rounded-full"></div>
-                <div class="absolute bottom-16 right-6 w-8 h-2 bg-white rounded-full"></div>
-              </div>
-              
-              <!-- Main App Content -->
-              <div class="text-center z-10">
-                <div class="w-16 h-16 bg-white/20 rounded-2xl mb-4 flex items-center justify-center mx-auto">
-                  <i class="fa fa-mobile-alt text-2xl"></i>
-                </div>
-                <h3 class="text-lg font-bold mb-2">Your Amazing App</h3>
-                <p class="text-sm opacity-90 mb-4">Built with Kodular</p>
+          <!-- Phone Frame with 2D white design -->
+          <div class="w-72 h-[540px] bg-gradient-to-b from-white via-gray-50 to-gray-100 rounded-[3.5rem] p-1 shadow-2xl shadow-gray-400/50 relative border-2 border-gray-200">
+            <!-- Phone highlights and details -->
+            <div class="absolute inset-2 rounded-[3rem] bg-gradient-to-b from-white/40 to-transparent"></div>
+            <div class="absolute top-6 left-1/2 transform -translate-x-1/2 w-20 h-1.5 bg-gray-400 rounded-full shadow-inner"></div>
+            <div class="absolute top-4 right-6 w-3 h-3 bg-gray-300 rounded-full shadow-inner"></div>
+            
+            
+            <!-- Screen with white bezel -->
+            <div class="w-full h-full bg-white rounded-[3.2rem] p-2 relative shadow-inner select-none cursor-default">
+              <div class="w-full h-full bg-white rounded-[2.8rem] overflow-hidden relative border border-gray-100">
                 
-                <!-- Interactive Elements -->
-                <div class="space-y-3">
-                  <div class="bg-white/20 rounded-lg p-2 text-xs">Button Component</div>
-                  <div class="bg-white/20 rounded-lg p-2 text-xs">Audio Player</div>
-                  <div class="bg-white/20 rounded-lg p-2 text-xs">Database Storage</div>
+                
+                <!-- Status Bar -->
+                <div class="absolute top-0 left-0 right-0 h-12 bg-white flex items-center justify-between px-6 text-gray-900 text-xs font-medium z-20">
+                  <div class="flex items-center space-x-2 w-20">
+                    <i class="fa fa-signal text-xs"></i>
+                    <span class="text-xs font-medium">Kodular</span>
+                  </div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2">
+                    <span class="font-semibold">9:41</span>
+                  </div>
+                  <div class="flex items-center space-x-2 w-20 justify-end">
+                    <i class="fa fa-wifi text-xs"></i>
+                    <i class="fa fa-battery-full text-xs"></i>
+                  </div>
+                </div>
+                
+                <!-- App Content - Material Design 3 Expressive -->
+                <div class="pt-12 h-full bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 relative overflow-hidden">
+                  <!-- Material Design 3 App Header -->
+                  <div class="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 px-6 py-6 relative overflow-hidden">
+                    <!-- Decorative shapes -->
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full transform translate-x-6 -translate-y-6"></div>
+                    <div class="absolute bottom-0 left-0 w-16 h-16 bg-white/15 rounded-full transform -translate-x-4 translate-y-4"></div>
+                    
+                    <div class="flex items-center justify-between relative z-10">
+                      <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                          <i class="fa fa-rocket text-white text-lg"></i>
+                        </div>
+                        <div>
+                          <h3 class="font-bold text-white text-sm">Creative Studio</h3>
+                          <p class="text-xs text-white/80">Express yourself</p>
+                        </div>
+                      </div>
+                      <div class="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <i class="fa fa-bell text-white text-xs"></i>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- App Body with Material 3 cards -->
+                  <div class="p-4 space-y-4 pb-20">
+                    <!-- Material 3 Hero Card with organic shapes -->
+                    <div class="bg-gradient-to-br from-purple-400 via-pink-400 to-orange-400 rounded-3xl p-6 text-white shadow-xl relative overflow-hidden animate-breathe">
+                      <!-- Organic background shapes -->
+                      <div class="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full transform translate-x-8 -translate-y-8"></div>
+                      <div class="absolute bottom-0 left-0 w-20 h-20 bg-white/15 rounded-full transform -translate-x-6 translate-y-6"></div>
+                      
+                      <div class="relative z-10">
+                        <h4 class="font-bold text-sm mb-2">Unleash Creativity</h4>
+                        <p class="text-xs opacity-90 mb-4">Design, build, and share amazing apps with expressive tools</p>
+                        <div class="bg-white/25 backdrop-blur-sm rounded-2xl py-3 px-6 text-xs font-semibold text-center shadow-lg animate-pulse-glow">
+                          Start Creating
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Material 3 Feature Cards Grid -->
+                    <div class="grid grid-cols-2 gap-3">
+                      <!-- Design Tools Card -->
+                      <div class="bg-gradient-to-br from-purple-100 to-purple-200 rounded-3xl p-4 shadow-md border border-purple-200/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-12 h-12 bg-purple-300/30 rounded-full transform translate-x-4 -translate-y-4"></div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mb-3 shadow-lg">
+                          <i class="fa fa-palette text-white text-xs"></i>
+                        </div>
+                        <p class="text-xs font-bold text-purple-900 mb-1">Design</p>
+                        <p class="text-[10px] text-purple-700">Express ideas</p>
+                      </div>
+                      
+                      <!-- Analytics Card -->
+                      <div class="bg-gradient-to-br from-pink-100 to-pink-200 rounded-3xl p-4 shadow-md border border-pink-200/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-12 h-12 bg-pink-300/30 rounded-full transform translate-x-4 -translate-y-4"></div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-pink-400 to-pink-600 rounded-2xl flex items-center justify-center mb-3 shadow-lg">
+                          <i class="fa fa-chart-line text-white text-xs"></i>
+                        </div>
+                        <p class="text-xs font-bold text-pink-900 mb-1">Insights</p>
+                        <p class="text-[10px] text-pink-700">Track success</p>
+                      </div>
+                      
+                      <!-- Community Card -->
+                      <div class="bg-gradient-to-br from-orange-100 to-orange-200 rounded-3xl p-4 shadow-md border border-orange-200/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-12 h-12 bg-orange-300/30 rounded-full transform translate-x-4 -translate-y-4"></div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center mb-3 shadow-lg">
+                          <i class="fa fa-users text-white text-xs"></i>
+                        </div>
+                        <p class="text-xs font-bold text-orange-900 mb-1">Connect</p>
+                        <p class="text-[10px] text-orange-700">Join creators</p>
+                      </div>
+                      
+                      <!-- Tools Card -->
+                      <div class="bg-gradient-to-br from-teal-100 to-teal-200 rounded-3xl p-4 shadow-md border border-teal-200/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-12 h-12 bg-teal-300/30 rounded-full transform translate-x-4 -translate-y-4"></div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-teal-400 to-teal-600 rounded-2xl flex items-center justify-center mb-3 shadow-lg">
+                          <i class="fa fa-tools text-white text-xs"></i>
+                        </div>
+                        <p class="text-xs font-bold text-teal-900 mb-1">Build</p>
+                        <p class="text-[10px] text-teal-700">Power tools</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Material 3 Navigation Rail -->
+                  <div class="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-purple-200/30 px-4 py-4">
+                    <div class="flex justify-around items-center">
+                      <div class="flex flex-col items-center space-y-1">
+                        <div class="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                          <i class="fa fa-home text-white text-[8px]"></i>
+                        </div>
+                        <span class="text-[8px] text-purple-600 font-semibold">Home</span>
+                      </div>
+                      <div class="flex flex-col items-center space-y-1">
+                        <div class="w-8 h-8 bg-gray-100 rounded-2xl flex items-center justify-center">
+                          <i class="fa fa-compass text-gray-400 text-[8px]"></i>
+                        </div>
+                        <span class="text-[8px] text-gray-400">Explore</span>
+                      </div>
+                      <div class="flex flex-col items-center space-y-1">
+                        <div class="w-8 h-8 bg-gray-100 rounded-2xl flex items-center justify-center">
+                          <i class="fa fa-heart text-gray-400 text-[8px]"></i>
+                        </div>
+                        <span class="text-[8px] text-gray-400">Favorites</span>
+                      </div>
+                      <div class="flex flex-col items-center space-y-1">
+                        <div class="w-8 h-8 bg-gray-100 rounded-2xl flex items-center justify-center">
+                          <i class="fa fa-user text-gray-400 text-[8px]"></i>
+                        </div>
+                        <span class="text-[8px] text-gray-400">Profile</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -206,6 +323,32 @@
 .block-element, .component-element {
   max-width: 200px;
   backdrop-filter: blur(10px);
+}
+
+
+/* Enhanced phone effects */
+.smartphone-container {
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.15));
+}
+
+/* Breathing animation for app elements */
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+/* Pulse animation for active elements */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.6); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 /* Responsive adjustments */
