@@ -1,5 +1,6 @@
 ---
 import testimonials from '../../data/testimonials.yml';
+import Button from '../ui/Button.astro';
 
 interface Testimonial {
 	name: string;
@@ -18,12 +19,10 @@ interface Testimonial {
       <p class="text-lg text-gray-600">Join thousands of creators building amazing apps with Kodular</p>
     </div>
     
-    <!-- Instagram-style comment grid with fading borders -->
-    <div class="relative">
-      <!-- Grid container with inner borders -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-h-[600px] overflow-hidden relative bg-white">
+    <!-- Testimonials grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200">
         {testimonials.map((testimonial: Testimonial) => (
-          <div class="p-4 border-r border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 last:border-r-0">
+          <div class="p-4 bg-white hover:bg-gray-50 transition-colors duration-200">
             <!-- User info header -->
             <div class="flex items-center gap-3 mb-3">
               <img 
@@ -42,42 +41,29 @@ interface Testimonial {
             <p class="text-sm text-gray-700 leading-relaxed line-clamp-4" set:html={testimonial.text.replace(/Kodular/gi, '<span class="text-primary-600 font-medium">Kodular</span>')}></p>
           </div>
         ))}
-      </div>
-      
-      <!-- Fading border overlays -->
-      <div class="absolute top-0 left-0 right-0 bottom-0 pointer-events-none">
-        <!-- Left fade -->
-        <div class="absolute top-0 left-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent"></div>
-        <!-- Right fade -->  
-        <div class="absolute top-0 right-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent"></div>
-        <!-- Top fade -->
-        <div class="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-white to-transparent"></div>
-        <!-- Bottom fade -->
-        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
-      </div>
     </div>
 
-          <div class="flex items-center justify-center gap-8 mb-6">
-        <div class="text-center">
-          <div class="text-2xl font-bold text-primary-600">4.1M+</div>
-          <div class="text-sm text-gray-500">App Projects Created</div>
-        </div>
-        <div class="text-center">
-          <div class="text-2xl font-bold text-primary-600">1.8M+</div>
-          <div class="text-sm text-gray-500">Active Users</div>
-        </div>
-        <div class="text-center">
-          <div class="text-2xl font-bold text-primary-600">50K+</div>
-          <div class="text-sm text-gray-500">Community Members</div>
-        </div>
+    <div class="flex items-center justify-center gap-8 mb-6 mt-12">
+      <div class="text-center">
+        <div class="text-2xl font-bold text-primary-600">4.1M+</div>
+        <div class="text-sm text-gray-500">App Projects Created</div>
       </div>
+      <div class="text-center">
+        <div class="text-2xl font-bold text-primary-600">1.8M+</div>
+        <div class="text-sm text-gray-500">Active Users</div>
+      </div>
+      <div class="text-center">
+        <div class="text-2xl font-bold text-primary-600">50K+</div>
+        <div class="text-sm text-gray-500">Community Members</div>
+      </div>
+    </div>
     
     <!-- View more button -->
-    <div class="text-center mt-8">
-      <a href="//community.kodular.io" target="_blank" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+    <div class="flex justify-center mt-8 w-full">
+      <Button href="//community.kodular.io" target="_blank" responsive={false}>
         Join Our Community
         <i class="fa fa-external-link"></i>
-      </a>
+      </Button>
     </div>
   </div>
 </section>
