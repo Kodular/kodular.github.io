@@ -1,0 +1,56 @@
+---
+export interface Props {
+  variant?: 'primary' | 'secondary';
+  size?: 'sm' | 'md' | 'lg';
+  responsive?: boolean;
+  href?: string;
+  target?: string;
+  class?: string;
+}
+
+const {
+  variant = 'primary',
+  size = 'md',
+  responsive = true,
+  href,
+  target,
+  class: className = '',
+  ...rest
+} = Astro.props;
+
+const baseClasses = 'font-medium transition-all duration-300 flex items-center justify-center gap-2';
+
+const variantClasses = {
+  primary: 'bg-primary-500 text-white hover:bg-primary-400 shadow-md',
+  secondary: 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200'
+};
+
+const sizeClasses = {
+  sm: 'px-4 py-2 text-sm',
+  md: 'px-6 py-3',
+  lg: 'px-8 py-4 text-lg'
+};
+
+const responsiveClasses = responsive ? 'flex-1 sm:flex-none' : '';
+
+const buttonClasses = [
+  baseClasses,
+  variantClasses[variant],
+  sizeClasses[size],
+  responsiveClasses,
+  'rounded-md',
+  'group',
+  className
+].filter(Boolean).join(' ');
+
+const Element = href ? 'a' : 'button';
+---
+
+<Element 
+  class={buttonClasses}
+  href={href}
+  target={target}
+  {...rest}
+>
+  <slot />
+</Element>
