@@ -137,11 +137,7 @@
         aria-label="Toggle navigation menu"
         aria-expanded="false"
       >
-        <svg id="menu-icon" class="h-6 w-6 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-line-1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16" class="transition-all duration-300"></path>
-          <path id="menu-line-2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" class="transition-all duration-300"></path>
-          <path id="menu-line-3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 18h16" class="transition-all duration-300"></path>
-        </svg>
+        <i id="menu-icon" class="fa fa-bars h-6 w-6 transition-all duration-300"></i>
       </button>
       
       <!-- Desktop Navigation -->
@@ -150,9 +146,7 @@
           href="/pricing" 
           class="flex items-center space-x-2 py-2 px-4 hover:bg-gray-100 rounded-lg transition-all duration-200 group"
         >
-          <svg class="w-4 h-4 text-gray-500 group-hover:text-primary-500 transition-colors" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-          </svg>
+          <i class="fa fa-credit-card w-4 h-4 text-gray-500 group-hover:text-primary-500 transition-colors"></i>
           <span class="font-medium">Pricing</span>
         </a>
         
@@ -161,9 +155,7 @@
           target="_blank" 
           class="flex items-center space-x-2 px-6 py-2.5 bg-primary-500 hover:bg-primary-600 text-white rounded-full transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
         >
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"></path>
-          </svg>
+          <i class="fa fa-puzzle-piece w-4 h-4"></i>
           <span>Create Apps!</span>
         </a>
       </div>
@@ -181,9 +173,7 @@
           href="/pricing" 
           class="flex items-center space-x-4 py-4 px-6 text-xl font-medium hover:bg-gray-100 rounded-xl transition-all duration-200 group"
         >
-          <svg class="w-6 h-6 text-gray-400 group-hover:text-primary-500 transition-colors" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-          </svg>
+          <i class="fa fa-credit-card w-6 h-6 text-gray-400 group-hover:text-primary-500 transition-colors"></i>
           <span>Pricing</span>
         </a>
         
@@ -192,9 +182,7 @@
           target="_blank" 
           class="flex items-center justify-center space-x-3 py-4 px-8 bg-primary-500 hover:bg-primary-600 text-white rounded-xl transition-all duration-200 font-semibold text-xl shadow-lg"
         >
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"></path>
-          </svg>
+          <i class="fa fa-puzzle-piece w-6 h-6"></i>
           <span>Create Apps!</span>
         </a>
       </nav>
@@ -206,9 +194,7 @@
   // Mobile menu functionality
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
-  const menuLine1 = document.getElementById('menu-line-1');
-  const menuLine2 = document.getElementById('menu-line-2');
-  const menuLine3 = document.getElementById('menu-line-3');
+  const menuIcon = document.getElementById('menu-icon');
   
   let isMenuOpen = false;
   
@@ -234,10 +220,8 @@
       navbar?.classList.add('menu-open');
       
       // Morph hamburger to X
-      if (menuLine1 && menuLine2 && menuLine3) {
-        menuLine1.setAttribute('d', 'M6 18L18 6');
-        menuLine2.style.opacity = '0';
-        menuLine3.setAttribute('d', 'M6 6l12 12');
+      if (menuIcon) {
+        menuIcon.className = 'fa fa-times h-6 w-6 transition-all duration-300';
       }
     }
   }
@@ -255,10 +239,8 @@
       navbar?.classList.remove('menu-open');
       
       // Morph X back to hamburger
-      if (menuLine1 && menuLine2 && menuLine3) {
-        menuLine1.setAttribute('d', 'M4 6h16');
-        menuLine2.style.opacity = '1';
-        menuLine3.setAttribute('d', 'M4 18h16');
+      if (menuIcon) {
+        menuIcon.className = 'fa fa-bars h-6 w-6 transition-all duration-300';
       }
     }
   }
