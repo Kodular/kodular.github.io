@@ -1,196 +1,167 @@
 ---
-// Fixed import error by using hardcoded social links
-const socialLinks = {
-  twitter: "https://twitter.com/KodularIO",
-  facebook: "https://facebook.com/KodularIO",
-  github: "https://github.com/Kodular",
-  instagram: "https://instagram.com/KodularIO",
-  telegram: "https://t.me/Kodular"
-};
+const quickLinks = [
+  { href: "//creator.kodular.io", icon: "fas fa-rocket", label: "My Kodular" },
+  { href: "//community.kodular.io", icon: "fas fa-users", label: "Community" },
+  { href: "//docs.kodular.io", icon: "fas fa-book", label: "Documentation" }
+];
+
+const resources = [
+  { href: "https://blog.kodular.io", icon: "fas fa-blog", label: "Blog", external: true },
+  { href: "https://status.kodular.io", icon: "fas fa-server", label: "Status", external: true },
+  { href: "https://translate.kodular.io", icon: "fas fa-language", label: "Translate", external: true }
+];
+
+const companyLinks = [
+  { href: "/about", icon: "fas fa-info-circle", label: "About Us" },
+  { href: "/team", icon: "fas fa-users", label: "Team" }
+];
+
+const socialLinks = [
+  { href: "https://twitter.com/KodularIO", icon: "fab fa-twitter", label: "Twitter" },
+  { href: "https://facebook.com/KodularIO", icon: "fab fa-facebook", label: "Facebook" },
+  { href: "https://instagram.com/KodularIO", icon: "fab fa-instagram", label: "Instagram" },
+  { href: "https://github.com/Kodular", icon: "fab fa-github", label: "GitHub" }
+];
 ---
 
-<footer class="bg-gray-900 text-white pt-16 pb-8">
-  <div class="container mx-auto px-4">
+<footer class="relative bg-gray-50 text-gray-900 overflow-hidden border-t border-gray-200">
+  
+  <!-- Brand gradient accent -->
+  <div class="absolute inset-0 bg-gradient-to-br from-primary-500/5 via-transparent to-primary-400/3"></div>
+  
+  <div class="relative z-10 container mx-auto px-4 pt-16 pb-8">
     <!-- Main footer content -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
       
       <!-- Brand column -->
-      <div class="space-y-4">
+      <div class="space-y-6">
         <div class="flex items-center space-x-3">
-          <img 
-            class="w-12 h-12" 
-            src="//assets.kodular.io/images/logo/inverted/512x512.png" 
-            alt="Kodular Logo"
-            width="48"
-            height="48"
-          />
-          <h2 class="text-2xl font-bold text-white">Kodular</h2>
+          <div class="flex items-center justify-center w-12 h-12 bg-primary-600 rounded-xl shadow-lg">
+            <img 
+              class="w-12 h-12" 
+              src="//assets.kodular.io/images/logo/inverted/512x512.png" 
+              alt="Kodular Logo"
+              width="32"
+              height="32"
+            />
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900">Kodular</h2>
         </div>
-        <p class="text-gray-400 max-w-xs">
-          Create Android apps with our drag and drop app builder. No coding required!
+        <p class="text-gray-700 leading-relaxed">
+          Create stunning Android apps with our intuitive drag-and-drop builder. 
+          <span class="text-primary-600 font-semibold">No coding required!</span>
         </p>
-        <p class="flex items-center text-gray-300">
-          Koded with 
-          <span class="inline-block mx-2">
-            <i class="fa fa-heart w-5 h-5 text-red-500"></i>
-          </span>
+        <p class="text-gray-600 text-sm flex items-center space-x-2">
+          <span>Koded with</span>
+          <i class="fas fa-heart text-red-500 animate-pulse"></i>
+          <span class="text-gray-700 font-medium">by creators, for creators</span>
         </p>
+        
+        <!-- Social Media -->
+        <div class="pt-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-3">Connect With Us</h4>
+          <div class="flex space-x-3">
+            {socialLinks.map((link) => (
+              <a 
+                href={link.href} 
+                target="_blank" 
+                class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 hover:bg-primary-600 hover:border-primary-500 text-gray-600 hover:text-white transition-all duration-200"
+                aria-label={link.label}
+              >
+                <i class={`${link.icon} text-sm`}></i>
+              </a>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Contact -->
+        <div class="pt-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-3">Get in Touch</h4>
+          <a href="mailto:support@kodular.io" class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+            <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+              <i class="fas fa-envelope text-sm"></i>
+            </div>
+            <span>support@kodular.io</span>
+          </a>
+        </div>
       </div>
       
       <!-- Quick Links column -->
-      <div class="space-y-4">
-        <h3 class="text-lg font-semibold text-white relative inline-block">
-          Quick Links
-          <div class="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-500"></div>
-        </h3>
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Quick Links</h3>
         <ul class="space-y-3">
-          <li>
-            <a href="//creator.kodular.io" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-info-circle w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              My Kodular
-            </a>
-          </li>
-          <li>
-            <a href="//community.kodular.io" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-users w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              Community
-            </a>
-          </li>
-          <li>
-            <a href="//docs.kodular.io" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-file-text w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              Docs
-            </a>
-          </li>
+          {quickLinks.map((link) => (
+            <li>
+              <a href={link.href} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+                <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+                  <i class={`${link.icon} text-sm`}></i>
+                </div>
+                <span>{link.label}</span>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
       
       <!-- Resources column -->
-      <div class="space-y-4">
-        <h3 class="text-lg font-semibold text-white relative inline-block">
-          Resources
-          <div class="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-500"></div>
-        </h3>
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Resources</h3>
         <ul class="space-y-3">
-          <li>
-            <a href="https://blog.kodular.io" target="_blank" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-newspaper w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://status.kodular.io" target="_blank" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-server w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              Server Status
-            </a>
-          </li>
-          <li>
-            <a href="https://translate.kodular.io" target="_blank" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-language w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              Help Translate
-            </a>
-          </li>
+          {resources.map((link) => (
+            <li>
+              <a href={link.href} target={link.external ? "_blank" : undefined} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+                <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+                  <i class={`${link.icon} text-sm`}></i>
+                </div>
+                <span>{link.label}</span>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
       
       <!-- Company column -->
-      <div class="space-y-4">
-        <h3 class="text-lg font-semibold text-white relative inline-block">
-          Company
-          <div class="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-500"></div>
-        </h3>
-        <ul class="space-y-3">
-          <li>
-            <a href="/about" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-info-circle w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="/team" class="text-gray-400 hover:text-white flex items-center group">
-              <i class="fa fa-users w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              Our Team
-            </a>
-          </li>
-          <li class="pt-2">
-            <h4 class="text-md font-medium text-gray-300 mb-2">Contact</h4>
-            <a href="mailto:support@kodular.io" class="text-gray-400 hover:text-white flex items-center group mb-1">
-              <i class="fa fa-envelope w-4 h-4 mr-2 text-white group-hover:text-white transition-colors"></i>
-              support@kodular.io
-            </a>
-            <p class="text-gray-400 text-sm">
-              Support: <span class="text-gray-300">Sat - Sun</span>
-            </p>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Connect column -->
-      <div class="space-y-4">
-        <h3 class="text-lg font-semibold text-white relative inline-block">
-          Connect With Us
-          <div class="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-500"></div>
-        </h3>
-        <div class="flex flex-wrap gap-3">
-          <!-- Twitter/X -->
-          <a 
-            href={socialLinks.twitter} 
-            target="_blank" 
-            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
-            aria-label="Twitter"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-          
-          <!-- Facebook -->
-          <a 
-            href={socialLinks.facebook} 
-            target="_blank" 
-            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
-            aria-label="Facebook"
-          >
-            <i class="fab fa-facebook"></i>
-          </a>
-          
-          <!-- Instagram -->
-          <a 
-            href={socialLinks.instagram} 
-            target="_blank" 
-            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          
-          <!-- GitHub -->
-          <a 
-            href={socialLinks.github} 
-            target="_blank" 
-            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
-            aria-label="GitHub"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Company</h3>
         
-        <div class="mt-6">
-          <a href="#" class="inline-flex items-center text-gray-400 hover:text-white group">
-            <span>Back to top</span>
-            <i class="fa fa-arrow-up w-4 h-4 ml-1 group-hover:-translate-y-1 transition-transform"></i>
-          </a>
-        </div>
+        <!-- Company Links -->
+        <ul class="space-y-3">
+          {companyLinks.map((link) => (
+            <li>
+              <a href={link.href} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+                <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+                  <i class={`${link.icon} text-sm`}></i>
+                </div>
+                <span>{link.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
     
     <!-- Divider -->
-    <div class="h-px bg-gray-800 my-8"></div>
+    <div class="h-px bg-gray-300 mb-6"></div>
     
     <!-- Copyright -->
-    <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-      <p>Junnovate Limited &copy; {new Date().getFullYear()} - Kodular &reg; | All Rights Reserved</p>
-      <div class="mt-4 md:mt-0 flex space-x-4">
-        <a href="https://legal.junnovate.com/kodular/privacy/" class="hover:text-white transition-colors">Privacy Policy</a>
-        <a href="https://legal.junnovate.com/kodular/tos/" class="hover:text-white transition-colors">Terms of Service</a>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-600 text-sm">
+      <p class="text-center sm:text-left">
+        <span class="font-medium text-gray-700">Junnovate Limited</span> &copy; {new Date().getFullYear()} - 
+        <span class="text-primary-600 font-semibold">Kodular</span> &reg; | All Rights Reserved
+      </p>
+      <div class="flex flex-wrap justify-center sm:justify-end gap-4">
+        <a 
+          href="https://legal.junnovate.com/kodular/privacy/" 
+          class="hover:text-primary-600 transition-colors duration-200"
+        >
+          Privacy Policy
+        </a>
+        <a 
+          href="https://legal.junnovate.com/kodular/tos/" 
+          class="hover:text-primary-600 transition-colors duration-200"
+        >
+          Terms of Service
+        </a>
       </div>
     </div>
   </div>
