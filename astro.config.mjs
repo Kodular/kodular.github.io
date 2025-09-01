@@ -11,9 +11,4 @@ export default defineConfig({
   vite: {
     plugins: [yaml(), tailwindcss()]
   },
-  redirects: {
-    '/account': 'https://account.kodular.io/',
-    '/ide': 'https://ide.kodular.io/',
-    '/store': 'https://store.kodular.io/',
-  }
 });
