@@ -32,14 +32,14 @@ const socialLinks = [
   <div class="relative z-10 container mx-auto px-4 pt-16 pb-8">
     <!-- Main footer content -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
-      
+
       <!-- Brand column -->
       <div class="space-y-6">
         <div class="flex items-center space-x-3">
           <div class="flex items-center justify-center w-12 h-12 bg-primary-600 rounded-xl shadow-lg">
-            <img 
-              class="w-12 h-12" 
-              src="//assets.kodular.io/images/logo/inverted/512x512.png" 
+            <img
+              class="w-12 h-12"
+              src="//assets.kodular.io/images/logo/inverted/512x512.png"
               alt="Kodular Logo"
               width="32"
               height="32"
@@ -48,7 +48,7 @@ const socialLinks = [
           <h2 class="text-2xl font-bold text-gray-900">Kodular</h2>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Create stunning Android apps with our intuitive drag-and-drop builder. 
+          Create stunning Android apps with our intuitive drag-and-drop builder.
           <span class="text-primary-600 font-semibold">No coding required!</span>
         </p>
         <p class="text-gray-600 text-sm flex items-center space-x-2">
@@ -56,34 +56,6 @@ const socialLinks = [
           <i class="fas fa-heart text-red-500 animate-pulse"></i>
           <span class="text-gray-700 font-medium">by creators, for creators</span>
         </p>
-        
-        <!-- Social Media -->
-        <div class="pt-4">
-          <h4 class="text-sm font-semibold text-gray-700 mb-3">Connect With Us</h4>
-          <div class="flex space-x-3">
-            {socialLinks.map((link) => (
-              <a 
-                href={link.href} 
-                target="_blank" 
-                class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 hover:bg-primary-600 hover:border-primary-500 text-gray-600 hover:text-white transition-all duration-200"
-                aria-label={link.label}
-              >
-                <i class={`${link.icon} text-sm`}></i>
-              </a>
-            ))}
-          </div>
-        </div>
-        
-        <!-- Contact -->
-        <div class="pt-4">
-          <h4 class="text-sm font-semibold text-gray-700 mb-3">Get in Touch</h4>
-          <a href="mailto:support@kodular.io" class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
-            <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
-              <i class="fas fa-envelope text-sm"></i>
-            </div>
-            <span>support@kodular.io</span>
-          </a>
-        </div>
       </div>
       
       <!-- Quick Links column -->
@@ -123,7 +95,7 @@ const socialLinks = [
       <!-- Company column -->
       <div class="space-y-6">
         <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Company</h3>
-        
+
         <!-- Company Links -->
         <ul class="space-y-3">
           {companyLinks.map((link) => (
@@ -137,6 +109,37 @@ const socialLinks = [
             </li>
           ))}
         </ul>
+      </div>
+    </div>
+
+    <!-- Second row for Connect With Us and Get in Touch -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 mb-12">
+      <!-- Social Media -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Connect With Us</h3>
+        <div class="flex space-x-3">
+          {socialLinks.map((link) => (
+            <a
+              href={link.href}
+              target="_blank"
+              class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 hover:bg-primary-600 hover:border-primary-500 text-gray-600 hover:text-white transition-all duration-200"
+              aria-label={link.label}
+            >
+              <i class={`${link.icon} text-sm`}></i>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Get in Touch</h3>
+        <a href="mailto:support@kodular.io" class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+          <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+            <i class="fas fa-envelope text-sm"></i>
+          </div>
+          <span>support@kodular.io</span>
+        </a>
       </div>
     </div>
     
