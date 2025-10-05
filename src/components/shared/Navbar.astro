@@ -2,6 +2,14 @@
 ---
 
 <style>
+  /* Fallback for browsers that don't support animation-timeline */
+  .morphing-navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+  }
+
   /* Desktop Morphing Animation */
   @supports (animation-timeline: scroll()) {
     @media (min-width: theme('screens.lg')) {
@@ -10,14 +18,14 @@
         animation-timeline: scroll(root);
         animation-range: 0 120px;
       }
-      
+
       .morphing-container {
         animation: container-morph-desktop linear forwards;
         animation-timeline: scroll(root);
         animation-range: 0 120px;
       }
     }
-    
+
     /* Mobile Floating Animation */
     @media (max-width: calc(theme('screens.lg') - 1px)) {
       .morphing-navbar {
@@ -25,7 +33,7 @@
         animation-timeline: scroll(root);
         animation-range: 0 80px;
       }
-      
+
       .morphing-container {
         animation: container-morph-mobile linear forwards;
         animation-timeline: scroll(root);
@@ -195,37 +203,37 @@
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuIcon = document.getElementById('menu-icon');
-  
+
   let isMenuOpen = false;
-  
+
   function toggleMobileMenu() {
     isMenuOpen = !isMenuOpen;
-    
+
     if (isMenuOpen) {
       openMobileMenu();
     } else {
       closeMobileMenu();
     }
   }
-  
+
   function openMobileMenu() {
     if (mobileMenu) {
       mobileMenu.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
       mobileMenuButton?.setAttribute('aria-expanded', 'true');
       mobileMenuButton?.setAttribute('aria-label', 'Close navigation menu');
-      
+
       // Add menu-open class to navbar
       const navbar = document.querySelector('.morphing-navbar');
       navbar?.classList.add('menu-open');
-      
+
       // Morph hamburger to X
       if (menuIcon) {
         menuIcon.className = 'fa fa-times h-6 w-6 transition-all duration-300';
       }
     }
   }
-  
+
   function closeMobileMenu() {
     if (mobileMenu) {
       mobileMenu.classList.add('hidden');
@@ -233,38 +241,57 @@
       mobileMenuButton?.setAttribute('aria-expanded', 'false');
       mobileMenuButton?.setAttribute('aria-label', 'Open navigation menu');
       isMenuOpen = false;
-      
+
       // Remove menu-open class from navbar
       const navbar = document.querySelector('.morphing-navbar');
       navbar?.classList.remove('menu-open');
-      
+
       // Morph X back to hamburger
       if (menuIcon) {
         menuIcon.className = 'fa fa-bars h-6 w-6 transition-all duration-300';
       }
     }
   }
-  
+
   // Event listeners
   mobileMenuButton?.addEventListener('click', toggleMobileMenu);
-  
+
   // Close on backdrop click
   mobileMenu?.addEventListener('click', (e) => {
     if (e.target === mobileMenu) {
       closeMobileMenu();
     }
   });
-  
+
   // Close on escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
       closeMobileMenu();
     }
   });
-  
+
   // Close menu when clicking mobile menu links
   const mobileMenuLinks = mobileMenu?.querySelectorAll('a');
   mobileMenuLinks?.forEach(link => {
     link.addEventListener('click', closeMobileMenu);
   });
+
+  // Fallback for browsers that don't support animation-timeline (like Firefox)
+  if (!CSS.supports('animation-timeline: scroll()')) {
+    const navbar = document.querySelector('.morphing-navbar');
+
+    function handleScroll() {
+      const scrollY = window.scrollY;
+      const threshold = window.innerWidth >= 1024 ? 120 : 80; // lg breakpoint
+
+      if (scrollY > 0) {
+        navbar?.classList.add('scrolled');
+      } else {
+        navbar?.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial check
+  }
 </script>
