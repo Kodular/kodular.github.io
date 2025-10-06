@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors */
+  --color-primary-500: #4527a0;
+  --color-primary-400: #5e35b1;
+  --color-primary-600: #311b92;
+  
+  /* Font family */
+  --font-display: "Jost", sans-serif;
+  --font-sans: "Jost", sans-serif;
+}
+
+/* Custom variants */
+@variant theme-primary (&:where([data-theme="primary"] *));

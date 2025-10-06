@@ -1,0 +1,54 @@
+---
+import testimonials from '../../data/testimonials.yml';
+import Button from '../ui/Button.astro';
+
+interface Testimonial {
+	name: string;
+	username: string;
+	text: string;
+}
+---
+
+<section class="py-24 bg-white" id="testimonials">
+  <div class="container mx-auto px-4">
+    <!-- Section heading with stats -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        What Our Community Says
+      </h2>
+      <p class="text-lg text-gray-600">Join thousands of creators building amazing apps with Kodular</p>
+    </div>
+    
+    <!-- Testimonials grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200">
+        {testimonials.map((testimonial: Testimonial) => (
+          <div class="p-4 bg-white hover:bg-gray-50 transition-colors duration-200">
+            <!-- User info header -->
+            <div class="flex items-center gap-3 mb-3">
+              <img 
+                src={`//community.kodular.io/user_avatar/community.kodular.io/${testimonial.username}/60/1.png`} 
+                alt={testimonial.name}
+                class="w-8 h-8 rounded-full object-cover"
+                loading="lazy"
+              />
+              <div class="min-w-0 flex-1">
+                <div class="font-semibold text-sm text-gray-900 truncate">{testimonial.name}</div>
+                <div class="text-xs text-gray-500 truncate">@{testimonial.username}</div>
+              </div>
+            </div>
+            
+            <!-- Comment text -->
+            <p class="text-sm text-gray-700 leading-relaxed line-clamp-4" set:html={testimonial.text.replace(/Kodular/gi, '<span class="text-primary-600 font-medium">Kodular</span>')}></p>
+          </div>
+        ))}
+    </div>
+
+    <!-- View more button -->
+    <div class="flex justify-center mt-8 w-full">
+      <Button href="//community.kodular.io" target="_blank" responsive={false}>
+        Join Our Community
+        <i class="fa fa-external-link"></i>
+      </Button>
+    </div>
+  </div>
+</section>

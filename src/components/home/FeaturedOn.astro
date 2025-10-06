@@ -1,0 +1,50 @@
+---
+import featuredon from '../../data/featuredon.yml';
+
+interface Featuredon {
+	name: string;
+	url: string;
+}
+---
+
+<section class="py-24 bg-white" id="featuredon">
+  <div class="container mx-auto px-4">
+    <!-- Section heading with decorative elements -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4 relative inline-block">
+        As featured on...
+        <div class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full"></div>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">Kodular has been recognized by these publications</p>
+    </div>
+    
+    <!-- Featured logos with hover effects -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+      {featuredon.map((site: Featuredon) => (
+        <div class="w-full max-w-[180px] transition-all duration-300 hover:scale-110">
+          <a 
+            href={site.url} 
+            target="_blank"
+            class="block p-2"
+            title={`Visit ${site.name}`}
+          >
+            <img 
+              class="w-full h-auto filter grayscale hover:grayscale-0 transition-all duration-500" 
+              src={`/images/${site.name.toLowerCase().replaceAll(' ', '')}.png`} 
+              alt={site.name}
+              loading="lazy"
+            />
+          </a>
+        </div>
+      ))}
+    </div>
+    
+    <!-- Trust badge -->
+    <div class="mt-16 text-center">
+      <span class="inline-flex items-center px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-600">
+        <i class="fa fa-shield-alt w-4 h-4 mr-2 text-primary-500"></i>
+        Trusted by millions of developers worldwide
+      </span>
+    </div>
+  </div>
+</section>

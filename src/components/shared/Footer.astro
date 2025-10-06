@@ -1,0 +1,171 @@
+---
+const quickLinks = [
+  { href: "//my.kodular.io", icon: "fas fa-rocket", label: "My Kodular" },
+  { href: "//community.kodular.io", icon: "fas fa-users", label: "Community" },
+  { href: "//docs.kodular.io", icon: "fas fa-book", label: "Documentation" }
+];
+
+const resources = [
+  { href: "https://blog.kodular.io", icon: "fas fa-blog", label: "Blog", external: true },
+  { href: "https://status.kodular.io", icon: "fas fa-server", label: "Status", external: true },
+  { href: "https://translate.kodular.io", icon: "fas fa-language", label: "Translate", external: true }
+];
+
+const companyLinks = [
+  { href: "/about", icon: "fas fa-info-circle", label: "About Us" },
+  { href: "/team", icon: "fas fa-users", label: "Team" }
+];
+
+const socialLinks = [
+  { href: "https://twitter.com/KodularIO", icon: "fab fa-twitter", label: "Twitter" },
+  { href: "https://facebook.com/Kodular", icon: "fab fa-facebook", label: "Facebook" },
+  { href: "https://instagram.com/Kodular", icon: "fab fa-instagram", label: "Instagram" },
+  { href: "https://github.com/Kodular", icon: "fab fa-github", label: "GitHub" }
+];
+---
+
+<footer class="relative bg-gray-50 text-gray-900 overflow-hidden border-t border-gray-200">
+  
+  <!-- Brand gradient accent -->
+  <div class="absolute inset-0 bg-gradient-to-br from-primary-500/5 via-transparent to-primary-400/3"></div>
+  
+  <div class="relative z-10 container mx-auto px-4 pt-16 pb-8">
+    <!-- Main footer content -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+
+      <!-- Brand column -->
+      <div class="space-y-6">
+        <div class="flex items-center space-x-3">
+          <div class="flex items-center justify-center w-12 h-12 bg-primary-600 rounded-xl shadow-lg">
+            <img
+              class="w-12 h-12"
+              src="//assets.kodular.io/images/logo/inverted/512x512.png"
+              alt="Kodular Logo"
+              width="32"
+              height="32"
+            />
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900">Kodular</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          Create stunning Android apps with our intuitive drag-and-drop builder.
+          <span class="text-primary-600 font-semibold">No coding required!</span>
+        </p>
+        <p class="text-gray-600 text-sm flex items-center space-x-2">
+          <span>Koded with</span>
+          <i class="fas fa-heart text-red-500 animate-pulse"></i>
+          <span class="text-gray-700 font-medium">by creators, for creators</span>
+        </p>
+      </div>
+      
+      <!-- Quick Links column -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Quick Links</h3>
+        <ul class="space-y-3">
+          {quickLinks.map((link) => (
+            <li>
+              <a href={link.href} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+                <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+                  <i class={`${link.icon} text-sm`}></i>
+                </div>
+                <span>{link.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <!-- Resources column -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Resources</h3>
+        <ul class="space-y-3">
+          {resources.map((link) => (
+            <li>
+              <a href={link.href} target={link.external ? "_blank" : undefined} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+                <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+                  <i class={`${link.icon} text-sm`}></i>
+                </div>
+                <span>{link.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <!-- Company column -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Company</h3>
+
+        <!-- Company Links -->
+        <ul class="space-y-3">
+          {companyLinks.map((link) => (
+            <li>
+              <a href={link.href} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+                <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+                  <i class={`${link.icon} text-sm`}></i>
+                </div>
+                <span>{link.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Second row for Connect With Us and Get in Touch -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 mb-12">
+      <!-- Social Media -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Connect With Us</h3>
+        <div class="flex space-x-3">
+          {socialLinks.map((link) => (
+            <a
+              href={link.href}
+              target="_blank"
+              class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 hover:bg-primary-600 hover:border-primary-500 text-gray-600 hover:text-white transition-all duration-200"
+              aria-label={link.label}
+            >
+              <i class={`${link.icon} text-sm`}></i>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Get in Touch</h3>
+        <a href="mailto:support@kodular.io" class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+          <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
+            <i class="fas fa-envelope text-sm"></i>
+          </div>
+          <span>support@kodular.io</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Divider -->
+    <div class="h-px bg-gray-300 mb-6"></div>
+    
+    <!-- Copyright -->
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-600 text-sm">
+      <p class="text-center sm:text-left">
+        <span class="font-medium text-gray-700">Junnovate Limited</span> &copy; {new Date().getFullYear()} - 
+        <span class="text-primary-600 font-semibold">Kodular</span> &reg; | All Rights Reserved
+      </p>
+      <div class="flex flex-wrap justify-center sm:justify-end gap-4">
+        <a 
+          href="https://legal.junnovate.com/kodular/privacy/" 
+          class="hover:text-primary-600 transition-colors duration-200"
+        >
+          Privacy Policy
+        </a>
+        <a 
+          href="https://legal.junnovate.com/kodular/tos/" 
+          class="hover:text-primary-600 transition-colors duration-200"
+        >
+          Terms of Service
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

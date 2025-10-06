@@ -2,8 +2,9 @@
 import Head from '../components/head.html';
 import Styles from '../components/styles.html';
 import Scripts from '../components/scripts.html';
-import Nav from '../components/nav.astro';
-import Footer from '../components/footer.astro';
+import Nav from '../components/shared/Navbar.astro';
+import Footer from '../components/shared/Footer.astro';
+import '../styles/global.css';
 
 export interface Props {
 	title: string;
@@ -13,7 +14,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -23,7 +24,7 @@ const { title } = Astro.props;
 		<Head />
 		<Styles />
 	</head>
-	<body>
+	<body class="font-sans text-gray-900 antialiased">
 		<Nav />
 		<slot />
 		<Footer />
