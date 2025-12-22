@@ -3,9 +3,9 @@ import Button from '../ui/Button.astro';
 ---
 
 <!-- Get Started Section -->
-<section class="py-24 bg-white" id="getstarted">
+<section class="py-12 md:py-24 bg-white" id="getstarted">
   <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
       <!-- Content column -->
       <div class="md:w-1/2 text-center md:text-left">
         <h2 class="text-3xl font-bold text-gray-900 mb-6">Transform Your Ideas Into Apps</h2>
@@ -30,20 +30,18 @@ import Button from '../ui/Button.astro';
         <div class="hidden md:block h-1 w-24 bg-primary-500 rounded-full mt-8"></div>
       </div>
       
-      <!-- Image column with hover effect -->
-      <div class="md:w-1/2">
-        <a 
-          href="https://community.kodular.io/t/kodular-fenix/132021" 
-          target="_blank"
-          class="block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-        >
-          <img 
-            src="/images/fenix_3d.png" 
-            class="w-full h-auto" 
-            alt="Kodular Fenix"
-            loading="lazy"
-          >
-        </a>
+      <!-- Video column -->
+      <div class="w-full md:w-1/2">
+        <div class="overflow-hidden rounded-xl shadow-lg">
+          <iframe
+            class="w-full aspect-video"
+            src="https://www.youtube-nocookie.com/embed/U_IYequVzbU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
   </div>
