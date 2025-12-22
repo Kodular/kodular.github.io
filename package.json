@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "3.3.1",
-    "@tailwindcss/vite": "^4.1.6",
-    "astro": "5.7.12",
-    "tailwindcss": "^4.1.6"
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.6",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@rollup/plugin-yaml": "^4.1.1"
+    "@rollup/plugin-yaml": "^4.1.2"
   }
 }
