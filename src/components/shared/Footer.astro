@@ -13,7 +13,8 @@ const resources = [
 
 const companyLinks = [
   { href: "/about", icon: "fas fa-info-circle", label: "About Us" },
-  { href: "/team", icon: "fas fa-users", label: "Team" }
+  { href: "/team", icon: "fas fa-users", label: "Team" },
+  { href: "https://policies.kodular.io", icon: "fas fa-file-contract", label: "Policies", external: true }
 ];
 
 const socialLinks = [
@@ -100,7 +101,7 @@ const socialLinks = [
         <ul class="space-y-3">
           {companyLinks.map((link) => (
             <li>
-              <a href={link.href} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
+              <a href={link.href} target={link.external ? "_blank" : undefined} class="group flex items-center space-x-3 text-gray-700 hover:text-gray-900 transition-colors duration-200">
                 <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 border border-gray-300 group-hover:bg-primary-600 group-hover:border-primary-500 text-gray-600 group-hover:text-white transition-all duration-200">
                   <i class={`${link.icon} text-sm`}></i>
                 </div>
@@ -149,8 +150,7 @@ const socialLinks = [
     <!-- Copyright -->
     <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-600 text-sm">
       <p class="text-center sm:text-left">
-        <span class="font-medium text-gray-700">Junnovate Limited</span> &copy; {new Date().getFullYear()} - 
-        <span class="text-primary-600 font-semibold">Kodular</span> &reg; | All Rights Reserved
+&copy; {new Date().getFullYear()} Kodular. All rights reserved.
       </p>
       <div class="flex flex-wrap justify-center sm:justify-end gap-4">
         <a 
