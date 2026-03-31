@@ -112,40 +112,82 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Legal Links Section -->
+	<!-- Legal Information Section -->
 	<section class="py-16 bg-white">
 		<div class="container mx-auto px-4">
 			<div class="max-w-3xl mx-auto">
 				<div class="text-center mb-10">
 					<h2 class="text-2xl font-bold text-gray-900 mb-4">Legal Information</h2>
-					<p class="text-gray-600">Important documents about our company and services</p>
+					<p class="text-gray-600">Important information about our company and services</p>
 				</div>
 
+				<!-- Company Information -->
+				<div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mb-8">
+					<div class="flex items-center gap-3 mb-6">
+						<div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center text-primary-500">
+							<i class="fa fa-building"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-900">Company Information</h3>
+					</div>
+
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-gray-700">
+						<div>
+							<p class="text-sm text-gray-500 mb-1">Company Name</p>
+							<p class="font-medium">Junnovate Limited</p>
+						</div>
+						<div>
+							<p class="text-sm text-gray-500 mb-1">Trading Name</p>
+							<p class="font-medium">Kodular</p>
+						</div>
+						<div>
+							<p class="text-sm text-gray-500 mb-1">Company Type</p>
+							<p class="font-medium">Private Company Limited by Shares</p>
+						</div>
+						<div>
+							<p class="text-sm text-gray-500 mb-1">Company Number</p>
+							<p class="font-medium">784589</p>
+						</div>
+						<div>
+							<p class="text-sm text-gray-500 mb-1">Country of Incorporation</p>
+							<p class="font-medium">Ireland (Dublin)</p>
+						</div>
+						<div>
+							<p class="text-sm text-gray-500 mb-1">VAT Number</p>
+							<p class="font-medium">IE 4416003MH</p>
+						</div>
+						<div class="sm:col-span-2">
+							<p class="text-sm text-gray-500 mb-1">Registered Address</p>
+							<p class="font-medium">24A Baggot Street Upper, Dublin, D04 N528, Ireland</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Policy Links -->
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-					<a href="https://legal.junnovate.com/info/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
+					<a href="https://policies.kodular.io/terms/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
 						<div class="flex items-center gap-3">
 							<div class="text-primary-500 group-hover:text-primary-600 transition-colors">
 								<i class="fa fa-file-text w-5 h-5"></i>
 							</div>
-							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Company Information</span>
+							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Terms of Service</span>
 						</div>
 					</a>
 
-					<a href="https://legal.junnovate.com/kodular/disclaimer/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
+					<a href="https://policies.kodular.io/privacy/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
+						<div class="flex items-center gap-3">
+							<div class="text-primary-500 group-hover:text-primary-600 transition-colors">
+								<i class="fa fa-lock w-5 h-5"></i>
+							</div>
+							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Privacy Policy</span>
+						</div>
+					</a>
+
+					<a href="https://policies.kodular.io/disclaimer/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
 						<div class="flex items-center gap-3">
 							<div class="text-primary-500 group-hover:text-primary-600 transition-colors">
 								<i class="fa fa-info-circle w-5 h-5"></i>
 							</div>
 							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Disclaimer</span>
-						</div>
-					</a>
-
-					<a href="https://legal.junnovate.com/kodular/tac/" target="_blank" class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl hover:bg-primary-50 hover:border-primary-100 hover:shadow-sm transition-all duration-300 group">
-						<div class="flex items-center gap-3">
-							<div class="text-primary-500 group-hover:text-primary-600 transition-colors">
-								<i class="fa fa-lock w-5 h-5"></i>
-							</div>
-							<span class="font-medium text-gray-800 group-hover:text-gray-900 transition-colors">Terms and Conditions</span>
 						</div>
 					</a>
 				</div>
