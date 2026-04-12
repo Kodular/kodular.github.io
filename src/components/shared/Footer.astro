@@ -7,8 +7,7 @@ const quickLinks = [
 
 const resources = [
   { href: "https://blog.kodular.io", icon: "fas fa-blog", label: "Blog", external: true },
-  { href: "https://status.kodular.io", icon: "fas fa-server", label: "Status", external: true },
-  { href: "https://translate.kodular.io", icon: "fas fa-language", label: "Translate", external: true }
+  { href: "https://status.kodular.io", icon: "fas fa-server", label: "Status", external: true }
 ];
 
 const companyLinks = [
@@ -90,9 +89,19 @@ const socialLinks = [
               </a>
             </li>
           ))}
+          <li>
+            <iframe
+              src="https://kodular.instatus.com/embed-status/65700731/light-sm"
+              width="230"
+              height="61"
+              frameborder="0"
+              scrolling="no"
+              style="border: none;"
+            ></iframe>
+          </li>
         </ul>
       </div>
-      
+
       <!-- Company column -->
       <div class="space-y-6">
         <h3 class="text-lg font-bold text-gray-900 border-b-2 border-primary-500 pb-2">Company</h3>
@@ -153,13 +162,13 @@ const socialLinks = [
 &copy; {new Date().getFullYear()} Kodular. All rights reserved.
       </p>
       <div class="flex flex-wrap justify-center sm:justify-end gap-4">
-        <a 
+        <a
           href="https://policies.kodular.io/privacy/"
           class="hover:text-primary-600 transition-colors duration-200"
         >
           Privacy Policy
         </a>
-        <a 
+        <a
           href="https://policies.kodular.io/terms/"
           class="hover:text-primary-600 transition-colors duration-200"
         >
